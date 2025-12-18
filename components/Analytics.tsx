@@ -1,0 +1,34 @@
+'use client';
+
+import Script from 'next/script';
+
+// EDST Google Analytics Measurement ID
+const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-8XJFTW1FWQ';
+
+export const GoogleAnalytics = () => {
+  // Don't load analytics if no valid ID
+  if (!GA_MEASUREMENT_ID) {
+    return null;
+  }
+
+  return (
+    <>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_MEASUREMENT_ID}', {
+            page_title: document.title,
+            page_location: window.location.href,
+          });
+        `}
+      </Script>
+    </>
+  );
+};
+

@@ -1,0 +1,20 @@
+{
+  "name": "EDST - The Marketing Ecosystem That Never Sleeps",
+  "short_name": "EDST",
+  "description": "AI-powered growth infrastructure for creators, artists & entrepreneurs",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020309",
+  "theme_color": "#FACC53",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
+
+
+
+
