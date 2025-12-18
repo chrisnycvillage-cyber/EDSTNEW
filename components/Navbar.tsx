@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ArrowRight, Gift } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 import { navigation } from '@/lib/config';
 import { Logo } from './Logo';
 
@@ -15,62 +15,6 @@ export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [navHovered, setNavHovered] = useState(false);
   const [activeSection, setActiveSection] = useState('');
-  const [wonBonus, setWonBonus] = useState<string | null>(null);
-  const [showBonusModal, setShowBonusModal] = useState(false);
-  const [shouldWiggle, setShouldWiggle] = useState(false);
-  const [hasInteracted, setHasInteracted] = useState(false);
-
-  // Periodic wiggle animation for the bonus button
-  useEffect(() => {
-    if (hasInteracted || wonBonus) return; // Don't wiggle if already interacted or won
-    
-    const triggerWiggle = () => {
-      setShouldWiggle(true);
-      setTimeout(() => setShouldWiggle(false), 600); // Wiggle duration
-    };
-
-    // Initial wiggle after 3 seconds
-    const initialTimer = setTimeout(triggerWiggle, 3000);
-    
-    // Then wiggle every 6-10 seconds randomly
-    const interval = setInterval(() => {
-      const delay = Math.random() * 4000 + 6000; // 6-10 seconds
-      setTimeout(triggerWiggle, delay);
-    }, 10000);
-
-    return () => {
-      clearTimeout(initialTimer);
-      clearInterval(interval);
-    };
-  }, [hasInteracted, wonBonus]);
-
-  // Check for won bonus
-  useEffect(() => {
-    const checkBonus = () => {
-      const saved = localStorage.getItem('edst-wheel-v3');
-      if (saved) {
-        const data = JSON.parse(saved);
-        const prizes = [
-          { label: '1K Followers', value: '1,000 Followers' },
-          { label: '2K Followers', value: '2,000 Followers' },
-          { label: 'PR Article', value: 'PR Article' },
-          { label: 'Pop Pack', value: 'Pop Pack' },
-        ];
-        if (data.prizeIndex !== undefined && prizes[data.prizeIndex]) {
-          setWonBonus(prizes[data.prizeIndex].value);
-        }
-      }
-    };
-    checkBonus();
-    // Listen for storage changes (when user spins)
-    window.addEventListener('storage', checkBonus);
-    // Also check periodically in case same-tab update
-    const interval = setInterval(checkBonus, 1000);
-    return () => {
-      window.removeEventListener('storage', checkBonus);
-      clearInterval(interval);
-    };
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -192,41 +136,8 @@ export const Navbar = () => {
               </div>
             </div>
 
-            {/* Right Side: Bonus + Get Started */}
+            {/* Right Side: Get Started */}
             <div className="hidden md:flex items-center gap-3">
-              {/* Bonus Button - always visible with periodic wiggle */}
-              <motion.button
-                initial={{ opacity: 0, x: 10 }}
-                animate={{ 
-                  opacity: 1, 
-                  x: 0,
-                  rotate: shouldWiggle ? [0, -3, 3, -3, 3, 0] : 0,
-                }}
-                transition={{
-                  rotate: { duration: 0.5, ease: "easeInOut" }
-                }}
-                onClick={() => {
-                  setHasInteracted(true);
-                  if (wonBonus) {
-                    setShowBonusModal(true);
-                  } else {
-                    window.dispatchEvent(new Event('open-spin-wheel'));
-                  }
-                }}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className={`flex items-center gap-2 px-3 py-2 rounded-full transition-all ${
-                  wonBonus 
-                    ? 'bg-edst-gold/10 border border-edst-gold/50' 
-                    : 'bg-edst-charcoal/60 border border-edst-gold/30 hover:border-edst-gold/50'
-                }`}
-              >
-                <Gift className="w-3.5 h-3.5 text-edst-gold" />
-                <span className="text-[10px] uppercase tracking-wider text-edst-gold font-medium">
-                  {wonBonus ? 'Bonus ✓' : 'Bonus'}
-                </span>
-              </motion.button>
-              
               <motion.a
                 href="/marketing"
                 whileHover={{ scale: 1.02 }}
@@ -252,56 +163,6 @@ export const Navbar = () => {
           </div>
         </div>
       </motion.nav>
-
-      {/* Bonus Modal */}
-      <AnimatePresence>
-        {showBonusModal && wonBonus && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/90"
-            onClick={() => setShowBonusModal(false)}
-          >
-            <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-sm bg-edst-black rounded-2xl border border-edst-gold/30 p-6 text-center"
-            >
-              <button
-                onClick={() => setShowBonusModal(false)}
-                className="absolute top-3 right-3 p-2 text-edst-silver/50 hover:text-white"
-              >
-                <X className="w-4 h-4" />
-              </button>
-              
-              <div className="p-3 rounded-full bg-edst-gold/10 border border-edst-gold/30 w-fit mx-auto mb-4">
-                <Gift className="w-6 h-6 text-edst-gold" />
-              </div>
-              
-              <div className="text-xs uppercase tracking-wider text-edst-gold/70 mb-1">Your Welcome Bonus</div>
-              <div className="text-2xl font-bold text-edst-gold mb-4">{wonBonus}</div>
-              
-              <p className="text-sm text-edst-silver mb-6">
-                Delivered within 24 hours of joining any plan.<br />
-                Our team reaches out personally.
-              </p>
-              
-              <motion.a
-                href="/marketing"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-edst-gold text-edst-black font-bold text-sm uppercase tracking-wider rounded-xl"
-              >
-                Claim Bonus
-                <ArrowRight className="w-4 h-4" />
-              </motion.a>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
 
       {/* Mobile Menu */}
       <AnimatePresence>
