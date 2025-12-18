@@ -141,7 +141,7 @@ export const Navbar = () => {
               {/* Discreet Login for existing clients */}
               <a
                 href="https://marketplace.edst.com"
-                className="text-[10px] text-edst-silver/40 hover:text-edst-silver/70 transition-colors px-2 py-1"
+                className="text-xs text-edst-silver/50 hover:text-edst-silver transition-colors px-3 py-1.5"
               >
                 Login
               </a>
