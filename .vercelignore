@@ -1,0 +1,3 @@
+# Ignore the large Trelbs video file (176MB exceeds 100MB limit)
+public/videos/Trelbs-Testimonial.mov
+
