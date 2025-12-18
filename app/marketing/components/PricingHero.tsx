@@ -98,7 +98,7 @@ export const PricingHero = () => {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-base md:text-lg text-edst-silver max-w-md mx-auto mb-8"
+            className="text-base md:text-lg text-edst-silver mx-auto mb-8 whitespace-nowrap"
           >
             50+ services • Exclusive community • Dedicated support
           </motion.p>
