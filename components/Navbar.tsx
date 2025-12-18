@@ -136,8 +136,16 @@ export const Navbar = () => {
               </div>
             </div>
 
-            {/* Right Side: Get Started */}
-            <div className="hidden md:flex items-center gap-3">
+            {/* Right Side: Login + Get Started */}
+            <div className="hidden md:flex items-center gap-2">
+              {/* Discreet Login for existing clients */}
+              <a
+                href="https://marketplace.edst.com"
+                className="text-[10px] text-edst-silver/40 hover:text-edst-silver/70 transition-colors px-2 py-1"
+              >
+                Login
+              </a>
+              
               <motion.a
                 href="/marketing"
                 whileHover={{ scale: 1.02 }}
