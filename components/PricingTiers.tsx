@@ -1292,9 +1292,6 @@ export const PricingTiers = () => {
                 <OrganicPlanCard key={plan.name} plan={plan} index={index + 3} isPremium  sponsor={sponsor || 'EDST'}/>
               ))}
             </div>
-            
-            {/* Community Spotlight - Below pricing tiers */}
-            <CommunitySpotlight />
           </motion.div>
           ) : (
           // Default grid for other categories (PR, Community)
@@ -1409,6 +1406,9 @@ export const PricingTiers = () => {
           </motion.div>
           )}
         </AnimatePresence>
+
+        {/* Community Spotlight - Always visible below all pricing tiers */}
+        <CommunitySpotlight />
 
         {/* Bottom note - Highlighted */}
         <motion.div
