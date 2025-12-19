@@ -635,7 +635,7 @@ const FitnessPlanSection = () => {
           </motion.a> */}
 
           <motion.a
-            href={vipPaymentType === 'onetime' ? `https://marketplace.edst.com/auth/signup?ref=${sponsor}&campaignId=305` : `https://marketplace.edst.com/auth/signup?ref=${sponsor}&campaignId=304`
+            href={vipPaymentType === 'onetime' ? `https://marketplace.edst.com/auth/signup?ref=${sponsor}&campaignId=305` : `https://marketplace.edst.com/auth/signup?ref=${sponsor}&campaignId=308`
             }
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
