@@ -36,14 +36,14 @@ export default function MarketingPage() {
       {/* Enterprise / High-Level Tiers */}
       <EnterpriseTiers />
 
+      {/* Video Testimonials */}
+      <VideoTestimonials />
+
       {/* Marketplace Teaser */}
       <MarketplaceTeaser />
 
       {/* Testimonials */}
       <PricingTestimonials />
-
-      {/* Video Testimonials */}
-      <VideoTestimonials />
 
       {/* FAQ Section */}
       <FAQ />
