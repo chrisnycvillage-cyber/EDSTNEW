@@ -20,6 +20,7 @@ import {
   VolumeX
 } from 'lucide-react';
 import { LandingFooter } from '@/components/LandingFooter';
+import { useSponsor } from '@/app/providers/SponsorProvider';
 
 // Fitness video testimonials with actual video sources
 const fitnessTestimonials = [
@@ -169,6 +170,7 @@ const FitnessVideoCard = ({
 export default function FitnessPage() {
   const [vipPaymentType, setVipPaymentType] = useState<'onetime' | 'monthly'>('onetime');
   const [currentlyPlayingId, setCurrentlyPlayingId] = useState<number>(-1);
+  const sponsor = useSponsor() || 'EDST';
 
   const scrollToPlans = () => {
     document.getElementById('fitness-plans')?.scrollIntoView({ behavior: 'smooth' });
@@ -401,7 +403,7 @@ export default function FitnessPage() {
               </ul>
 
               <motion.a
-                href="https://marketplace.edst.com/auth/signup?ref=EDST&campaignId=304"
+                href={`https://marketplace.edst.com/auth/signup?ref=${sponsor}&campaignId=304`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="w-full flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm uppercase tracking-wider bg-edst-slate/30 text-edst-white hover:bg-edst-gold hover:text-edst-black transition-all"
@@ -487,8 +489,8 @@ export default function FitnessPage() {
 
               <motion.a
                 href={vipPaymentType === 'onetime' 
-                  ? '/checkout?plan=fit-biz-vip&price=1950&category=fitness'
-                  : '/checkout?plan=fit-biz-vip-monthly&price=379&category=fitness&billing=monthly'
+                  ? `https://marketplace.edst.com/auth/signup?ref=${sponsor}&campaignId=305`
+                  : `https://marketplace.edst.com/auth/signup?ref=${sponsor}&campaignId=304`
                 }
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
@@ -693,7 +695,7 @@ export default function FitnessPage() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <motion.a
-                href="https://marketplace.edst.com/auth/signup?ref=EDST&campaignId=304"
+                href={`https://marketplace.edst.com/auth/signup?ref=${sponsor}&campaignId=304`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="px-8 py-4 bg-edst-charcoal border border-edst-gold/30 text-edst-gold font-bold rounded-lg hover:bg-edst-gold/10 transition-all flex items-center gap-2"
@@ -702,7 +704,7 @@ export default function FitnessPage() {
                 <span className="text-sm font-normal">$129/mo</span>
               </motion.a>
               <motion.a
-                href="https://marketplace.edst.com/auth/signup?ref=EDST&campaignId=305"
+                href={`https://marketplace.edst.com/auth/signup?ref=${sponsor}&campaignId=305`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="px-8 py-4 bg-edst-gold text-edst-black font-bold rounded-lg hover:bg-edst-gold-light transition-all flex items-center gap-2"
