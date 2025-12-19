@@ -254,12 +254,12 @@ export const Footer = () => {
             <Link href="/terms" className="text-xs text-edst-silver/60 hover:text-edst-silver transition-colors">
               Terms of Service
             </Link>
-            <Link href="/login" className="text-xs text-edst-silver/60 hover:text-edst-silver transition-colors">
+            <a href="https://marketplace.edst.com" className="text-xs text-edst-silver/60 hover:text-edst-silver transition-colors">
               Marketplace
-            </Link>
-            <Link href="/partner/login" className="text-xs text-edst-silver/60 hover:text-edst-silver transition-colors">
+            </a>
+            <a href="https://partner.edst.com" className="text-xs text-edst-silver/60 hover:text-edst-silver transition-colors">
               Partner Login
-            </Link>
+            </a>
           </div>
         </div>
       </div>

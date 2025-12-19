@@ -215,8 +215,17 @@ export const Navbar = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 }}
-                  className="pt-4 border-t border-edst-slate/20"
+                  className="pt-4 border-t border-edst-slate/20 flex flex-col gap-3"
                 >
+                  {/* Login link - subtle like desktop */}
+                  <a
+                    href="https://marketplace.edst.com"
+                    className="text-sm text-edst-silver/50 hover:text-edst-silver transition-colors"
+                  >
+                    Login
+                  </a>
+                  
+                  {/* Get Started button */}
                   <a
                     href="/marketing"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-edst-gold text-edst-black font-semibold text-sm uppercase tracking-wider rounded"
