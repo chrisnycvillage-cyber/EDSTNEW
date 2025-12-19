@@ -7,6 +7,14 @@ import { Menu, X, ArrowRight } from 'lucide-react';
 import { navigation } from '@/lib/config';
 import { Logo } from './Logo';
 
+// Marketing page specific navigation
+const marketingNavLinks = [
+  { label: 'Plans', href: '#plans' },
+  { label: 'Enterprise', href: '#enterprise' },
+  { label: 'Testimonials', href: '#testimonials' },
+  { label: 'FAQ', href: '#faq' },
+];
+
 export const Navbar = () => {
   const pathname = usePathname();
   const isMarketingPage = pathname === '/marketing' || pathname === '/checkout';
@@ -16,13 +24,19 @@ export const Navbar = () => {
   const [navHovered, setNavHovered] = useState(false);
   const [activeSection, setActiveSection] = useState('');
 
+  // Get the appropriate nav links based on the page
+  const currentNavLinks = isMarketingPage ? marketingNavLinks : navigation.links;
+
   useEffect(() => {
     const handleScroll = () => {
       // Collapse to dots after scrolling just 50px
       setIsScrolled(window.scrollY > 50);
       
-      // Detect active section
-      const sections = ['ecosystem', 'services', 'results', 'analytics'];
+      // Detect active section based on current page
+      const sections = isMarketingPage 
+        ? ['plans', 'enterprise', 'testimonials', 'faq']
+        : ['ecosystem', 'services', 'results', 'analytics'];
+      
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el) {
@@ -37,7 +51,7 @@ export const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isMarketingPage]);
 
   const scrollToSection = (href: string) => {
     setIsMobileMenuOpen(false);
@@ -91,7 +105,7 @@ export const Navbar = () => {
                     border: (isScrolled || isMarketingPage) && navHovered ? '1px solid rgba(250,204,83,0.15)' : '1px solid transparent',
                   }}
                 >
-                  {navigation.links.map((link, index) => {
+                  {currentNavLinks.map((link, index) => {
                     const sectionId = link.href.replace('#', '');
                     const isActive = activeSection === sectionId;
                     
@@ -184,7 +198,7 @@ export const Navbar = () => {
           >
             <div className="section-container py-6">
               <div className="flex flex-col gap-4">
-                {navigation.links.map((link, index) => (
+                {currentNavLinks.map((link, index) => (
                   <motion.button
                     key={link.label}
                     initial={{ opacity: 0, x: -10 }}

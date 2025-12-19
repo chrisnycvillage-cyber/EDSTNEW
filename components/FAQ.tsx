@@ -120,7 +120,7 @@ export const FAQ = () => {
   };
 
   return (
-    <section className="relative py-16 md:py-20 overflow-hidden">
+    <section id="faq" className="relative py-16 md:py-20 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-edst-dark" />
       <div className="absolute inset-0 gradient-radial opacity-20" />

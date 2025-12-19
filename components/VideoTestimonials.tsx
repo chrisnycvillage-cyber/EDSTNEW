@@ -246,7 +246,7 @@ export const VideoTestimonials = () => {
   };
 
   return (
-    <section className="relative py-12 md:py-16 overflow-hidden">
+    <section id="testimonials" className="relative py-12 md:py-16 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-edst-dark" />
       <div className="absolute inset-0 gradient-radial opacity-20" />
