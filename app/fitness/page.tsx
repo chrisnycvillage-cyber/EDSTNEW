@@ -53,6 +53,7 @@ const FitnessVideoCard = ({
 }) => {
   const [isMuted, setIsMuted] = useState(false); // Start with sound ON
   const [isHovered, setIsHovered] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   // Handle play/pause based on parent state
@@ -93,15 +94,23 @@ const FitnessVideoCard = ({
       onMouseLeave={() => setIsHovered(false)}
       className="relative flex-shrink-0 w-[120px] md:w-[140px] aspect-[9/16] rounded-xl overflow-hidden bg-edst-charcoal/60 border border-edst-slate/20 cursor-pointer group"
     >
+      {/* Loading placeholder - shows while video loads */}
+      {!isLoaded && (
+        <div className="absolute inset-0 bg-gradient-to-br from-edst-charcoal via-edst-slate/30 to-edst-charcoal animate-pulse flex items-center justify-center">
+          <div className="w-8 h-8 border-2 border-edst-gold/30 border-t-edst-gold rounded-full animate-spin" />
+        </div>
+      )}
+
       {/* Video element - plays inline */}
       <video
         ref={videoRef}
         src={video.videoUrl}
-        className="absolute inset-0 w-full h-full object-cover"
+        className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
         muted={isMuted}
         playsInline
         loop
-        preload="metadata"
+        preload="auto"
+        onLoadedData={() => setIsLoaded(true)}
         onClick={handleClick}
       />
       
