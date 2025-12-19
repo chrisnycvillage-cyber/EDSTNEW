@@ -10,7 +10,7 @@ import { Logo } from './Logo';
 // Marketing page specific navigation
 const marketingNavLinks = [
   { label: 'Plans', href: '#plans' },
-  { label: 'Enterprise', href: '#enterprise' },
+  { label: 'Viral', href: '#enterprise' },
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
 ];
