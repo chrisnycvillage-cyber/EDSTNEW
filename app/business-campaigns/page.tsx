@@ -137,6 +137,16 @@ export default function BusinessCampaignsPage() {
 
   return (
     <main className="min-h-screen bg-[#08080a] text-white">
+      {/* Top Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-4">
+        <Link 
+          href="/"
+          className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors"
+        >
+          <span className="font-heading text-lg font-bold tracking-tight">EDST</span>
+        </Link>
+      </nav>
+      
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">

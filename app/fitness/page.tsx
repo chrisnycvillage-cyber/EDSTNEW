@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { LandingFooter } from '@/components/LandingFooter';
 import { useSponsor } from '@/app/providers/SponsorProvider';
+import Link from 'next/link';
 
 // Fitness video testimonials with actual video sources
 const fitnessTestimonials = [
@@ -67,6 +68,24 @@ const FitnessVideoCard = ({
     }
   }, [isCurrentlyPlaying]);
 
+  // Force load the video on mount for mobile
+  useEffect(() => {
+    if (videoRef.current) {
+      // Force load the video
+      videoRef.current.load();
+      // On mobile, try to seek to show first frame
+      const handleLoadedMetadata = () => {
+        if (videoRef.current) {
+          videoRef.current.currentTime = 0.1; // Set to just after start to show a frame
+        }
+      };
+      videoRef.current.addEventListener('loadedmetadata', handleLoadedMetadata);
+      return () => {
+        videoRef.current?.removeEventListener('loadedmetadata', handleLoadedMetadata);
+      };
+    }
+  }, []);
+
   const handleClick = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (isCurrentlyPlaying) {
@@ -96,7 +115,7 @@ const FitnessVideoCard = ({
     >
       {/* Loading placeholder - shows while video loads */}
       {!isLoaded && (
-        <div className="absolute inset-0 bg-gradient-to-br from-edst-charcoal via-edst-slate/30 to-edst-charcoal animate-pulse flex items-center justify-center">
+        <div className="absolute inset-0 bg-gradient-to-br from-edst-charcoal via-edst-slate/30 to-edst-charcoal flex items-center justify-center">
           <div className="w-8 h-8 border-2 border-edst-gold/30 border-t-edst-gold rounded-full animate-spin" />
         </div>
       )}
@@ -109,7 +128,7 @@ const FitnessVideoCard = ({
         muted={isMuted}
         playsInline
         loop
-        preload="auto"
+        preload="metadata"
         onLoadedData={() => setIsLoaded(true)}
         onClick={handleClick}
       />
@@ -191,6 +210,16 @@ export default function FitnessPage() {
 
   return (
     <main className="bg-edst-black min-h-screen">
+      {/* Top Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-4">
+        <Link 
+          href="/"
+          className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors"
+        >
+          <span className="font-heading text-lg font-bold tracking-tight">EDST</span>
+        </Link>
+      </nav>
+      
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         {/* Animated background */}

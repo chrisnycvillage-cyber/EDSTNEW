@@ -178,34 +178,39 @@ const MusicianPopup = ({ isOpen, onClose, onGetStarted }: { isOpen: boolean; onC
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       onClick={onClose}
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm overflow-y-auto"
+      className="fixed inset-0 z-50 flex items-start md:items-center justify-center p-3 md:p-4 bg-black/90 backdrop-blur-sm overflow-y-auto"
     >
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.95, opacity: 0 }}
         onClick={(e) => e.stopPropagation()}
-        className="w-full max-w-4xl bg-edst-charcoal rounded-2xl border border-edst-slate/30 overflow-hidden my-8"
+        className="w-full max-w-4xl bg-edst-charcoal rounded-2xl border border-edst-slate/30 overflow-hidden mt-12 md:mt-0 mb-4 md:my-8"
       >
+        {/* Close button - Fixed position on mobile for easy access */}
+        <button 
+          onClick={onClose} 
+          className="fixed md:absolute top-4 right-4 z-[60] p-2.5 bg-edst-charcoal md:bg-transparent border border-edst-slate/30 md:border-0 rounded-full text-edst-silver hover:text-edst-white hover:bg-edst-slate/30 transition-colors"
+        >
+          <X className="w-5 h-5" />
+        </button>
+        
         {/* Header */}
-        <div className="p-6 border-b border-edst-slate/20 flex items-center justify-between">
+        <div className="p-4 md:p-6 border-b border-edst-slate/20 flex items-center">
           <div className="flex items-center gap-3">
             <div className="p-2 rounded-xl bg-edst-gold/20">
-              <Music className="w-6 h-6 text-edst-gold" />
+              <Music className="w-5 md:w-6 h-5 md:h-6 text-edst-gold" />
             </div>
             <div>
-              <h3 className="text-xl font-bold text-edst-white">Musician Campaigns</h3>
-              <p className="text-sm text-edst-silver">Example campaign breakdowns</p>
+              <h3 className="text-lg md:text-xl font-bold text-edst-white">Musician Campaigns</h3>
+              <p className="text-xs md:text-sm text-edst-silver">Example campaign breakdowns</p>
             </div>
           </div>
-          <button onClick={onClose} className="p-2 text-edst-silver hover:text-edst-white">
-            <X className="w-5 h-5" />
-          </button>
         </div>
 
-        <div className="p-6 grid md:grid-cols-2 gap-6">
+        <div className="p-4 md:p-6 grid md:grid-cols-2 gap-4 md:gap-6 max-h-[60vh] md:max-h-none overflow-y-auto">
           {/* $10K Option */}
-          <div className="p-6 rounded-xl bg-edst-black/50 border border-edst-slate/20">
+          <div className="p-4 md:p-6 rounded-xl bg-edst-black/50 border border-edst-slate/20">
             <div className="flex items-center justify-between mb-4">
               <span className="px-3 py-1 text-xs font-bold bg-edst-slate/30 text-edst-silver rounded-full">
                 OPTION 1
@@ -243,7 +248,7 @@ const MusicianPopup = ({ isOpen, onClose, onGetStarted }: { isOpen: boolean; onC
           </div>
 
           {/* $25K Option */}
-          <div className="p-6 rounded-xl bg-gradient-to-br from-edst-gold/5 to-edst-black/50 border border-edst-gold/30">
+          <div className="p-4 md:p-6 rounded-xl bg-gradient-to-br from-edst-gold/5 to-edst-black/50 border border-edst-gold/30">
             <div className="flex items-center justify-between mb-4">
               <span className="px-3 py-1 text-xs font-bold bg-edst-gold text-edst-black rounded-full">
                 RECOMMENDED
@@ -283,11 +288,11 @@ const MusicianPopup = ({ isOpen, onClose, onGetStarted }: { isOpen: boolean; onC
         </div>
 
         {/* Footer */}
-        <div className="p-6 border-t border-edst-slate/20 text-center">
-          <p className="text-sm text-edst-silver mb-4">Ready to blow up your music?</p>
+        <div className="p-4 md:p-6 border-t border-edst-slate/20 text-center">
+          <p className="text-xs md:text-sm text-edst-silver mb-3 md:mb-4">Ready to blow up your music?</p>
           <a 
             href="/musician-campaigns"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-edst-gold text-edst-black font-bold rounded-lg hover:bg-edst-gold-light transition-all"
+            className="inline-flex items-center gap-2 px-5 md:px-6 py-2.5 md:py-3 bg-edst-gold text-edst-black font-bold text-sm rounded-lg hover:bg-edst-gold-light transition-all"
           >
             Continue
             <ArrowRight className="w-4 h-4" />
