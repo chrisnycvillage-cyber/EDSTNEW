@@ -30,227 +30,124 @@ export default async function Image() {
           alignItems: 'center',
           justifyContent: 'center',
           backgroundColor: '#020309',
-          position: 'relative',
-          overflow: 'hidden',
+          backgroundImage: 'radial-gradient(ellipse at 50% 40%, rgba(250, 204, 83, 0.12) 0%, transparent 60%)',
         }}
       >
-        {/* Gold gradient glow behind */}
+        {/* Always Online Badge */}
         <div
           style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            width: '800px',
-            height: '400px',
-            background: 'radial-gradient(ellipse, rgba(250, 204, 83, 0.15) 0%, rgba(250, 204, 83, 0.05) 40%, transparent 70%)',
-            borderRadius: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '12px',
+            padding: '12px 28px',
+            borderRadius: '50px',
+            backgroundColor: 'rgba(34, 197, 94, 0.15)',
+            border: '2px solid rgba(34, 197, 94, 0.4)',
+            marginBottom: '50px',
           }}
-        />
-        
-        {/* Subtle grid pattern */}
-        <div
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundImage: 'linear-gradient(rgba(250, 204, 83, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(250, 204, 83, 0.02) 1px, transparent 1px)',
-            backgroundSize: '60px 60px',
-          }}
-        />
+        >
+          <div
+            style={{
+              width: '12px',
+              height: '12px',
+              borderRadius: '50%',
+              backgroundColor: '#22c55e',
+            }}
+          />
+          <span
+            style={{
+              fontSize: '20px',
+              fontWeight: 700,
+              color: '#22c55e',
+              letterSpacing: '3px',
+            }}
+          >
+            ALWAYS ONLINE
+          </span>
+        </div>
 
-        {/* Top gradient fade */}
-        <div
-          style={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            height: '200px',
-            background: 'linear-gradient(180deg, rgba(250, 204, 83, 0.08) 0%, transparent 100%)',
-          }}
-        />
-        
-        {/* Main Content */}
+        {/* Main Headline */}
         <div
           style={{
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'center',
-            textAlign: 'center',
-            padding: '60px',
-            position: 'relative',
-            zIndex: 10,
+            marginBottom: '40px',
           }}
         >
-          {/* Always Online Badge */}
-          <div
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '10px',
-              padding: '10px 24px',
-              borderRadius: '50px',
-              backgroundColor: 'rgba(34, 197, 94, 0.1)',
-              border: '1px solid rgba(34, 197, 94, 0.3)',
-              marginBottom: '40px',
-            }}
-          >
-            <div
-              style={{
-                width: '10px',
-                height: '10px',
-                borderRadius: '50%',
-                backgroundColor: '#22c55e',
-                boxShadow: '0 0 12px rgba(34, 197, 94, 0.8)',
-              }}
-            />
-            <span
-              style={{
-                fontSize: '18px',
-                fontWeight: '600',
-                color: '#22c55e',
-                letterSpacing: '2px',
-                textTransform: 'uppercase',
-              }}
-            >
-              Always Online
-            </span>
-          </div>
-
-          {/* Main Headline */}
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              marginBottom: '30px',
-            }}
-          >
-            <span
-              style={{
-                fontSize: '72px',
-                fontWeight: '800',
-                color: '#ffffff',
-                lineHeight: 1.1,
-                letterSpacing: '-2px',
-              }}
-            >
-              The Marketing Ecosystem
-            </span>
-            <span
-              style={{
-                fontSize: '72px',
-                fontWeight: '800',
-                color: '#facc53',
-                lineHeight: 1.1,
-                letterSpacing: '-2px',
-              }}
-            >
-              That Never Sleeps.
-            </span>
-          </div>
-
-          {/* Subline */}
           <span
             style={{
-              fontSize: '24px',
-              color: '#9ca3af',
-              marginBottom: '40px',
+              fontSize: '64px',
+              fontWeight: 800,
+              color: '#ffffff',
+              lineHeight: 1.15,
             }}
           >
-            Everything you need to blow up — under one roof.
+            The Marketing Ecosystem
           </span>
-
-          {/* EDST Logo */}
-          <div
+          <span
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '16px',
-              padding: '16px 32px',
-              borderRadius: '16px',
-              backgroundColor: 'rgba(250, 204, 83, 0.1)',
-              border: '1px solid rgba(250, 204, 83, 0.2)',
+              fontSize: '64px',
+              fontWeight: 800,
+              color: '#facc53',
+              lineHeight: 1.15,
             }}
           >
-            <span
-              style={{
-                fontSize: '48px',
-                fontWeight: '800',
-                color: '#facc53',
-                letterSpacing: '-2px',
-              }}
-            >
-              EDST
-            </span>
-            <div
-              style={{
-                width: '2px',
-                height: '32px',
-                backgroundColor: 'rgba(250, 204, 83, 0.3)',
-              }}
-            />
-            <span
-              style={{
-                fontSize: '18px',
-                color: '#9ca3af',
-                fontWeight: '500',
-              }}
-            >
-              edst.com
-            </span>
-          </div>
+            That Never Sleeps.
+          </span>
         </div>
 
-        {/* Corner accents */}
+        {/* Subline */}
+        <span
+          style={{
+            fontSize: '26px',
+            color: '#9ca3af',
+            marginBottom: '50px',
+          }}
+        >
+          Everything you need to blow up — under one roof.
+        </span>
+
+        {/* EDST Logo Bar */}
         <div
           style={{
-            position: 'absolute',
-            top: '30px',
-            left: '30px',
-            width: '60px',
-            height: '60px',
-            borderLeft: '2px solid rgba(250, 204, 83, 0.3)',
-            borderTop: '2px solid rgba(250, 204, 83, 0.3)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '20px',
+            padding: '20px 40px',
+            borderRadius: '20px',
+            backgroundColor: 'rgba(250, 204, 83, 0.1)',
+            border: '2px solid rgba(250, 204, 83, 0.25)',
           }}
-        />
-        <div
-          style={{
-            position: 'absolute',
-            top: '30px',
-            right: '30px',
-            width: '60px',
-            height: '60px',
-            borderRight: '2px solid rgba(250, 204, 83, 0.3)',
-            borderTop: '2px solid rgba(250, 204, 83, 0.3)',
-          }}
-        />
-        <div
-          style={{
-            position: 'absolute',
-            bottom: '30px',
-            left: '30px',
-            width: '60px',
-            height: '60px',
-            borderLeft: '2px solid rgba(250, 204, 83, 0.3)',
-            borderBottom: '2px solid rgba(250, 204, 83, 0.3)',
-          }}
-        />
-        <div
-          style={{
-            position: 'absolute',
-            bottom: '30px',
-            right: '30px',
-            width: '60px',
-            height: '60px',
-            borderRight: '2px solid rgba(250, 204, 83, 0.3)',
-            borderBottom: '2px solid rgba(250, 204, 83, 0.3)',
-          }}
-        />
+        >
+          <span
+            style={{
+              fontSize: '52px',
+              fontWeight: 800,
+              color: '#facc53',
+              letterSpacing: '-2px',
+            }}
+          >
+            EDST
+          </span>
+          <div
+            style={{
+              width: '3px',
+              height: '40px',
+              backgroundColor: 'rgba(250, 204, 83, 0.4)',
+              borderRadius: '2px',
+            }}
+          />
+          <span
+            style={{
+              fontSize: '22px',
+              color: '#9ca3af',
+              fontWeight: 500,
+            }}
+          >
+            edst.com
+          </span>
+        </div>
       </div>
     ),
     {
