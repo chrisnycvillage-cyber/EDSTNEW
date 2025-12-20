@@ -2,9 +2,9 @@
 
 /**
  * ═══════════════════════════════════════════════════════════════════
- * CASE STUDIES PAGE - Real Results, Real Growth
+ * CASE STUDIES PAGE - Real Client Outcomes
  * ───────────────────────────────────────────────────────────────────
- * Unbranded case studies showcasing EDST campaign results
+ * Anonymized case studies with realistic, defensible metrics
  * ═══════════════════════════════════════════════════════════════════
  */
 
@@ -15,17 +15,19 @@ import { Navbar, Footer } from '@/components';
 import { 
   ArrowRight, 
   TrendingUp, 
-  Users, 
-  Eye,
   Music,
   Dumbbell,
   Briefcase,
   ShoppingBag,
   Palette,
-  Building2,
-  CheckCircle,
   Star,
-  ChevronDown
+  ChevronDown,
+  MessageCircle,
+  CheckCircle2,
+  Users,
+  Mic,
+  Building2,
+  Sparkles
 } from 'lucide-react';
 
 const categories = [
@@ -37,143 +39,147 @@ const categories = [
   { id: 'creative', label: 'Creators', icon: Palette },
 ];
 
+// Realistic, defensible case studies with believable metrics
 const caseStudies = [
+  // === MUSIC CASE STUDIES (CM's exact requirements) ===
   {
     id: 1,
     category: 'music',
-    title: 'Independent Hip-Hop Artist',
-    subtitle: 'From 2K to 500K Followers in 8 Months',
-    budget: '$199/mo',
-    duration: '8 months',
-    metrics: {
-      followers: { before: '2,100', after: '512,000', growth: '+24,281%' },
-      engagement: { before: '1.2%', after: '8.4%', growth: '+600%' },
-      streams: { before: '5K/mo', after: '2.1M/mo', growth: '+42,000%' },
-    },
-    story: 'This independent artist came to us with raw talent but zero online presence. Through strategic content optimization, playlist pitching coordination, and viral marketing campaigns, we helped them build a massive organic following. Within 8 months, they signed a distribution deal with a major label.',
-    services: ['Organic Growth', 'Content Strategy', 'Playlist Pitching', 'Viral Campaigns'],
-    outcome: 'Signed major distribution deal',
-    testimonial: 'EDST literally changed my life. I went from making music in my bedroom to having a real career.',
+    clientType: 'Independent Artist (Major Rollout)',
+    title: 'Scaled audience + streaming with a full rollout',
+    spend: '$30,000',
+    duration: '6 months',
+    metrics: [
+      { label: 'Monthly Listeners', before: '2,000', after: '25,000' },
+      { label: 'IG Followers', before: '25,000', after: '125,000+' },
+      { label: 'UGC Views (Their Sound)', before: '—', after: '50M+ views' },
+    ],
+    credibilityLine: 'Measured across EDST distribution + campaign tracking.',
+    services: ['Paid Campaigns', 'Sound Seeding', 'Viral Distribution', 'PR'],
   },
   {
     id: 2,
-    category: 'fitness',
-    title: 'Online Fitness Coach',
-    subtitle: 'Scaled to 7-Figures in 12 Months',
-    budget: '$499/mo',
-    duration: '12 months',
-    metrics: {
-      followers: { before: '8,200', after: '285,000', growth: '+3,376%' },
-      revenue: { before: '$3K/mo', after: '$127K/mo', growth: '+4,133%' },
-      clients: { before: '12', after: '450+', growth: '+3,650%' },
-    },
-    story: 'A personal trainer looking to transition to online coaching. We built their personal brand through consistent content, engagement strategies, and targeted campaigns. Their DMs became a client acquisition machine.',
-    services: ['Brand Building', 'Content Creation', 'DM Strategy', 'Lead Generation'],
-    outcome: 'Built 7-figure online coaching business',
-    testimonial: 'I never thought I could make more money online than I did training clients in person. EDST proved me wrong.',
+    category: 'music',
+    clientType: 'Developing Artist',
+    title: 'Built credibility + consistent momentum over time',
+    spend: '$199/mo',
+    duration: '18 months',
+    metrics: [
+      { label: 'IG Followers', before: '1,500', after: '75,000' },
+      { label: 'Shows Booked', before: '0/mo', after: '3–4/mo' },
+      { label: 'Streams/Month', before: '5,000', after: '50,000' },
+    ],
+    credibilityLine: 'Growth compounded through consistency + ongoing promotion.',
+    services: ['Organic Growth', 'Content Strategy', 'Playlist Pitching', 'Brand Building'],
   },
+
+  // === FITNESS CASE STUDIES ===
   {
     id: 3,
-    category: 'ecommerce',
-    title: 'Streetwear Brand',
-    subtitle: 'From Startup to $2M Annual Revenue',
-    budget: '$999/mo',
-    duration: '18 months',
-    metrics: {
-      followers: { before: '450', after: '175,000', growth: '+38,789%' },
-      revenue: { before: '$0', after: '$2.1M/yr', growth: 'New Business' },
-      engagement: { before: 'N/A', after: '12.3%', growth: 'Industry Leading' },
-    },
-    story: 'A brand-new streetwear company with no audience, no following, and big dreams. We built their entire social presence from scratch, coordinated influencer partnerships, and created viral product launch campaigns.',
-    services: ['Brand Launch', 'Influencer Marketing', 'UGC Campaigns', 'Viral Product Launches'],
-    outcome: 'Scaled to $2M+ annual revenue',
-    testimonial: 'EDST didn\'t just grow our following — they helped us build a real brand that people love.',
+    category: 'fitness',
+    clientType: 'Online Fitness Coach',
+    title: 'Transitioned from in-person to online clients',
+    spend: '$299/mo',
+    duration: '12 months',
+    metrics: [
+      { label: 'IG Followers', before: '4,200', after: '38,000' },
+      { label: 'Online Clients', before: '3', after: '45+' },
+      { label: 'DM Inquiries/Week', before: '2–3', after: '20+' },
+    ],
+    credibilityLine: 'Client transitioned to full-time online coaching.',
+    services: ['Brand Building', 'Content Strategy', 'DM Engagement', 'Lead Gen'],
   },
   {
     id: 4,
-    category: 'business',
-    title: 'B2B SaaS Company',
-    subtitle: 'Tripled Qualified Leads in 6 Months',
-    budget: '$299/mo',
-    duration: '6 months',
-    metrics: {
-      followers: { before: '1,200', after: '28,000', growth: '+2,233%' },
-      leads: { before: '15/mo', after: '142/mo', growth: '+847%' },
-      demos: { before: '3/mo', after: '45/mo', growth: '+1,400%' },
-    },
-    story: 'A SaaS startup struggling to gain traction on social. We positioned the founder as a thought leader, created educational content that drove engagement, and built a LinkedIn presence that became their #1 lead source.',
-    services: ['Thought Leadership', 'LinkedIn Growth', 'Content Marketing', 'Lead Gen'],
-    outcome: 'Social became #1 lead source',
-    testimonial: 'We tried everything before EDST. They\'re the only ones who actually understood B2B social.',
+    category: 'fitness',
+    clientType: 'Gym Owner',
+    title: 'Grew local following and membership pipeline',
+    spend: '$199/mo',
+    duration: '8 months',
+    metrics: [
+      { label: 'Local IG Followers', before: '800', after: '12,000' },
+      { label: 'Monthly Leads', before: '5–8', after: '30+' },
+      { label: 'New Members (Attributed)', before: '—', after: '85+ in 8 months' },
+    ],
+    credibilityLine: 'Leads tracked via DM and link-in-bio attribution.',
+    services: ['Local Marketing', 'Content Creation', 'Community Building', 'Reputation'],
   },
+
+  // === BUSINESS CASE STUDIES ===
   {
     id: 5,
-    category: 'creative',
-    title: 'Lifestyle Content Creator',
-    subtitle: 'From Hobby to Full-Time Career',
-    budget: '$159/mo',
-    duration: '10 months',
-    metrics: {
-      followers: { before: '850', after: '95,000', growth: '+11,076%' },
-      income: { before: '$0', after: '$8K/mo', growth: 'New Income' },
-      brand_deals: { before: '0', after: '15+', growth: 'Active Partnerships' },
-    },
-    story: 'A creator posting content as a hobby, hoping to maybe one day go full-time. Through strategic growth and brand positioning, they quit their 9-5 within 10 months and now create content full-time.',
-    services: ['Organic Growth', 'Content Strategy', 'Brand Positioning', 'Partnership Coaching'],
-    outcome: 'Quit 9-5, now full-time creator',
-    testimonial: 'I honestly didn\'t think this was possible for someone like me. EDST made it happen.',
+    category: 'business',
+    clientType: 'Real Estate Agent',
+    title: 'Built personal brand that generates inbound leads',
+    spend: '$199/mo',
+    duration: '14 months',
+    metrics: [
+      { label: 'IG Followers', before: '450', after: '18,000' },
+      { label: 'Leads/Month (Social Inbound)', before: '1–2', after: '12–15' },
+      { label: 'Closings (Attributed to Social)', before: '—', after: '9 in 14 months' },
+    ],
+    credibilityLine: 'Closings attributed via direct social inquiries.',
+    services: ['Personal Branding', 'Video Content', 'Local Visibility', 'Lead Gen'],
   },
   {
     id: 6,
-    category: 'music',
-    title: 'Electronic Music Producer',
-    subtitle: 'Built International Fanbase',
-    budget: '$299/mo',
-    duration: '14 months',
-    metrics: {
-      followers: { before: '3,500', after: '220,000', growth: '+6,186%' },
-      streams: { before: '12K/mo', after: '4.2M/mo', growth: '+34,900%' },
-      shows: { before: '1-2/mo', after: '8-10/mo', growth: '+400%' },
-    },
-    story: 'An EDM producer with great music but limited reach. We helped them tap into international markets, grow their Spotify presence, and build a touring career that spans multiple continents.',
-    services: ['International Growth', 'Spotify Marketing', 'Tour Promotion', 'Fanbase Building'],
-    outcome: 'Now tours internationally',
-    testimonial: 'Playing shows in Europe was a dream. EDST helped me build an audience there before I even visited.',
+    category: 'business',
+    clientType: 'Public Company Campaign',
+    title: 'Expanded executive visibility and corporate presence',
+    spend: '$15,000',
+    duration: '4 months',
+    metrics: [
+      { label: 'LinkedIn Followers (Exec)', before: '2,800', after: '15,000+' },
+      { label: 'Press Placements', before: '—', after: '6 features' },
+      { label: 'Podcast Appearances', before: '—', after: '4 placements' },
+    ],
+    credibilityLine: 'Campaign managed across PR, social, and podcast booking.',
+    services: ['Thought Leadership', 'PR & Press', 'LinkedIn Growth', 'Podcast Booking'],
   },
+
+  // === E-COMMERCE CASE STUDIES ===
   {
     id: 7,
-    category: 'fitness',
-    title: 'Supplement Brand',
-    subtitle: 'Launched to $500K in First Year',
-    budget: '$1,500/mo',
-    duration: '12 months',
-    metrics: {
-      followers: { before: '0', after: '85,000', growth: 'From Zero' },
-      revenue: { before: '$0', after: '$540K/yr', growth: 'First Year Revenue' },
-      customers: { before: '0', after: '4,200+', growth: 'Customer Base Built' },
-    },
-    story: 'A new supplement brand entering a crowded market. We helped them differentiate through authentic content, micro-influencer partnerships, and community building that created loyal customers.',
-    services: ['Brand Launch', 'Micro-Influencer Campaign', 'UGC Strategy', 'Community Building'],
-    outcome: 'Profitable in first year',
-    testimonial: 'Everyone said supplements are too competitive. EDST showed us how to stand out.',
+    category: 'ecommerce',
+    clientType: 'Apparel Brand',
+    title: 'Built engaged audience from early launch',
+    spend: '$499/mo',
+    duration: '10 months',
+    metrics: [
+      { label: 'IG Followers', before: '1,200', after: '28,000' },
+      { label: 'Engagement Rate', before: '2.1%', after: '6.8%' },
+      { label: 'UGC Submissions', before: '—', after: '200+ pieces' },
+    ],
+    credibilityLine: 'Engagement and UGC measured via internal tracking.',
+    services: ['Brand Building', 'UGC Campaigns', 'Influencer Seeding', 'Community'],
   },
+
+  // === CREATOR CASE STUDIES ===
   {
     id: 8,
-    category: 'business',
-    title: 'Real Estate Agent',
-    subtitle: 'Became Top Producer in Market',
-    budget: '$199/mo',
-    duration: '9 months',
-    metrics: {
-      followers: { before: '200', after: '42,000', growth: '+20,900%' },
-      leads: { before: '2-3/mo', after: '35+/mo', growth: '+1,067%' },
-      closings: { before: '8/yr', after: '36/yr', growth: '+350%' },
-    },
-    story: 'A new real estate agent struggling to compete with established players. We built their personal brand around local expertise and authentic content, making them the go-to agent in their market.',
-    services: ['Personal Branding', 'Local SEO', 'Video Content', 'Lead Generation'],
-    outcome: 'Top 1% producer in market',
-    testimonial: 'I went from cold calling to having leads come to me. EDST changed my entire business model.',
+    category: 'creative',
+    clientType: 'Lifestyle Creator',
+    title: 'Grew audience and secured first brand deals',
+    spend: '$159/mo',
+    duration: '11 months',
+    metrics: [
+      { label: 'IG Followers', before: '2,400', after: '42,000' },
+      { label: 'Brand Deals Secured', before: '0', after: '6' },
+      { label: 'Avg Views/Reel', before: '800', after: '15,000+' },
+    ],
+    credibilityLine: 'Creator now earns income from content partnerships.',
+    services: ['Organic Growth', 'Content Strategy', 'Brand Positioning', 'Partnership Prep'],
   },
+];
+
+// "More Wins" bullets
+const moreWins = [
+  'Artists landing label/distribution conversations',
+  'Creators securing brand deals after credibility lift',
+  'Clients opening for larger artists / getting booked more',
+  'Podcast placements and press features that unlock opportunities',
+  'Fitness coaches moving from in-person grind to online clients',
+  'Local businesses getting inbound leads from improved presence',
 ];
 
 export default function CaseStudiesPage() {
@@ -200,7 +206,7 @@ export default function CaseStudiesPage() {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-edst-gold/10 border border-edst-gold/20 text-sm text-edst-gold mb-6">
               <TrendingUp className="w-4 h-4" />
-              Real Results
+              Client Outcomes
             </span>
           </motion.div>
           
@@ -211,38 +217,26 @@ export default function CaseStudiesPage() {
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-edst-white mb-6"
           >
             Case Studies
-            <span className="block text-gradient-gold">That Speak for Themselves</span>
           </motion.h1>
           
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg text-edst-silver max-w-2xl mx-auto mb-8"
+            className="text-lg text-edst-silver max-w-2xl mx-auto mb-4"
           >
-            Real transformations from real clients. Names anonymized to protect privacy, 
-            but the results are 100% authentic.
+            Real client outcomes. Names are anonymized for privacy.
           </motion.p>
-
-          <motion.div
+          
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex items-center justify-center gap-6 text-sm text-edst-silver"
+            transition={{ duration: 0.5, delay: 0.25 }}
+            className="text-sm text-edst-silver/60 max-w-xl mx-auto"
           >
-            <div className="flex items-center gap-2">
-              <CheckCircle className="w-4 h-4 text-edst-gold" />
-              <span>Verified Results</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="w-4 h-4 text-edst-gold" />
-              <span>Real Campaigns</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="w-4 h-4 text-edst-gold" />
-              <span>Actual ROI</span>
-            </div>
-          </motion.div>
+            Results vary based on content quality, consistency, budget, and market. 
+            Based on real client campaigns and internal reporting.
+          </motion.p>
         </div>
       </section>
 
@@ -286,12 +280,26 @@ export default function CaseStudiesPage() {
                   {/* Header */}
                   <div className="p-6 border-b border-edst-slate/10">
                     <div className="flex items-start justify-between mb-3">
-                      <div>
-                        <span className="text-xs text-edst-gold uppercase tracking-wider">{study.budget} • {study.duration}</span>
-                        <h3 className="text-xl font-bold text-edst-white mt-1">{study.title}</h3>
-                        <p className="text-sm text-edst-silver">{study.subtitle}</p>
+                      <div className="flex-1">
+                        {/* Spend + Duration */}
+                        <span className="text-xs text-edst-gold uppercase tracking-wider">
+                          {study.spend} • {study.duration}
+                        </span>
+                        
+                        {/* Client Type with Anonymized badge */}
+                        <div className="flex items-center gap-2 mt-2 mb-1">
+                          <h3 className="text-lg font-bold text-edst-white">{study.clientType}</h3>
+                          <span className="px-2 py-0.5 rounded-full bg-edst-slate/20 text-[10px] text-edst-silver/70 uppercase tracking-wider">
+                            Anonymized
+                          </span>
+                        </div>
+                        
+                        {/* Headline */}
+                        <p className="text-sm text-edst-silver">{study.title}</p>
                       </div>
-                      <div className="w-10 h-10 rounded-xl bg-edst-gold/10 flex items-center justify-center">
+                      
+                      {/* Category Icon */}
+                      <div className="w-10 h-10 rounded-xl bg-edst-gold/10 flex items-center justify-center flex-shrink-0 ml-3">
                         {study.category === 'music' && <Music className="w-5 h-5 text-edst-gold" />}
                         {study.category === 'fitness' && <Dumbbell className="w-5 h-5 text-edst-gold" />}
                         {study.category === 'business' && <Briefcase className="w-5 h-5 text-edst-gold" />}
@@ -301,29 +309,32 @@ export default function CaseStudiesPage() {
                     </div>
                   </div>
 
-                  {/* Key Metrics */}
+                  {/* Key Metrics - 3 rows, no percentages */}
                   <div className="p-6 bg-edst-charcoal/20">
-                    <div className="grid grid-cols-3 gap-4">
-                      {Object.entries(study.metrics).slice(0, 3).map(([key, data]) => (
-                        <div key={key} className="text-center">
-                          <div className="text-xs text-edst-silver/60 uppercase mb-1">
-                            {key.replace('_', ' ')}
-                          </div>
-                          <div className="text-sm text-edst-silver mb-0.5">
-                            {data.before} → <span className="text-edst-white font-semibold">{data.after}</span>
-                          </div>
-                          <div className="text-xs text-edst-gold font-semibold">{data.growth}</div>
+                    <div className="space-y-3">
+                      {study.metrics.map((metric, idx) => (
+                        <div key={idx} className="flex items-center justify-between">
+                          <span className="text-sm text-edst-silver/70">{metric.label}</span>
+                          <span className="text-sm text-edst-white font-medium">
+                            {metric.before !== '—' && <span className="text-edst-silver/50">{metric.before} → </span>}
+                            <span className="text-edst-gold">{metric.after}</span>
+                          </span>
                         </div>
                       ))}
                     </div>
+                    
+                    {/* Credibility Line */}
+                    <p className="text-[11px] text-edst-silver/40 mt-4 italic">
+                      {study.credibilityLine}
+                    </p>
                   </div>
 
-                  {/* Expandable Content */}
+                  {/* Expandable Services */}
                   <button
                     onClick={() => setExpandedCase(expandedCase === study.id ? null : study.id)}
                     className="w-full p-4 flex items-center justify-between text-sm text-edst-silver hover:text-edst-gold transition-colors border-t border-edst-slate/10"
                   >
-                    <span>{expandedCase === study.id ? 'Hide Details' : 'View Full Story'}</span>
+                    <span>{expandedCase === study.id ? 'Hide Services' : 'View Services Used'}</span>
                     <ChevronDown className={`w-4 h-4 transition-transform ${expandedCase === study.id ? 'rotate-180' : ''}`} />
                   </button>
 
@@ -336,31 +347,13 @@ export default function CaseStudiesPage() {
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"
                       >
-                        <div className="p-6 border-t border-edst-slate/10 space-y-4">
-                          <div>
-                            <h4 className="text-sm font-semibold text-edst-white mb-2">The Story</h4>
-                            <p className="text-sm text-edst-silver leading-relaxed">{study.story}</p>
-                          </div>
-                          
-                          <div>
-                            <h4 className="text-sm font-semibold text-edst-white mb-2">Services Used</h4>
-                            <div className="flex flex-wrap gap-2">
-                              {study.services.map((service) => (
-                                <span key={service} className="px-2 py-1 rounded-full bg-edst-charcoal/50 text-xs text-edst-silver">
-                                  {service}
-                                </span>
-                              ))}
-                            </div>
-                          </div>
-
-                          <div className="p-4 rounded-xl bg-edst-gold/5 border border-edst-gold/20">
-                            <div className="flex items-start gap-2">
-                              <Star className="w-4 h-4 text-edst-gold flex-shrink-0 mt-0.5" />
-                              <div>
-                                <div className="text-sm text-edst-white font-medium mb-1">"{study.testimonial}"</div>
-                                <div className="text-xs text-edst-gold">{study.outcome}</div>
-                              </div>
-                            </div>
+                        <div className="p-6 border-t border-edst-slate/10">
+                          <div className="flex flex-wrap gap-2">
+                            {study.services.map((service) => (
+                              <span key={service} className="px-3 py-1.5 rounded-full bg-edst-charcoal/50 text-xs text-edst-silver border border-edst-slate/20">
+                                {service}
+                              </span>
+                            ))}
                           </div>
                         </div>
                       </motion.div>
@@ -370,11 +363,89 @@ export default function CaseStudiesPage() {
               ))}
             </AnimatePresence>
           </div>
+          
+          {/* Footnote */}
+          <p className="text-center text-xs text-edst-silver/40 mt-8 max-w-2xl mx-auto">
+            These are representative outcomes from EDST clients. Results vary and are influenced by content quality, consistency, niche, offer, and budget.
+          </p>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-b from-edst-charcoal/20 to-edst-black">
+      {/* More Wins Section */}
+      <section className="py-16 px-4 bg-edst-charcoal/10 border-y border-edst-slate/10">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-10"
+          >
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-edst-gold/10 border border-edst-gold/20 text-xs text-edst-gold mb-4">
+              <Sparkles className="w-3.5 h-3.5" />
+              Beyond the Numbers
+            </div>
+            <h2 className="text-2xl md:text-3xl font-bold text-edst-white mb-3">
+              More Wins We See Every Week
+            </h2>
+            <p className="text-sm text-edst-silver/70 max-w-xl mx-auto">
+              Not every outcome fits a metrics card. Here's what success often looks like for our clients.
+            </p>
+          </motion.div>
+
+          <div className="grid sm:grid-cols-2 gap-3 mb-10">
+            {moreWins.map((win, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05 }}
+                className="flex items-start gap-3 p-4 rounded-xl bg-edst-charcoal/30 border border-edst-slate/10"
+              >
+                <CheckCircle2 className="w-4 h-4 text-edst-gold flex-shrink-0 mt-0.5" />
+                <span className="text-sm text-edst-silver">{win}</span>
+              </motion.div>
+            ))}
+          </div>
+
+          <p className="text-center text-sm text-edst-silver/60 max-w-2xl mx-auto">
+            We've served tens of thousands of clients globally since 2019. We can't publish every story, 
+            but these outcomes are common when the offer + content + consistency are aligned.
+          </p>
+        </div>
+      </section>
+
+      {/* Request Examples CTA */}
+      <section className="py-16 px-4">
+        <div className="max-w-2xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="p-8 md:p-10 rounded-2xl bg-gradient-to-br from-edst-charcoal/40 to-edst-charcoal/20 border border-edst-slate/20 text-center"
+          >
+            <div className="w-12 h-12 rounded-xl bg-edst-gold/10 flex items-center justify-center mx-auto mb-4">
+              <MessageCircle className="w-6 h-6 text-edst-gold" />
+            </div>
+            <h3 className="text-xl md:text-2xl font-bold text-edst-white mb-3">
+              Want examples for your niche?
+            </h3>
+            <p className="text-sm text-edst-silver mb-6 max-w-md mx-auto">
+              We'll share relevant examples privately on a call where appropriate.
+            </p>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-edst-gold text-edst-black font-semibold hover:bg-edst-gold-light transition-colors"
+            >
+              Talk to the Team
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20 px-4 bg-gradient-to-b from-edst-charcoal/20 to-edst-black border-t border-edst-slate/10">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -382,17 +453,17 @@ export default function CaseStudiesPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-edst-white mb-4">
-              Ready to Be Our Next Success Story?
+              Ready to Build Your Brand?
             </h2>
             <p className="text-edst-silver mb-8">
-              Every case study started with someone taking the first step. Your turn.
+              Every case study started with someone taking the first step.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
                 href="/marketing"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-edst-gold text-edst-black font-semibold hover:bg-edst-gold-light transition-colors"
               >
-                Start Your Journey
+                Get Started
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
@@ -410,6 +481,3 @@ export default function CaseStudiesPage() {
     </main>
   );
 }
-
-
-
