@@ -4,73 +4,73 @@ import { motion } from 'framer-motion';
 import { Play, ChevronLeft, ChevronRight, Pause, Volume2, VolumeX } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 
-// Video testimonials with actual video sources
+// Video testimonials with actual video sources - ordered for diversity in first 3
 const videoTestimonials = [
   { 
     id: 1, 
-    videoUrl: '/videos/brandonleethethird-testimonial.mov',
-    name: 'Brandon Lee',
-    title: 'Content Creator'
+    videoUrl: '/videos/Rasheed_bailey1-testimonial.mov',
+    name: 'Rasheed Bailey',
+    title: 'Athlete'
   },
   { 
     id: 2, 
-    videoUrl: '/videos/ceo.linko-testimonial.mov',
-    name: 'CEO Linko',
-    title: 'Entrepreneur'
-  },
-  { 
-    id: 3, 
-    videoUrl: '/videos/disturbthenoize-testimonial.mov',
-    name: 'Disturb The Noize',
-    title: 'Artist'
-  },
-  { 
-    id: 4, 
-    videoUrl: '/videos/Dyynvmicmn-testimonial.mov',
-    name: 'Dyynvmicmn',
-    title: 'Creator'
-  },
-  { 
-    id: 5, 
-    videoUrl: '/videos/H3theartist-testimonial.mov',
-    name: 'H3 The Artist',
-    title: 'Musician'
-  },
-  { 
-    id: 6, 
     videoUrl: '/videos/Joeydoyles-testimonial.mov',
     name: 'Joey Doyles',
     title: 'Artist'
   },
   { 
-    id: 7, 
-    videoUrl: '/videos/Modi3st_-testimonial.mov',
-    name: 'Modi3st',
-    title: 'Creator'
-  },
-  { 
-    id: 8, 
+    id: 3, 
     videoUrl: '/videos/Mysplitego-testimonial.mov',
     name: 'My Split Ego',
     title: 'Artist'
   },
   { 
+    id: 4, 
+    videoUrl: '/videos/brandonleethethird-testimonial.mov',
+    name: 'Brandon Lee',
+    title: 'Content Creator'
+  },
+  { 
+    id: 5, 
+    videoUrl: '/videos/ceo.linko-testimonial.mov',
+    name: 'CEO Linko',
+    title: 'Entrepreneur'
+  },
+  { 
+    id: 6, 
+    videoUrl: '/videos/disturbthenoize-testimonial.mov',
+    name: 'Disturb The Noize',
+    title: 'Artist'
+  },
+  { 
+    id: 7, 
+    videoUrl: '/videos/Dyynvmicmn-testimonial.mov',
+    name: 'Dyynvmicmn',
+    title: 'Creator'
+  },
+  { 
+    id: 8, 
+    videoUrl: '/videos/H3theartist-testimonial.mov',
+    name: 'H3 The Artist',
+    title: 'Musician'
+  },
+  { 
     id: 9, 
+    videoUrl: '/videos/Modi3st_-testimonial.mov',
+    name: 'Modi3st',
+    title: 'Creator'
+  },
+  { 
+    id: 10, 
     videoUrl: '/videos/Officialmosesbravo-testimonial.mov',
     name: 'Moses Bravo',
     title: 'Artist'
   },
   { 
-    id: 10, 
+    id: 11, 
     videoUrl: '/videos/papismilez-testimonal-1.mov',
     name: 'Papi Smilez',
     title: 'Creator'
-  },
-  { 
-    id: 11, 
-    videoUrl: '/videos/Rasheed_bailey1-testimonial.mov',
-    name: 'Rasheed Bailey',
-    title: 'Athlete'
   },
   { 
     id: 12, 
