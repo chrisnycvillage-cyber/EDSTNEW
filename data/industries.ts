@@ -4,6 +4,12 @@
  * ───────────────────────────────────────────────────────────────────
  * Comprehensive industry coverage for targeted marketing.
  * URL structure: /industries → /industries/[industrySlug]
+ * 
+ * CORE VALUE PROPOSITION (applies to ALL industries):
+ * - Credibility: Look legitimate and trustworthy
+ * - Exposure: Get in front of more people
+ * - Brand: Build a winning personal/business brand
+ * - Monetization: Turn attention into revenue
  * ═══════════════════════════════════════════════════════════════════
  */
 
@@ -58,6 +64,14 @@ export const industryCategories: Record<IndustryCategory, { name: string; descri
   creative: { name: 'Creative Industries', description: 'Photography, design, art, and creative services' },
 };
 
+// Universal results that apply across all industries - focused on the CORE value
+const universalResults = {
+  brandGrowth: { metric: 'Brand Growth', value: 'Accelerated' },
+  audienceReach: { metric: 'Audience Reach', value: 'Expanded' },
+  credibility: { metric: 'Credibility', value: 'Established' },
+  engagement: { metric: 'Engagement', value: 'Increased' },
+};
+
 export const industries: Industry[] = [
   // ═══════════════════════════════════════════════════════════════
   // ENTERTAINMENT & MEDIA
@@ -67,69 +81,69 @@ export const industries: Industry[] = [
     slug: 'music',
     category: 'entertainment',
     icon: 'Music',
-    tagline: 'Blow up your music career',
-    description: 'From independent artists to label-signed musicians, we help artists build fanbases, increase streams, and create viral moments.',
-    metaTitle: 'Music Marketing Agency | Artist Promotion | EDST',
-    metaDescription: 'EDST helps musicians and artists grow their fanbase, increase streams, and go viral. Trusted by 10,000+ artists. Start growing today.',
-    keywords: ['music marketing', 'artist promotion', 'music promotion agency', 'spotify promotion', 'artist growth', 'music industry marketing'],
-    heroHeadline: 'Marketing for Musicians Who Want to Blow Up',
-    heroSubheadline: 'From bedroom producers to touring artists — we help musicians build real fanbases that stream, buy, and show up.',
+    tagline: 'Build your artist brand',
+    description: 'We help musicians build credibility, expand their reach, and create a brand that fans connect with and support.',
+    metaTitle: 'Music Marketing Agency | Artist Brand Building | EDST',
+    metaDescription: 'EDST helps musicians and artists build powerful brands, expand their reach, and connect with fans. Start growing your music career today.',
+    keywords: ['music marketing', 'artist promotion', 'music brand building', 'artist growth', 'music industry marketing'],
+    heroHeadline: 'Build a Music Brand That Gets Noticed',
+    heroSubheadline: 'Whether you\'re just starting or already established — we help you build credibility, reach more listeners, and create a brand people remember.',
     challenges: [
-      'Getting noticed in a sea of 100K daily uploads',
-      'Building genuine fan engagement, not fake numbers',
-      'Converting listeners into superfans who buy merch and tickets',
-      'Standing out without a major label budget'
+      'Getting noticed in a crowded music landscape',
+      'Building genuine credibility and trust with fans',
+      'Creating a cohesive brand across all platforms',
+      'Turning listeners into loyal supporters'
     ],
     solutions: [
-      'Targeted content distribution to your ideal listener demographic',
-      'Viral campaign strategies designed for music discovery',
-      'Playlist pitching and algorithmic optimization',
-      'Fan engagement systems that build real community'
+      'Strategic brand positioning that makes you stand out',
+      'Content strategies that build real engagement',
+      'Multi-platform presence that looks professional',
+      'Community building that creates superfans'
     ],
     results: [
-      { metric: 'Avg Stream Increase', value: '340%' },
-      { metric: 'Artists Served', value: '10K+' },
-      { metric: 'Viral Campaigns', value: '500+' },
-      { metric: 'Monthly Listeners Added', value: '50M+' }
+      { metric: 'Brand Presence', value: 'Elevated' },
+      { metric: 'Audience Reach', value: 'Expanded' },
+      { metric: 'Fan Engagement', value: 'Increased' },
+      { metric: 'Industry Credibility', value: 'Established' }
     ],
-    testimonialQuote: "EDST took me from 500 monthly listeners to 50K in 3 months. The growth was organic and the fans actually engage.",
-    testimonialAuthor: "Marcus J.",
-    testimonialRole: "Independent Hip-Hop Artist",
+    testimonialQuote: "EDST helped me build a brand that actually represents who I am. My whole presence feels more professional now.",
+    testimonialAuthor: "Independent Artist",
+    testimonialRole: "Musician",
     relatedIndustries: ['podcasts', 'entertainment', 'influencers'],
-    popularServices: ['Organic Growth', 'Viral Campaigns', 'Content Distribution', 'Press & PR']
+    popularServices: ['Brand Building', 'Content Strategy', 'Social Media', 'Press & PR']
   },
   {
     name: 'Podcasts',
     slug: 'podcasts',
     category: 'entertainment',
     icon: 'Mic',
-    tagline: 'Grow your podcast audience',
-    description: 'Help your podcast break through the noise with strategic marketing that drives downloads, ratings, and loyal listeners.',
-    metaTitle: 'Podcast Marketing Agency | Grow Your Audience | EDST',
-    metaDescription: 'EDST helps podcasters grow their audience, increase downloads, and land sponsorships. Proven strategies for podcast growth.',
-    keywords: ['podcast marketing', 'podcast promotion', 'grow podcast audience', 'podcast advertising', 'podcast growth agency'],
-    heroHeadline: 'Podcast Marketing That Gets You Heard',
-    heroSubheadline: 'More than 5 million podcasts exist. We help yours stand out and build an audience that actually listens.',
+    tagline: 'Grow your podcast brand',
+    description: 'Help your podcast break through with strategic branding that builds credibility and expands your listener base.',
+    metaTitle: 'Podcast Marketing Agency | Podcast Brand Building | EDST',
+    metaDescription: 'EDST helps podcasters build credibility, grow their audience, and create professional brands that attract listeners.',
+    keywords: ['podcast marketing', 'podcast promotion', 'podcast branding', 'podcast growth'],
+    heroHeadline: 'Build a Podcast Brand That Gets Heard',
+    heroSubheadline: 'Stand out in a sea of podcasts with professional branding, expanded reach, and a presence that attracts loyal listeners.',
     challenges: [
-      'Standing out among 5+ million podcasts',
-      'Growing beyond friends and family listeners',
-      'Getting discovered on Apple, Spotify, and YouTube',
-      'Building enough audience to attract sponsors'
+      'Standing out among millions of podcasts',
+      'Building credibility as a new voice',
+      'Creating professional presence across platforms',
+      'Growing beyond friends and family listeners'
     ],
     solutions: [
-      'Cross-platform promotion strategies',
-      'Audiogram and clip optimization for social',
-      'Guest booking and cross-promotion networks',
-      'Review generation and chart climbing tactics'
+      'Professional brand positioning and identity',
+      'Cross-platform visibility strategies',
+      'Content optimization for discovery',
+      'Audience building and engagement systems'
     ],
     results: [
-      { metric: 'Avg Download Increase', value: '280%' },
-      { metric: 'Podcasts Helped', value: '1,200+' },
-      { metric: 'Top 100 Placements', value: '85+' },
-      { metric: 'Sponsor Deals Landed', value: '200+' }
+      { metric: 'Brand Credibility', value: 'Established' },
+      { metric: 'Listener Reach', value: 'Expanded' },
+      { metric: 'Professional Presence', value: 'Elevated' },
+      { metric: 'Audience Growth', value: 'Accelerated' }
     ],
     relatedIndustries: ['music', 'influencers', 'coaches'],
-    popularServices: ['Audience Growth', 'Social Clips', 'Review Campaigns', 'Sponsorship Prep']
+    popularServices: ['Brand Building', 'Social Strategy', 'Content Marketing', 'Audience Growth']
   },
   {
     name: 'Gaming & Esports',
@@ -137,32 +151,32 @@ export const industries: Industry[] = [
     category: 'entertainment',
     icon: 'Gamepad2',
     tagline: 'Level up your gaming brand',
-    description: 'From streamers to esports orgs, we help gaming creators and brands build engaged communities and go viral.',
-    metaTitle: 'Gaming Marketing Agency | Streamer Growth | EDST',
-    metaDescription: 'EDST helps gamers, streamers, and esports brands grow their audience. Proven strategies for Twitch, YouTube Gaming, and more.',
-    keywords: ['gaming marketing', 'streamer growth', 'esports marketing', 'twitch promotion', 'gaming influencer agency'],
-    heroHeadline: 'Gaming Marketing for Creators & Brands',
-    heroSubheadline: 'Whether you\'re grinding for partner or building an esports empire, we help gaming brands level up.',
+    description: 'From streamers to esports pros, we help gaming creators build professional brands that stand out.',
+    metaTitle: 'Gaming Marketing Agency | Streamer Branding | EDST',
+    metaDescription: 'EDST helps gamers, streamers, and esports brands build professional presence and expand their reach.',
+    keywords: ['gaming marketing', 'streamer branding', 'esports marketing', 'gaming influencer'],
+    heroHeadline: 'Build a Gaming Brand That Stands Out',
+    heroSubheadline: 'Create a professional presence that attracts viewers, builds community, and opens doors to opportunities.',
     challenges: [
-      'Breaking through on oversaturated platforms',
-      'Building concurrent viewership that attracts sponsors',
-      'Creating content that performs across Twitch, YouTube, and TikTok',
-      'Monetizing beyond donations and subs'
+      'Standing out on oversaturated platforms',
+      'Building a recognizable personal brand',
+      'Creating content that performs across platforms',
+      'Looking professional to attract opportunities'
     ],
     solutions: [
-      'Multi-platform growth strategies optimized for gaming',
-      'Clip strategy for maximum viral potential',
-      'Community building that creates superfans',
-      'Brand partnership positioning and outreach'
+      'Personal brand strategy and positioning',
+      'Multi-platform content strategies',
+      'Community building that creates loyalty',
+      'Professional presence that attracts partners'
     ],
     results: [
-      { metric: 'Avg Viewer Increase', value: '420%' },
-      { metric: 'Streamers Helped', value: '3,500+' },
-      { metric: 'Brand Deals Secured', value: '150+' },
-      { metric: 'Partner Achievements', value: '200+' }
+      { metric: 'Brand Recognition', value: 'Increased' },
+      { metric: 'Community Growth', value: 'Accelerated' },
+      { metric: 'Professional Presence', value: 'Established' },
+      { metric: 'Platform Reach', value: 'Expanded' }
     ],
     relatedIndustries: ['influencers', 'tech', 'entertainment'],
-    popularServices: ['Twitch Growth', 'YouTube Gaming', 'Clip Marketing', 'Brand Deals']
+    popularServices: ['Personal Branding', 'Content Strategy', 'Community Building', 'Social Media']
   },
   {
     name: 'Sports & Athletes',
@@ -170,131 +184,131 @@ export const industries: Industry[] = [
     category: 'entertainment',
     icon: 'Trophy',
     tagline: 'Build your athlete brand',
-    description: 'Help athletes, teams, and sports brands build powerful personal brands that attract sponsors and engage fans.',
+    description: 'Help athletes build powerful personal brands that create opportunities and connect with fans.',
     metaTitle: 'Sports Marketing Agency | Athlete Branding | EDST',
-    metaDescription: 'EDST helps athletes and sports brands build powerful personal brands. NIL deals, sponsorships, and fan engagement.',
-    keywords: ['sports marketing', 'athlete branding', 'NIL marketing', 'sports social media', 'athlete promotion'],
-    heroHeadline: 'Athlete Marketing for the NIL Era',
-    heroSubheadline: 'Your talent gets you on the field. Your brand gets you paid off it. We build athlete brands that win.',
+    metaDescription: 'EDST helps athletes build professional personal brands that attract opportunities and engage fans.',
+    keywords: ['sports marketing', 'athlete branding', 'athlete marketing', 'sports personal brand'],
+    heroHeadline: 'Build an Athlete Brand That Opens Doors',
+    heroSubheadline: 'Your talent gets you on the field. Your brand creates opportunities off it. We help athletes build personal brands that matter.',
     challenges: [
       'Building a brand while focusing on performance',
-      'Maximizing NIL and sponsorship opportunities',
-      'Creating content that resonates with fans',
-      'Standing out in a crowded athlete market'
+      'Creating professional presence off the field',
+      'Standing out in a crowded athlete market',
+      'Connecting authentically with fans'
     ],
     solutions: [
       'Personal brand strategy and positioning',
-      'Content creation systems that fit athlete schedules',
-      'NIL deal positioning and sponsor outreach',
+      'Content systems that fit athlete schedules',
+      'Professional presence across all platforms',
       'Fan engagement and community building'
     ],
     results: [
-      { metric: 'Avg NIL Value Increase', value: '3x' },
-      { metric: 'Athletes Served', value: '800+' },
-      { metric: 'Sponsorships Secured', value: '250+' },
-      { metric: 'Total NIL Generated', value: '$15M+' }
+      { metric: 'Brand Visibility', value: 'Elevated' },
+      { metric: 'Professional Image', value: 'Enhanced' },
+      { metric: 'Fan Connection', value: 'Strengthened' },
+      { metric: 'Opportunity Access', value: 'Expanded' }
     ],
     relatedIndustries: ['fitness', 'influencers', 'entertainment'],
-    popularServices: ['Personal Branding', 'NIL Strategy', 'Content Creation', 'Sponsor Outreach']
+    popularServices: ['Personal Branding', 'Content Creation', 'Social Media', 'PR & Visibility']
   },
   {
     name: 'Film & Video Production',
     slug: 'film-video',
     category: 'entertainment',
     icon: 'Film',
-    tagline: 'Market your productions',
-    description: 'Help filmmakers, production companies, and video creators build audiences and market their content effectively.',
-    metaTitle: 'Film Marketing Agency | Video Production Marketing | EDST',
-    metaDescription: 'EDST helps filmmakers and video production companies market their content. Festival campaigns, distribution, and audience building.',
-    keywords: ['film marketing', 'video production marketing', 'movie promotion', 'filmmaker marketing', 'video marketing agency'],
-    heroHeadline: 'Marketing for Filmmakers & Video Creators',
-    heroSubheadline: 'Great content deserves great marketing. We help filmmakers and video creators find their audience.',
+    tagline: 'Build your production brand',
+    description: 'Help filmmakers and video creators build professional brands that attract clients and audiences.',
+    metaTitle: 'Film Marketing Agency | Video Production Branding | EDST',
+    metaDescription: 'EDST helps filmmakers and video production companies build professional brands and expand their reach.',
+    keywords: ['film marketing', 'video production branding', 'filmmaker marketing'],
+    heroHeadline: 'Build a Production Brand That Gets Noticed',
+    heroSubheadline: 'Great content deserves great branding. We help filmmakers and creators build presence that attracts the right opportunities.',
     challenges: [
-      'Getting eyeballs on your content in a crowded market',
-      'Building buzz for festival submissions and releases',
-      'Creating marketing that matches your creative vision',
-      'Converting viewers into followers and subscribers'
+      'Getting your work seen in a crowded market',
+      'Building credibility as a creator',
+      'Creating professional presence that attracts clients',
+      'Standing out with your unique creative vision'
     ],
     solutions: [
-      'Launch campaign strategies for releases',
-      'Festival submission and promotion support',
-      'Trailer and clip optimization for social',
-      'Audience building across platforms'
+      'Brand identity that reflects your creative vision',
+      'Portfolio presentation and marketing',
+      'Visibility strategies for your work',
+      'Professional presence that attracts opportunities'
     ],
     results: [
-      { metric: 'Avg View Increase', value: '3-5x' },
-      { metric: 'Projects Marketed', value: '600+' },
-      { metric: 'Festival Selections', value: '120+' },
-      { metric: 'Distribution Deals', value: '45+' }
+      { metric: 'Brand Credibility', value: 'Established' },
+      { metric: 'Work Visibility', value: 'Increased' },
+      { metric: 'Professional Image', value: 'Elevated' },
+      { metric: 'Opportunity Access', value: 'Expanded' }
     ],
     relatedIndustries: ['photography', 'music', 'entertainment'],
-    popularServices: ['Launch Campaigns', 'Festival Marketing', 'Social Strategy', 'Press & PR']
+    popularServices: ['Brand Building', 'Portfolio Marketing', 'Social Strategy', 'PR & Visibility']
   },
   {
     name: 'Entertainment & Events',
     slug: 'entertainment',
     category: 'entertainment',
     icon: 'Sparkles',
-    tagline: 'Fill venues and create buzz',
-    description: 'Help entertainment venues, event producers, and promoters sell tickets and create unforgettable buzz.',
-    metaTitle: 'Entertainment Marketing Agency | Event Promotion | EDST',
-    metaDescription: 'EDST helps entertainment venues and event producers fill seats and create buzz. Concerts, festivals, shows, and more.',
-    keywords: ['entertainment marketing', 'event promotion', 'concert marketing', 'venue marketing', 'festival promotion'],
-    heroHeadline: 'Marketing That Fills Venues',
-    heroSubheadline: 'From intimate shows to major festivals, we help entertainment brands sell out and create moments people talk about.',
+    tagline: 'Build your event brand',
+    description: 'Help entertainment venues and event producers build brands that create buzz and attract audiences.',
+    metaTitle: 'Entertainment Marketing Agency | Event Branding | EDST',
+    metaDescription: 'EDST helps entertainment venues and event producers build powerful brands that attract audiences.',
+    keywords: ['entertainment marketing', 'event branding', 'venue marketing'],
+    heroHeadline: 'Build an Entertainment Brand People Talk About',
+    heroSubheadline: 'Create a brand that generates buzz, builds anticipation, and keeps audiences coming back.',
     challenges: [
-      'Cutting through noise to sell tickets',
-      'Building hype that translates to attendance',
-      'Creating FOMO that drives urgency',
+      'Standing out in a crowded entertainment market',
+      'Building consistent brand presence',
+      'Creating buzz that translates to attendance',
       'Competing with endless entertainment options'
     ],
     solutions: [
-      'Ticket sales campaigns with urgency mechanics',
-      'Influencer and creator partnerships for buzz',
-      'User-generated content strategies',
-      'Post-event content for future marketing'
+      'Brand positioning that creates desire',
+      'Buzz-building marketing strategies',
+      'Community engagement that drives loyalty',
+      'Professional presence across all channels'
     ],
     results: [
-      { metric: 'Avg Ticket Sales Increase', value: '250%' },
-      { metric: 'Events Marketed', value: '400+' },
-      { metric: 'Sold Out Events', value: '150+' },
-      { metric: 'Total Tickets Sold', value: '2M+' }
+      { metric: 'Brand Recognition', value: 'Elevated' },
+      { metric: 'Audience Reach', value: 'Expanded' },
+      { metric: 'Community Engagement', value: 'Increased' },
+      { metric: 'Market Presence', value: 'Strengthened' }
     ],
     relatedIndustries: ['music', 'sports', 'hospitality'],
-    popularServices: ['Ticket Campaigns', 'Influencer Marketing', 'Social Buzz', 'Email Marketing']
+    popularServices: ['Brand Building', 'Social Media', 'Event Marketing', 'Community Building']
   },
   {
     name: 'Influencers & Creators',
     slug: 'influencers',
     category: 'entertainment',
     icon: 'Users',
-    tagline: 'Scale your creator business',
-    description: 'Help influencers and content creators grow their audience, land brand deals, and build sustainable businesses.',
-    metaTitle: 'Influencer Marketing Agency | Creator Growth | EDST',
-    metaDescription: 'EDST helps influencers and creators grow their audience and land brand deals. Proven growth strategies for all platforms.',
-    keywords: ['influencer marketing', 'creator growth', 'influencer agency', 'content creator marketing', 'social media growth'],
-    heroHeadline: 'Creator Marketing That Actually Works',
-    heroSubheadline: 'From micro-influencer to media empire. We help creators build audiences and businesses that last.',
+    tagline: 'Scale your creator brand',
+    description: 'Help influencers and content creators build professional brands that attract opportunities.',
+    metaTitle: 'Influencer Marketing Agency | Creator Branding | EDST',
+    metaDescription: 'EDST helps influencers and creators build professional brands and expand their reach.',
+    keywords: ['influencer marketing', 'creator branding', 'influencer growth'],
+    heroHeadline: 'Build a Creator Brand That Attracts Opportunities',
+    heroSubheadline: 'From micro-influencer to media brand. We help creators build professional presence that opens doors.',
     challenges: [
+      'Building a brand that stands out',
+      'Looking professional enough for partnerships',
       'Growing beyond a plateau',
-      'Landing brand deals that pay what you\'re worth',
-      'Diversifying income beyond one platform',
-      'Creating sustainably without burnout'
+      'Creating sustainable presence across platforms'
     ],
     solutions: [
-      'Cross-platform growth strategies',
-      'Brand deal positioning and rate negotiation',
-      'Content systems for sustainable creation',
-      'Audience diversification and owned media'
+      'Personal brand strategy and positioning',
+      'Cross-platform presence optimization',
+      'Professional image that attracts partners',
+      'Content strategies for sustainable growth'
     ],
     results: [
-      { metric: 'Avg Follower Growth', value: '3-5x' },
-      { metric: 'Creators Served', value: '15K+' },
-      { metric: 'Brand Deals Landed', value: '5K+' },
-      { metric: 'Combined Following Grown', value: '500M+' }
+      { metric: 'Brand Professionalism', value: 'Elevated' },
+      { metric: 'Audience Reach', value: 'Expanded' },
+      { metric: 'Partnership Readiness', value: 'Enhanced' },
+      { metric: 'Platform Presence', value: 'Strengthened' }
     ],
     relatedIndustries: ['music', 'gaming', 'fashion'],
-    popularServices: ['Audience Growth', 'Brand Partnerships', 'Content Strategy', 'Monetization']
+    popularServices: ['Personal Branding', 'Content Strategy', 'Social Media', 'Partnership Positioning']
   },
 
   // ═══════════════════════════════════════════════════════════════
@@ -305,66 +319,66 @@ export const industries: Industry[] = [
     slug: 'healthcare',
     category: 'healthcare',
     icon: 'Heart',
-    tagline: 'Grow your practice ethically',
-    description: 'Help healthcare providers build trust, attract patients, and grow practices through ethical, compliant marketing.',
-    metaTitle: 'Healthcare Marketing Agency | Medical Practice Growth | EDST',
-    metaDescription: 'EDST helps healthcare providers grow their practices with ethical, HIPAA-compliant marketing. Trusted by 500+ medical practices.',
-    keywords: ['healthcare marketing', 'medical practice marketing', 'doctor marketing', 'healthcare social media', 'patient acquisition'],
-    heroHeadline: 'Healthcare Marketing That Builds Trust',
-    heroSubheadline: 'Grow your practice with marketing that\'s as ethical as your care. We help healthcare providers attract patients authentically.',
+    tagline: 'Build your practice brand',
+    description: 'Help healthcare providers build trust and credibility through professional branding that attracts patients.',
+    metaTitle: 'Healthcare Marketing Agency | Medical Practice Branding | EDST',
+    metaDescription: 'EDST helps healthcare providers build trusted professional brands that attract patients.',
+    keywords: ['healthcare marketing', 'medical practice branding', 'healthcare brand building'],
+    heroHeadline: 'Build a Healthcare Brand Patients Trust',
+    heroSubheadline: 'Grow your practice with professional branding that builds credibility and attracts the patients you want.',
     challenges: [
       'Building trust in a skeptical digital landscape',
-      'Staying compliant with HIPAA and advertising regulations',
-      'Competing with corporate healthcare systems',
-      'Converting online interest into booked appointments'
+      'Standing out among competing practices',
+      'Looking professional and credible online',
+      'Attracting ideal patients consistently'
     ],
     solutions: [
-      'Trust-building content strategies',
-      'Compliant advertising and social media',
-      'Review generation and reputation management',
-      'Patient education content that converts'
+      'Trust-building brand strategies',
+      'Professional presence across platforms',
+      'Reputation building and management',
+      'Patient-focused content and engagement'
     ],
     results: [
-      { metric: 'Avg Patient Increase', value: '180%' },
-      { metric: 'Practices Served', value: '500+' },
-      { metric: 'Reviews Generated', value: '25K+' },
-      { metric: 'Appointments Booked', value: '100K+' }
+      { metric: 'Brand Trust', value: 'Established' },
+      { metric: 'Professional Presence', value: 'Elevated' },
+      { metric: 'Patient Reach', value: 'Expanded' },
+      { metric: 'Practice Credibility', value: 'Strengthened' }
     ],
     relatedIndustries: ['dental', 'medspa', 'mental-health'],
-    popularServices: ['Reputation Management', 'Social Media', 'Content Marketing', 'Local SEO']
+    popularServices: ['Brand Building', 'Reputation Management', 'Social Media', 'Content Marketing']
   },
   {
     name: 'Dental Practices',
     slug: 'dental',
     category: 'healthcare',
     icon: 'Smile',
-    tagline: 'Fill your dental chairs',
-    description: 'Help dental practices attract new patients and build thriving practices through strategic marketing.',
-    metaTitle: 'Dental Marketing Agency | Dentist Marketing | EDST',
-    metaDescription: 'EDST helps dental practices grow with proven marketing strategies. New patient acquisition, reviews, and brand building.',
-    keywords: ['dental marketing', 'dentist marketing', 'dental practice growth', 'dental social media', 'dental patient acquisition'],
-    heroHeadline: 'Dental Marketing That Fills Chairs',
-    heroSubheadline: 'From new patient acquisition to case acceptance, we help dental practices grow profitably.',
+    tagline: 'Build your dental brand',
+    description: 'Help dental practices build professional brands that attract new patients and build community trust.',
+    metaTitle: 'Dental Marketing Agency | Dentist Branding | EDST',
+    metaDescription: 'EDST helps dental practices build professional brands that attract patients and build trust.',
+    keywords: ['dental marketing', 'dentist branding', 'dental practice marketing'],
+    heroHeadline: 'Build a Dental Brand Patients Choose',
+    heroSubheadline: 'Stand out in your local market with professional branding that builds trust and attracts ideal patients.',
     challenges: [
       'Standing out in a competitive local market',
-      'Attracting high-value cosmetic and implant cases',
-      'Building a reputation that drives referrals',
-      'Converting consultations into accepted treatment plans'
+      'Building trust before the first appointment',
+      'Looking professional and modern online',
+      'Attracting higher-value cases'
     ],
     solutions: [
-      'New patient acquisition campaigns',
-      'Before/after content strategies',
-      'Review generation systems',
-      'High-value case marketing'
+      'Professional brand positioning',
+      'Trust-building content strategies',
+      'Reputation management and building',
+      'Modern, professional presence'
     ],
     results: [
-      { metric: 'Avg New Patients/Mo', value: '+45' },
-      { metric: 'Practices Served', value: '200+' },
-      { metric: '5-Star Reviews Generated', value: '15K+' },
-      { metric: 'Case Acceptance Increase', value: '35%' }
+      { metric: 'Brand Perception', value: 'Elevated' },
+      { metric: 'Local Visibility', value: 'Increased' },
+      { metric: 'Patient Trust', value: 'Strengthened' },
+      { metric: 'Practice Reputation', value: 'Enhanced' }
     ],
     relatedIndustries: ['healthcare', 'medspa', 'chiropractic'],
-    popularServices: ['New Patient Campaigns', 'Google Reviews', 'Social Media', 'Cosmetic Case Marketing']
+    popularServices: ['Brand Building', 'Reputation Management', 'Social Media', 'Local Marketing']
   },
   {
     name: 'Med Spa & Aesthetics',
@@ -372,164 +386,164 @@ export const industries: Industry[] = [
     category: 'healthcare',
     icon: 'Sparkles',
     tagline: 'Elevate your aesthetic brand',
-    description: 'Help med spas and aesthetic practices attract clients and build premium brands in the competitive aesthetics market.',
-    metaTitle: 'Med Spa Marketing Agency | Aesthetic Marketing | EDST',
-    metaDescription: 'EDST helps med spas and aesthetic practices grow. Premium brand positioning, client acquisition, and social media marketing.',
-    keywords: ['med spa marketing', 'aesthetic marketing', 'medspa social media', 'botox marketing', 'cosmetic marketing'],
-    heroHeadline: 'Med Spa Marketing for Premium Brands',
-    heroSubheadline: 'Attract clients who value quality over price. We help aesthetic practices build premium brands.',
+    description: 'Help med spas build premium brands that attract clients who value quality.',
+    metaTitle: 'Med Spa Marketing Agency | Aesthetic Branding | EDST',
+    metaDescription: 'EDST helps med spas and aesthetic practices build premium brands that attract quality clients.',
+    keywords: ['med spa marketing', 'aesthetic branding', 'medspa marketing'],
+    heroHeadline: 'Build a Premium Aesthetic Brand',
+    heroSubheadline: 'Attract clients who value quality over price. We help aesthetic practices build brands that command respect.',
     challenges: [
-      'Competing with discount providers and Groupon deals',
-      'Attracting high-value, repeat clients',
-      'Showcasing results while staying compliant',
-      'Building a premium brand perception'
+      'Differentiating from discount providers',
+      'Building a premium brand perception',
+      'Attracting quality-focused clients',
+      'Looking as premium as your services'
     ],
     solutions: [
       'Premium brand positioning strategies',
-      'Before/after content that converts',
-      'Influencer and UGC partnerships',
-      'Membership and loyalty program marketing'
+      'Elevated visual presence',
+      'Trust and credibility building',
+      'Quality-focused marketing approach'
     ],
     results: [
-      { metric: 'Avg Revenue Increase', value: '220%' },
-      { metric: 'Med Spas Served', value: '150+' },
-      { metric: 'Avg Client Value Increase', value: '85%' },
-      { metric: 'Membership Signups', value: '10K+' }
+      { metric: 'Brand Positioning', value: 'Elevated' },
+      { metric: 'Client Quality', value: 'Enhanced' },
+      { metric: 'Market Perception', value: 'Premium' },
+      { metric: 'Practice Credibility', value: 'Strengthened' }
     ],
     relatedIndustries: ['plastic-surgery', 'dental', 'wellness'],
-    popularServices: ['Brand Positioning', 'Social Media', 'Influencer Marketing', 'Membership Marketing']
+    popularServices: ['Premium Branding', 'Social Media', 'Content Strategy', 'Reputation Building']
   },
   {
     name: 'Mental Health',
     slug: 'mental-health',
     category: 'healthcare',
     icon: 'Brain',
-    tagline: 'Reach those who need help',
-    description: 'Help therapists, counselors, and mental health practices connect with clients who need their services.',
-    metaTitle: 'Mental Health Marketing Agency | Therapist Marketing | EDST',
-    metaDescription: 'EDST helps therapists and mental health practices grow. Ethical marketing that connects you with clients who need help.',
-    keywords: ['mental health marketing', 'therapist marketing', 'counselor marketing', 'psychology practice marketing', 'therapy marketing'],
-    heroHeadline: 'Marketing for Mental Health Providers',
-    heroSubheadline: 'Connect with clients who need your help. We make finding a therapist easier for everyone.',
+    tagline: 'Build your practice brand',
+    description: 'Help therapists and mental health providers build professional brands that connect with those who need help.',
+    metaTitle: 'Mental Health Marketing Agency | Therapist Branding | EDST',
+    metaDescription: 'EDST helps therapists and mental health providers build trusted professional brands.',
+    keywords: ['mental health marketing', 'therapist branding', 'counselor marketing'],
+    heroHeadline: 'Build a Mental Health Brand That Connects',
+    heroSubheadline: 'Help people find you when they need you most. Professional branding that builds trust and reduces barriers.',
     challenges: [
-      'Reaching people who need help but aren\'t searching',
-      'Destigmatizing mental health in marketing',
       'Building trust before the first session',
-      'Standing out in a growing therapy market'
+      'Standing out among growing provider options',
+      'Creating professional yet approachable presence',
+      'Reaching people who need help'
     ],
     solutions: [
-      'Awareness content that reduces stigma',
-      'Trust-building educational content',
-      'Niche positioning for specialties',
-      'Referral and word-of-mouth amplification'
+      'Trust-building brand presence',
+      'Approachable professional positioning',
+      'Visibility strategies that reach those in need',
+      'Content that reduces stigma and builds connection'
     ],
     results: [
-      { metric: 'Avg Inquiry Increase', value: '200%' },
-      { metric: 'Practices Served', value: '300+' },
-      { metric: 'Client Connections Made', value: '50K+' },
-      { metric: 'Waitlist Growth', value: '150%' }
+      { metric: 'Professional Presence', value: 'Established' },
+      { metric: 'Approachability', value: 'Enhanced' },
+      { metric: 'Visibility', value: 'Increased' },
+      { metric: 'Client Trust', value: 'Strengthened' }
     ],
     relatedIndustries: ['healthcare', 'coaches', 'wellness'],
-    popularServices: ['Content Marketing', 'Social Media', 'Directory Optimization', 'Referral Systems']
+    popularServices: ['Brand Building', 'Content Marketing', 'Social Media', 'Visibility Strategy']
   },
   {
     name: 'Fitness & Gyms',
     slug: 'fitness',
     category: 'healthcare',
     icon: 'Dumbbell',
-    tagline: 'Fill your gym floor',
-    description: 'Help gyms, fitness studios, and personal trainers attract members and build thriving fitness businesses.',
-    metaTitle: 'Fitness Marketing Agency | Gym Marketing | EDST',
-    metaDescription: 'EDST helps gyms and fitness businesses grow membership. Proven marketing strategies for fitness studios and trainers.',
-    keywords: ['fitness marketing', 'gym marketing', 'personal trainer marketing', 'fitness studio marketing', 'gym membership marketing'],
-    heroHeadline: 'Fitness Marketing That Drives Membership',
-    heroSubheadline: 'From boutique studios to big box gyms, we help fitness businesses fill their floors with committed members.',
+    tagline: 'Build your fitness brand',
+    description: 'Help gyms, studios, and trainers build powerful brands that attract committed members.',
+    metaTitle: 'Fitness Marketing Agency | Gym Branding | EDST',
+    metaDescription: 'EDST helps fitness businesses build powerful brands that attract and retain members.',
+    keywords: ['fitness marketing', 'gym branding', 'personal trainer marketing'],
+    heroHeadline: 'Build a Fitness Brand People Choose',
+    heroSubheadline: 'Stand out from generic gyms with a brand that inspires action and builds community.',
     challenges: [
-      'Competing with low-cost gym chains',
-      'Reducing member churn and improving retention',
-      'Attracting members who actually show up',
-      'Standing out in a crowded fitness market'
+      'Standing out in a crowded fitness market',
+      'Building a brand beyond just equipment',
+      'Creating community and loyalty',
+      'Looking professional and inspiring'
     ],
     solutions: [
-      'New member acquisition campaigns',
-      'Retention and engagement marketing',
+      'Brand positioning that inspires action',
       'Community building strategies',
-      'Transformation content that inspires action'
+      'Professional presence that attracts members',
+      'Content that motivates and engages'
     ],
     results: [
-      { metric: 'Avg Membership Increase', value: '180%' },
-      { metric: 'Gyms Served', value: '400+' },
-      { metric: 'Members Acquired', value: '200K+' },
-      { metric: 'Retention Improvement', value: '40%' }
+      { metric: 'Brand Recognition', value: 'Increased' },
+      { metric: 'Community Strength', value: 'Built' },
+      { metric: 'Member Engagement', value: 'Enhanced' },
+      { metric: 'Market Position', value: 'Elevated' }
     ],
     relatedIndustries: ['wellness', 'sports', 'coaches'],
-    popularServices: ['Member Acquisition', 'Social Media', 'Transformation Marketing', 'Retention Campaigns']
+    popularServices: ['Brand Building', 'Social Media', 'Community Building', 'Content Strategy']
   },
   {
     name: 'Wellness & Holistic',
     slug: 'wellness',
     category: 'healthcare',
     icon: 'Leaf',
-    tagline: 'Grow your wellness practice',
-    description: 'Help wellness practitioners, spas, and holistic health providers attract clients and build conscious brands.',
-    metaTitle: 'Wellness Marketing Agency | Holistic Health Marketing | EDST',
-    metaDescription: 'EDST helps wellness and holistic health businesses grow. Authentic marketing for spas, practitioners, and wellness brands.',
-    keywords: ['wellness marketing', 'holistic health marketing', 'spa marketing', 'wellness brand marketing', 'alternative health marketing'],
-    heroHeadline: 'Wellness Marketing That Feels Authentic',
-    heroSubheadline: 'Grow your wellness practice without compromising your values. Marketing as conscious as your approach to health.',
+    tagline: 'Build your wellness brand',
+    description: 'Help wellness practitioners build authentic brands that attract aligned clients.',
+    metaTitle: 'Wellness Marketing Agency | Holistic Branding | EDST',
+    metaDescription: 'EDST helps wellness and holistic health businesses build authentic brands that attract ideal clients.',
+    keywords: ['wellness marketing', 'holistic branding', 'spa marketing'],
+    heroHeadline: 'Build a Wellness Brand That Feels Authentic',
+    heroSubheadline: 'Grow your practice without compromising your values. Authentic branding that attracts aligned clients.',
     challenges: [
-      'Marketing without feeling "salesy"',
+      'Marketing without feeling salesy',
       'Standing out in the wellness boom',
-      'Attracting clients aligned with your approach',
-      'Building authority in a skeptical market'
+      'Building credibility in a skeptical market',
+      'Attracting clients aligned with your approach'
     ],
     solutions: [
       'Values-aligned brand positioning',
-      'Educational content that builds authority',
-      'Community-driven marketing strategies',
-      'Authentic social media presence'
+      'Authentic content strategies',
+      'Credibility and trust building',
+      'Community-driven presence'
     ],
     results: [
-      { metric: 'Avg Client Increase', value: '200%' },
-      { metric: 'Wellness Brands Served', value: '350+' },
-      { metric: 'Community Members Built', value: '75K+' },
-      { metric: 'Revenue Growth', value: '180%' }
+      { metric: 'Brand Authenticity', value: 'Preserved' },
+      { metric: 'Client Alignment', value: 'Improved' },
+      { metric: 'Credibility', value: 'Established' },
+      { metric: 'Community Presence', value: 'Strengthened' }
     ],
-    relatedIndustries: ['fitness', 'medspa', 'yoga'],
-    popularServices: ['Brand Building', 'Content Marketing', 'Community Building', 'Email Marketing']
+    relatedIndustries: ['fitness', 'medspa', 'mental-health'],
+    popularServices: ['Authentic Branding', 'Content Marketing', 'Community Building', 'Social Media']
   },
   {
     name: 'Chiropractic',
     slug: 'chiropractic',
     category: 'healthcare',
     icon: 'Activity',
-    tagline: 'Adjust your marketing',
-    description: 'Help chiropractic practices attract new patients and build practices focused on wellness, not just pain relief.',
-    metaTitle: 'Chiropractic Marketing Agency | Chiropractor Marketing | EDST',
-    metaDescription: 'EDST helps chiropractic practices grow with proven marketing. New patient acquisition and wellness positioning.',
-    keywords: ['chiropractic marketing', 'chiropractor marketing', 'chiropractic practice growth', 'chiropractic social media'],
-    heroHeadline: 'Chiropractic Marketing That Attracts Ideal Patients',
-    heroSubheadline: 'Build a practice of wellness patients, not just pain cases. Marketing that positions you as the expert.',
+    tagline: 'Build your practice brand',
+    description: 'Help chiropractic practices build professional brands that attract ideal patients.',
+    metaTitle: 'Chiropractic Marketing Agency | Chiropractor Branding | EDST',
+    metaDescription: 'EDST helps chiropractic practices build professional brands that attract patients.',
+    keywords: ['chiropractic marketing', 'chiropractor branding', 'chiropractic practice marketing'],
+    heroHeadline: 'Build a Chiropractic Brand Patients Trust',
+    heroSubheadline: 'Position your practice as the go-to wellness expert with professional branding that builds trust.',
     challenges: [
-      'Moving beyond "back pain" marketing',
-      'Educating patients on wellness care value',
-      'Competing with medical providers',
-      'Building long-term patient relationships'
+      'Building credibility and trust',
+      'Educating patients on your value',
+      'Standing out from competitors',
+      'Creating a modern, professional image'
     ],
     solutions: [
-      'Wellness positioning strategies',
-      'Patient education content',
-      'Community health event marketing',
-      'Membership and wellness plan promotion'
+      'Professional brand positioning',
+      'Educational content strategies',
+      'Trust and credibility building',
+      'Modern presence across platforms'
     ],
     results: [
-      { metric: 'Avg New Patients/Mo', value: '+35' },
-      { metric: 'Practices Served', value: '175+' },
-      { metric: 'Wellness Plan Signups', value: '8K+' },
-      { metric: 'Patient Retention Increase', value: '45%' }
+      { metric: 'Brand Credibility', value: 'Established' },
+      { metric: 'Patient Trust', value: 'Strengthened' },
+      { metric: 'Professional Image', value: 'Elevated' },
+      { metric: 'Practice Visibility', value: 'Increased' }
     ],
     relatedIndustries: ['healthcare', 'wellness', 'fitness'],
-    popularServices: ['Patient Acquisition', 'Wellness Marketing', 'Social Media', 'Event Marketing']
+    popularServices: ['Brand Building', 'Reputation Management', 'Social Media', 'Content Marketing']
   },
   {
     name: 'Plastic Surgery',
@@ -537,32 +551,32 @@ export const industries: Industry[] = [
     category: 'healthcare',
     icon: 'Scissors',
     tagline: 'Elevate your surgical brand',
-    description: 'Help plastic surgeons and cosmetic practices attract high-value patients with premium brand positioning.',
-    metaTitle: 'Plastic Surgery Marketing Agency | Cosmetic Surgery Marketing | EDST',
-    metaDescription: 'EDST helps plastic surgeons grow with premium marketing. Patient acquisition, brand building, and before/after marketing.',
-    keywords: ['plastic surgery marketing', 'cosmetic surgery marketing', 'plastic surgeon marketing', 'aesthetic surgery marketing'],
-    heroHeadline: 'Plastic Surgery Marketing for Premium Practices',
-    heroSubheadline: 'Attract patients who value expertise and results over price. Premium marketing for premium practices.',
+    description: 'Help plastic surgeons build premium brands that attract quality patients.',
+    metaTitle: 'Plastic Surgery Marketing Agency | Surgeon Branding | EDST',
+    metaDescription: 'EDST helps plastic surgeons build premium professional brands that attract quality patients.',
+    keywords: ['plastic surgery marketing', 'cosmetic surgery branding', 'surgeon marketing'],
+    heroHeadline: 'Build a Premium Surgical Brand',
+    heroSubheadline: 'Attract patients who value expertise and results. Premium branding for premium practices.',
     challenges: [
       'Differentiating from discount providers',
-      'Showcasing results while maintaining discretion',
-      'Attracting patients for high-value procedures',
-      'Building trust for significant decisions'
+      'Building trust for significant decisions',
+      'Showcasing expertise professionally',
+      'Attracting quality-focused patients'
     ],
     solutions: [
       'Premium brand positioning',
-      'Tasteful before/after campaigns',
-      'Patient journey content',
-      'Consultation optimization strategies'
+      'Trust and credibility building',
+      'Professional results presentation',
+      'Elevated digital presence'
     ],
     results: [
-      { metric: 'Avg Consultation Increase', value: '150%' },
-      { metric: 'Surgeons Served', value: '100+' },
-      { metric: 'Avg Case Value Increase', value: '60%' },
-      { metric: 'Consultation Conversion', value: '+35%' }
+      { metric: 'Brand Perception', value: 'Premium' },
+      { metric: 'Patient Quality', value: 'Enhanced' },
+      { metric: 'Trust Factor', value: 'Strengthened' },
+      { metric: 'Professional Image', value: 'Elevated' }
     ],
     relatedIndustries: ['medspa', 'healthcare', 'dental'],
-    popularServices: ['Brand Positioning', 'Before/After Marketing', 'Consultation Optimization', 'Social Media']
+    popularServices: ['Premium Branding', 'Reputation Building', 'Content Strategy', 'Social Media']
   },
 
   // ═══════════════════════════════════════════════════════════════
@@ -573,33 +587,33 @@ export const industries: Industry[] = [
     slug: 'small-business',
     category: 'business',
     icon: 'Store',
-    tagline: 'Compete with the big guys',
-    description: 'Help small businesses punch above their weight with marketing strategies that level the playing field.',
-    metaTitle: 'Small Business Marketing Agency | Local Business Growth | EDST',
-    metaDescription: 'EDST helps small businesses grow with enterprise-level marketing strategies at small business prices.',
-    keywords: ['small business marketing', 'local business marketing', 'small business growth', 'entrepreneur marketing'],
-    heroHeadline: 'Small Business Marketing That Punches Up',
-    heroSubheadline: 'You don\'t need a big budget to make a big impact. We help small businesses compete with anyone.',
+    tagline: 'Build your business brand',
+    description: 'Help small businesses build professional brands that compete with anyone.',
+    metaTitle: 'Small Business Marketing Agency | Business Branding | EDST',
+    metaDescription: 'EDST helps small businesses build professional brands that stand out and attract customers.',
+    keywords: ['small business marketing', 'business branding', 'local business marketing'],
+    heroHeadline: 'Build a Business Brand That Punches Up',
+    heroSubheadline: 'You don\'t need a big budget to look big. Professional branding that helps you compete with anyone.',
     challenges: [
-      'Competing with businesses 10x your size',
-      'Getting ROI from limited marketing budgets',
+      'Looking as professional as larger competitors',
+      'Building credibility quickly',
       'Standing out in local markets',
-      'Building brand awareness from scratch'
+      'Creating consistent brand presence'
     ],
     solutions: [
-      'High-impact, budget-conscious campaigns',
-      'Local market domination strategies',
-      'Word-of-mouth amplification',
-      'Scrappy, creative marketing tactics'
+      'Professional brand identity',
+      'Credibility building strategies',
+      'Local market positioning',
+      'Consistent presence across channels'
     ],
     results: [
-      { metric: 'Avg Revenue Increase', value: '200%' },
-      { metric: 'Small Businesses Served', value: '5K+' },
-      { metric: 'ROI Delivered', value: '8x avg' },
-      { metric: 'Local Market Wins', value: '2K+' }
+      { metric: 'Professional Image', value: 'Elevated' },
+      { metric: 'Market Credibility', value: 'Established' },
+      { metric: 'Brand Consistency', value: 'Achieved' },
+      { metric: 'Local Presence', value: 'Strengthened' }
     ],
     relatedIndustries: ['retail', 'restaurants', 'home-services'],
-    popularServices: ['Social Media', 'Local Marketing', 'Brand Building', 'Reputation Management']
+    popularServices: ['Brand Building', 'Social Media', 'Local Marketing', 'Reputation Management']
   },
   {
     name: 'Finance & Banking',
@@ -607,164 +621,164 @@ export const industries: Industry[] = [
     category: 'business',
     icon: 'Landmark',
     tagline: 'Build financial trust',
-    description: 'Help financial advisors, banks, and fintech companies build trust and acquire clients in a regulated industry.',
-    metaTitle: 'Financial Services Marketing Agency | Finance Marketing | EDST',
-    metaDescription: 'EDST helps financial services companies grow. Compliant marketing for advisors, banks, and fintech.',
-    keywords: ['financial services marketing', 'financial advisor marketing', 'bank marketing', 'fintech marketing', 'wealth management marketing'],
-    heroHeadline: 'Financial Marketing That Builds Trust',
-    heroSubheadline: 'In finance, trust is everything. We help financial brands build credibility that converts to clients.',
+    description: 'Help financial professionals build credibility and trust through professional branding.',
+    metaTitle: 'Financial Services Marketing Agency | Finance Branding | EDST',
+    metaDescription: 'EDST helps financial professionals build trusted brands that attract quality clients.',
+    keywords: ['financial services marketing', 'finance branding', 'financial advisor marketing'],
+    heroHeadline: 'Build a Financial Brand Clients Trust',
+    heroSubheadline: 'In finance, trust is everything. Build credibility and professional presence that attracts quality clients.',
     challenges: [
       'Building trust in a skeptical market',
-      'Staying compliant with financial regulations',
       'Differentiating in a commoditized industry',
-      'Reaching high-net-worth clients'
+      'Looking credible and established',
+      'Reaching quality clients'
     ],
     solutions: [
-      'Thought leadership and authority building',
-      'Compliant content marketing strategies',
-      'Client education campaigns',
-      'Referral and network marketing'
+      'Trust and credibility building',
+      'Thought leadership positioning',
+      'Professional presence across platforms',
+      'Content that demonstrates expertise'
     ],
     results: [
-      { metric: 'Avg AUM Growth', value: '45%' },
-      { metric: 'Financial Firms Served', value: '250+' },
-      { metric: 'Client Acquisitions', value: '15K+' },
-      { metric: 'Avg Client Value', value: '+65%' }
+      { metric: 'Brand Trust', value: 'Established' },
+      { metric: 'Professional Credibility', value: 'Elevated' },
+      { metric: 'Market Authority', value: 'Built' },
+      { metric: 'Client Quality', value: 'Enhanced' }
     ],
     relatedIndustries: ['insurance', 'real-estate', 'legal'],
-    popularServices: ['Thought Leadership', 'Content Marketing', 'LinkedIn Strategy', 'Event Marketing']
+    popularServices: ['Thought Leadership', 'Content Marketing', 'Brand Building', 'LinkedIn Strategy']
   },
   {
     name: 'Legal Services',
     slug: 'legal',
     category: 'business',
     icon: 'Scale',
-    tagline: 'Grow your legal practice',
-    description: 'Help law firms and attorneys attract clients and build authority in their practice areas.',
-    metaTitle: 'Law Firm Marketing Agency | Legal Marketing | EDST',
-    metaDescription: 'EDST helps law firms and attorneys grow. Client acquisition, thought leadership, and practice area marketing.',
-    keywords: ['law firm marketing', 'attorney marketing', 'legal marketing', 'lawyer marketing', 'legal services marketing'],
-    heroHeadline: 'Legal Marketing for Modern Law Firms',
-    heroSubheadline: 'Attract clients who need your expertise. We help law firms build authority and generate quality leads.',
+    tagline: 'Build your legal brand',
+    description: 'Help law firms build authority and credibility that attracts quality clients.',
+    metaTitle: 'Law Firm Marketing Agency | Legal Branding | EDST',
+    metaDescription: 'EDST helps law firms build authoritative brands that attract quality clients.',
+    keywords: ['law firm marketing', 'attorney branding', 'legal marketing'],
+    heroHeadline: 'Build a Legal Brand Clients Seek Out',
+    heroSubheadline: 'Stand out as the authority in your practice area. Professional branding that attracts quality clients.',
     challenges: [
       'Standing out in a crowded legal market',
-      'Generating high-quality client inquiries',
-      'Building authority in specific practice areas',
-      'Marketing ethically within bar guidelines'
+      'Building authority in practice areas',
+      'Looking established and credible',
+      'Attracting quality clients'
     ],
     solutions: [
-      'Practice area authority building',
-      'Client education content',
-      'Case study and results marketing',
-      'Referral network development'
+      'Authority building strategies',
+      'Professional brand presence',
+      'Thought leadership positioning',
+      'Credibility-focused content'
     ],
     results: [
-      { metric: 'Avg Lead Increase', value: '180%' },
-      { metric: 'Law Firms Served', value: '200+' },
-      { metric: 'Client Acquisitions', value: '10K+' },
-      { metric: 'Avg Case Value Increase', value: '40%' }
+      { metric: 'Practice Authority', value: 'Established' },
+      { metric: 'Brand Credibility', value: 'Elevated' },
+      { metric: 'Professional Image', value: 'Enhanced' },
+      { metric: 'Client Quality', value: 'Improved' }
     ],
     relatedIndustries: ['finance', 'real-estate', 'healthcare'],
-    popularServices: ['Content Marketing', 'Local SEO', 'Authority Building', 'Referral Marketing']
+    popularServices: ['Authority Building', 'Content Marketing', 'Brand Building', 'Reputation Management']
   },
   {
     name: 'Insurance',
     slug: 'insurance',
     category: 'business',
     icon: 'Shield',
-    tagline: 'Grow your book of business',
-    description: 'Help insurance agents and agencies attract clients and build thriving practices.',
-    metaTitle: 'Insurance Marketing Agency | Agent Marketing | EDST',
-    metaDescription: 'EDST helps insurance agents and agencies grow. Lead generation, brand building, and client acquisition strategies.',
-    keywords: ['insurance marketing', 'insurance agent marketing', 'insurance agency marketing', 'insurance lead generation'],
-    heroHeadline: 'Insurance Marketing That Builds Books',
-    heroSubheadline: 'Grow your book of business with marketing that generates quality leads and builds lasting client relationships.',
+    tagline: 'Build your agent brand',
+    description: 'Help insurance professionals build trusted personal brands that attract quality clients.',
+    metaTitle: 'Insurance Marketing Agency | Agent Branding | EDST',
+    metaDescription: 'EDST helps insurance agents build trusted personal brands that attract quality clients.',
+    keywords: ['insurance marketing', 'insurance agent branding', 'insurance agency marketing'],
+    heroHeadline: 'Build an Insurance Brand Clients Trust',
+    heroSubheadline: 'Stand out from online quotes with a personal brand that builds trust and attracts quality clients.',
     challenges: [
       'Competing with direct carriers and online quotes',
-      'Generating quality leads, not tire kickers',
       'Building trust in a skeptical market',
-      'Retaining clients in a price-sensitive market'
+      'Looking professional and established',
+      'Standing out as an individual agent'
     ],
     solutions: [
-      'Value-based positioning strategies',
-      'Lead generation campaigns',
-      'Client retention marketing',
-      'Referral amplification systems'
+      'Personal brand building',
+      'Trust and credibility strategies',
+      'Professional presence development',
+      'Value-based positioning'
     ],
     results: [
-      { metric: 'Avg Lead Increase', value: '200%' },
-      { metric: 'Agents Served', value: '400+' },
-      { metric: 'Policies Written', value: '50K+' },
-      { metric: 'Client Retention Increase', value: '30%' }
+      { metric: 'Personal Brand', value: 'Established' },
+      { metric: 'Client Trust', value: 'Strengthened' },
+      { metric: 'Professional Image', value: 'Elevated' },
+      { metric: 'Market Differentiation', value: 'Achieved' }
     ],
     relatedIndustries: ['finance', 'real-estate', 'small-business'],
-    popularServices: ['Lead Generation', 'Social Media', 'Retention Marketing', 'Referral Programs']
+    popularServices: ['Personal Branding', 'Social Media', 'Content Marketing', 'Reputation Building']
   },
   {
     name: 'Real Estate',
     slug: 'real-estate',
     category: 'business',
     icon: 'Home',
-    tagline: 'Close more deals',
-    description: 'Help real estate agents, teams, and brokerages generate leads and close more transactions.',
-    metaTitle: 'Real Estate Marketing Agency | Realtor Marketing | EDST',
-    metaDescription: 'EDST helps real estate agents and brokerages grow. Lead generation, listing marketing, and personal branding.',
-    keywords: ['real estate marketing', 'realtor marketing', 'real estate agent marketing', 'listing marketing', 'real estate lead generation'],
-    heroHeadline: 'Real Estate Marketing That Closes Deals',
-    heroSubheadline: 'From lead generation to closing, we help real estate pros dominate their markets.',
+    tagline: 'Build your realtor brand',
+    description: 'Help real estate professionals build personal brands that attract clients and referrals.',
+    metaTitle: 'Real Estate Marketing Agency | Realtor Branding | EDST',
+    metaDescription: 'EDST helps real estate agents build powerful personal brands that attract clients.',
+    keywords: ['real estate marketing', 'realtor branding', 'real estate agent marketing'],
+    heroHeadline: 'Build a Real Estate Brand That Wins',
+    heroSubheadline: 'Stand out among thousands of agents with a personal brand that attracts clients and referrals.',
     challenges: [
       'Standing out among thousands of local agents',
-      'Generating seller leads in competitive markets',
-      'Building a personal brand that attracts referrals',
-      'Marketing listings effectively'
+      'Building a recognizable personal brand',
+      'Creating professional presence',
+      'Attracting quality listings and buyers'
     ],
     solutions: [
       'Personal brand positioning',
-      'Seller lead generation campaigns',
-      'Listing marketing strategies',
-      'Sphere of influence marketing'
+      'Professional presence across platforms',
+      'Content that showcases expertise',
+      'Community and network building'
     ],
     results: [
-      { metric: 'Avg Transaction Increase', value: '150%' },
-      { metric: 'Agents Served', value: '1,500+' },
-      { metric: 'Listings Sold', value: '10K+' },
-      { metric: 'GCI Growth', value: '200%+' }
+      { metric: 'Personal Brand', value: 'Established' },
+      { metric: 'Market Recognition', value: 'Increased' },
+      { metric: 'Professional Image', value: 'Elevated' },
+      { metric: 'Referral Potential', value: 'Enhanced' }
     ],
     relatedIndustries: ['mortgage', 'home-services', 'finance'],
-    popularServices: ['Personal Branding', 'Lead Generation', 'Listing Marketing', 'Video Marketing']
+    popularServices: ['Personal Branding', 'Social Media', 'Content Marketing', 'Video Marketing']
   },
   {
     name: 'Coaches & Consultants',
     slug: 'coaches',
     category: 'professional',
     icon: 'Target',
-    tagline: 'Fill your coaching practice',
-    description: 'Help coaches and consultants attract high-ticket clients and build scalable businesses.',
-    metaTitle: 'Coach Marketing Agency | Consultant Marketing | EDST',
-    metaDescription: 'EDST helps coaches and consultants attract clients. Personal branding, lead generation, and high-ticket sales marketing.',
-    keywords: ['coach marketing', 'consultant marketing', 'coaching business marketing', 'high-ticket marketing', 'consulting marketing'],
-    heroHeadline: 'Marketing for Coaches Who Want Premium Clients',
-    heroSubheadline: 'Stop chasing clients. Start attracting them. We help coaches build practices full of premium clients.',
+    tagline: 'Build your coaching brand',
+    description: 'Help coaches and consultants build authoritative personal brands that attract premium clients.',
+    metaTitle: 'Coach Marketing Agency | Consultant Branding | EDST',
+    metaDescription: 'EDST helps coaches and consultants build professional brands that attract premium clients.',
+    keywords: ['coach marketing', 'consultant branding', 'coaching business marketing'],
+    heroHeadline: 'Build a Coaching Brand That Commands Respect',
+    heroSubheadline: 'Stop chasing clients. Build a brand that attracts them. Professional positioning for premium coaches.',
     challenges: [
       'Standing out in a crowded coaching market',
-      'Attracting clients who can afford premium pricing',
-      'Building authority quickly',
-      'Converting followers into paying clients'
+      'Building authority and credibility quickly',
+      'Looking professional enough for premium pricing',
+      'Creating consistent brand presence'
     ],
     solutions: [
-      'Authority positioning and thought leadership',
-      'High-ticket sales funnel optimization',
-      'Content strategies that demonstrate expertise',
-      'Community building and nurture systems'
+      'Authority positioning strategies',
+      'Professional brand development',
+      'Thought leadership content',
+      'Premium brand presence'
     ],
     results: [
-      { metric: 'Avg Revenue Increase', value: '280%' },
-      { metric: 'Coaches Served', value: '2K+' },
-      { metric: 'Clients Acquired', value: '25K+' },
-      { metric: 'Avg Program Price Increase', value: '100%' }
+      { metric: 'Brand Authority', value: 'Established' },
+      { metric: 'Professional Image', value: 'Elevated' },
+      { metric: 'Market Positioning', value: 'Premium' },
+      { metric: 'Credibility', value: 'Strengthened' }
     ],
-    relatedIndustries: ['influencers', 'speakers', 'authors'],
-    popularServices: ['Personal Branding', 'High-Ticket Funnels', 'Content Strategy', 'Launch Marketing']
+    relatedIndustries: ['influencers', 'speakers', 'fitness'],
+    popularServices: ['Personal Branding', 'Authority Building', 'Content Strategy', 'Social Media']
   },
   {
     name: 'Speakers & Authors',
@@ -772,32 +786,32 @@ export const industries: Industry[] = [
     category: 'professional',
     icon: 'BookOpen',
     tagline: 'Build your platform',
-    description: 'Help speakers and authors build platforms that book stages and sell books.',
-    metaTitle: 'Speaker Marketing Agency | Author Marketing | EDST',
-    metaDescription: 'EDST helps speakers and authors build platforms. Speaking engagements, book launches, and authority marketing.',
-    keywords: ['speaker marketing', 'author marketing', 'book marketing', 'keynote speaker marketing', 'thought leader marketing'],
-    heroHeadline: 'Platform Building for Speakers & Authors',
-    heroSubheadline: 'Your message deserves a bigger stage. We help speakers and authors build platforms that matter.',
+    description: 'Help speakers and authors build platforms and personal brands that open doors.',
+    metaTitle: 'Speaker Marketing Agency | Author Branding | EDST',
+    metaDescription: 'EDST helps speakers and authors build platforms and personal brands that attract opportunities.',
+    keywords: ['speaker marketing', 'author branding', 'book marketing'],
+    heroHeadline: 'Build a Platform That Opens Doors',
+    heroSubheadline: 'Your message deserves a bigger stage. Build the platform and brand that makes it happen.',
     challenges: [
-      'Getting booked for speaking engagements',
-      'Building audience before a book launch',
-      'Creating multiple revenue streams from expertise',
-      'Standing out as a thought leader'
+      'Building a recognized platform',
+      'Getting booked for speaking opportunities',
+      'Standing out as a thought leader',
+      'Creating professional author/speaker presence'
     ],
     solutions: [
       'Platform building strategies',
-      'Book launch and promotion campaigns',
-      'Speaking engagement positioning',
-      'Thought leadership content'
+      'Thought leadership positioning',
+      'Professional brand development',
+      'Visibility and positioning'
     ],
     results: [
-      { metric: 'Speaking Gigs Booked', value: '500+' },
-      { metric: 'Authors Served', value: '300+' },
-      { metric: 'Books on Bestseller Lists', value: '45+' },
-      { metric: 'Avg Audience Growth', value: '400%' }
+      { metric: 'Platform Presence', value: 'Built' },
+      { metric: 'Thought Leadership', value: 'Established' },
+      { metric: 'Professional Image', value: 'Elevated' },
+      { metric: 'Visibility', value: 'Increased' }
     ],
     relatedIndustries: ['coaches', 'podcasts', 'influencers'],
-    popularServices: ['Platform Building', 'Book Marketing', 'Speaking Positioning', 'Podcast Guesting']
+    popularServices: ['Platform Building', 'Personal Branding', 'Content Strategy', 'PR & Visibility']
   },
 
   // ═══════════════════════════════════════════════════════════════
@@ -809,98 +823,98 @@ export const industries: Industry[] = [
     category: 'lifestyle',
     icon: 'Shirt',
     tagline: 'Build your fashion brand',
-    description: 'Help fashion brands, designers, and apparel companies build desirable brands and drive sales.',
-    metaTitle: 'Fashion Marketing Agency | Apparel Marketing | EDST',
-    metaDescription: 'EDST helps fashion brands grow. Brand building, influencer marketing, and e-commerce growth strategies.',
-    keywords: ['fashion marketing', 'apparel marketing', 'clothing brand marketing', 'fashion influencer marketing', 'fashion social media'],
-    heroHeadline: 'Fashion Marketing That Creates Desire',
-    heroSubheadline: 'Build a fashion brand people want to wear. We help apparel brands create desire and drive sales.',
+    description: 'Help fashion brands build desirable brands that stand out and attract customers.',
+    metaTitle: 'Fashion Marketing Agency | Apparel Branding | EDST',
+    metaDescription: 'EDST helps fashion brands build desirable brands that attract customers and drive sales.',
+    keywords: ['fashion marketing', 'apparel branding', 'clothing brand marketing'],
+    heroHeadline: 'Build a Fashion Brand People Want to Wear',
+    heroSubheadline: 'Stand out in a crowded market with brand positioning that creates desire and drives sales.',
     challenges: [
       'Standing out in a saturated fashion market',
       'Building brand desire, not just awareness',
-      'Converting social followers into customers',
-      'Competing with fast fashion on value, not price'
+      'Creating a brand identity that resonates',
+      'Looking premium without premium budgets'
     ],
     solutions: [
-      'Brand storytelling and positioning',
-      'Influencer and creator partnerships',
-      'User-generated content strategies',
-      'Launch and drop campaign marketing'
+      'Brand identity and positioning',
+      'Desire-building content strategies',
+      'Professional brand presence',
+      'Community and audience building'
     ],
     results: [
-      { metric: 'Avg Revenue Increase', value: '250%' },
-      { metric: 'Fashion Brands Served', value: '400+' },
-      { metric: 'Influencer Partnerships', value: '2K+' },
-      { metric: 'Social Commerce Sales', value: '$25M+' }
+      { metric: 'Brand Desirability', value: 'Elevated' },
+      { metric: 'Market Presence', value: 'Strengthened' },
+      { metric: 'Audience Connection', value: 'Enhanced' },
+      { metric: 'Brand Recognition', value: 'Increased' }
     ],
     relatedIndustries: ['beauty', 'luxury', 'ecommerce'],
-    popularServices: ['Influencer Marketing', 'Brand Building', 'Launch Campaigns', 'Social Commerce']
+    popularServices: ['Brand Building', 'Social Media', 'Content Strategy', 'Influencer Marketing']
   },
   {
     name: 'Beauty & Cosmetics',
     slug: 'beauty',
     category: 'lifestyle',
     icon: 'Palette',
-    tagline: 'Grow your beauty brand',
-    description: 'Help beauty brands, makeup artists, and cosmetics companies build engaged audiences and drive sales.',
-    metaTitle: 'Beauty Marketing Agency | Cosmetics Marketing | EDST',
-    metaDescription: 'EDST helps beauty brands grow. Influencer marketing, UGC campaigns, and social commerce for cosmetics.',
-    keywords: ['beauty marketing', 'cosmetics marketing', 'makeup marketing', 'beauty brand marketing', 'beauty influencer marketing'],
-    heroHeadline: 'Beauty Marketing That Captivates',
-    heroSubheadline: 'Build a beauty brand that inspires. We help cosmetics companies create communities of loyal fans.',
+    tagline: 'Build your beauty brand',
+    description: 'Help beauty brands build engaged audiences and loyal customer communities.',
+    metaTitle: 'Beauty Marketing Agency | Cosmetics Branding | EDST',
+    metaDescription: 'EDST helps beauty brands build engaging brands that attract customers and build loyalty.',
+    keywords: ['beauty marketing', 'cosmetics branding', 'makeup marketing'],
+    heroHeadline: 'Build a Beauty Brand That Captivates',
+    heroSubheadline: 'Stand out with a brand that inspires and builds a community of loyal customers.',
     challenges: [
-      'Competing with established beauty conglomerates',
-      'Creating authentic content in a filtered world',
-      'Building trust for products people put on their skin',
-      'Converting social buzz into sales'
+      'Competing with established beauty giants',
+      'Building trust for products people wear',
+      'Creating authentic brand presence',
+      'Standing out in a visual category'
     ],
     solutions: [
-      'Authentic influencer partnerships',
-      'Tutorial and educational content',
-      'User-generated content campaigns',
-      'Community building strategies'
+      'Authentic brand positioning',
+      'Trust-building strategies',
+      'Community building approaches',
+      'Visual brand excellence'
     ],
     results: [
-      { metric: 'Avg Revenue Increase', value: '300%' },
-      { metric: 'Beauty Brands Served', value: '300+' },
-      { metric: 'UGC Content Created', value: '50K+' },
-      { metric: 'Influencer Reach', value: '500M+' }
+      { metric: 'Brand Authenticity', value: 'Established' },
+      { metric: 'Customer Trust', value: 'Built' },
+      { metric: 'Community Engagement', value: 'Increased' },
+      { metric: 'Market Presence', value: 'Strengthened' }
     ],
     relatedIndustries: ['fashion', 'medspa', 'wellness'],
-    popularServices: ['Influencer Marketing', 'UGC Campaigns', 'Tutorial Content', 'TikTok Strategy']
+    popularServices: ['Brand Building', 'Social Media', 'Content Strategy', 'Community Building']
   },
   {
     name: 'Travel & Tourism',
     slug: 'travel',
     category: 'lifestyle',
     icon: 'Plane',
-    tagline: 'Inspire wanderlust',
-    description: 'Help travel brands, destinations, and hospitality companies inspire travel and drive bookings.',
-    metaTitle: 'Travel Marketing Agency | Tourism Marketing | EDST',
-    metaDescription: 'EDST helps travel brands inspire wanderlust and drive bookings. Destination marketing, hospitality, and tourism.',
-    keywords: ['travel marketing', 'tourism marketing', 'destination marketing', 'hospitality marketing', 'travel social media'],
-    heroHeadline: 'Travel Marketing That Inspires Action',
-    heroSubheadline: 'Turn dream destinations into booked trips. We help travel brands inspire and convert.',
+    tagline: 'Build your travel brand',
+    description: 'Help travel brands inspire and build presence that drives interest and bookings.',
+    metaTitle: 'Travel Marketing Agency | Tourism Branding | EDST',
+    metaDescription: 'EDST helps travel brands build inspiring presence that attracts travelers.',
+    keywords: ['travel marketing', 'tourism branding', 'destination marketing'],
+    heroHeadline: 'Build a Travel Brand That Inspires',
+    heroSubheadline: 'Create a brand that makes people want to book. Inspiring presence that drives action.',
     challenges: [
-      'Standing out in a visually-saturated market',
-      'Converting inspiration into bookings',
-      'Building trust for significant travel investments',
-      'Competing with OTAs and aggregators'
+      'Standing out in a visual-heavy market',
+      'Building brand recognition',
+      'Creating inspiring content consistently',
+      'Competing with major travel platforms'
     ],
     solutions: [
-      'Visual storytelling strategies',
-      'Influencer trip partnerships',
-      'User-generated content campaigns',
-      'Booking-optimized content funnels'
+      'Visual brand excellence',
+      'Inspiring content strategies',
+      'Brand positioning that stands out',
+      'Audience building and engagement'
     ],
     results: [
-      { metric: 'Avg Booking Increase', value: '200%' },
-      { metric: 'Travel Brands Served', value: '250+' },
-      { metric: 'Content Reach', value: '1B+' },
-      { metric: 'Avg Engagement Lift', value: '280%' }
+      { metric: 'Brand Inspiration', value: 'Elevated' },
+      { metric: 'Visual Presence', value: 'Enhanced' },
+      { metric: 'Audience Reach', value: 'Expanded' },
+      { metric: 'Brand Recognition', value: 'Increased' }
     ],
     relatedIndustries: ['hospitality', 'luxury', 'entertainment'],
-    popularServices: ['Influencer Trips', 'Visual Content', 'Destination Marketing', 'Social Strategy']
+    popularServices: ['Brand Building', 'Visual Content', 'Social Media', 'Influencer Marketing']
   },
   {
     name: 'Luxury Brands',
@@ -908,65 +922,65 @@ export const industries: Industry[] = [
     category: 'lifestyle',
     icon: 'Diamond',
     tagline: 'Elevate your luxury brand',
-    description: 'Help luxury brands maintain exclusivity while building digital presence and desire.',
-    metaTitle: 'Luxury Marketing Agency | Premium Brand Marketing | EDST',
-    metaDescription: 'EDST helps luxury brands grow without compromising exclusivity. Premium positioning and digital strategy.',
-    keywords: ['luxury marketing', 'luxury brand marketing', 'premium brand marketing', 'high-end marketing', 'luxury social media'],
-    heroHeadline: 'Luxury Marketing Without Compromise',
-    heroSubheadline: 'Maintain exclusivity while building desire. We help luxury brands navigate digital without dilution.',
+    description: 'Help luxury brands maintain exclusivity while building digital presence.',
+    metaTitle: 'Luxury Marketing Agency | Premium Branding | EDST',
+    metaDescription: 'EDST helps luxury brands build premium digital presence without compromising exclusivity.',
+    keywords: ['luxury marketing', 'luxury branding', 'premium brand marketing'],
+    heroHeadline: 'Build a Luxury Brand Without Compromise',
+    heroSubheadline: 'Maintain exclusivity while building digital presence. Premium branding for premium brands.',
     challenges: [
       'Building digital presence without losing exclusivity',
+      'Maintaining premium perception',
       'Reaching affluent audiences authentically',
-      'Creating desire without discounting',
-      'Storytelling that justifies premium pricing'
+      'Storytelling that justifies premium positioning'
     ],
     solutions: [
       'Premium positioning strategies',
-      'Exclusive content and access marketing',
-      'Affluent audience targeting',
-      'Craftsmanship and heritage storytelling'
+      'Exclusive-feeling digital presence',
+      'Craftsmanship and heritage storytelling',
+      'Affluent audience engagement'
     ],
     results: [
-      { metric: 'Avg Brand Value Increase', value: '150%' },
-      { metric: 'Luxury Brands Served', value: '100+' },
-      { metric: 'Avg Client Value Increase', value: '80%' },
-      { metric: 'Affluent Reach', value: '50M+' }
+      { metric: 'Premium Positioning', value: 'Maintained' },
+      { metric: 'Digital Presence', value: 'Elevated' },
+      { metric: 'Brand Exclusivity', value: 'Preserved' },
+      { metric: 'Market Perception', value: 'Strengthened' }
     ],
-    relatedIndustries: ['fashion', 'jewelry', 'travel'],
-    popularServices: ['Brand Positioning', 'Exclusive Content', 'Affluent Targeting', 'Heritage Marketing']
+    relatedIndustries: ['fashion', 'travel', 'medspa'],
+    popularServices: ['Premium Branding', 'Content Strategy', 'Social Media', 'Exclusive Marketing']
   },
   {
     name: 'Pets & Animals',
     slug: 'pets',
     category: 'lifestyle',
     icon: 'Cat',
-    tagline: 'Grow your pet brand',
-    description: 'Help pet brands, veterinarians, and animal businesses reach pet parents and build loyal communities.',
-    metaTitle: 'Pet Marketing Agency | Animal Business Marketing | EDST',
-    metaDescription: 'EDST helps pet brands and animal businesses grow. Reaching pet parents with authentic, engaging marketing.',
-    keywords: ['pet marketing', 'pet brand marketing', 'veterinary marketing', 'pet product marketing', 'animal business marketing'],
-    heroHeadline: 'Pet Marketing That Pet Parents Love',
-    heroSubheadline: 'Reach the people who treat pets like family. We help pet brands build communities of loyal customers.',
+    tagline: 'Build your pet brand',
+    description: 'Help pet brands build loyal communities of pet parents.',
+    metaTitle: 'Pet Marketing Agency | Pet Brand Building | EDST',
+    metaDescription: 'EDST helps pet brands build loyal communities and trusted brand presence.',
+    keywords: ['pet marketing', 'pet branding', 'veterinary marketing'],
+    heroHeadline: 'Build a Pet Brand Parents Trust',
+    heroSubheadline: 'Reach people who treat pets like family with a brand that builds trust and loyalty.',
     challenges: [
-      'Standing out in a booming pet market',
       'Building trust with protective pet parents',
-      'Creating engaging content in a cute-overload space',
-      'Converting pet lovers into customers'
+      'Standing out in a booming pet market',
+      'Creating engaging content in a cute-saturated space',
+      'Building brand beyond just products'
     ],
     solutions: [
-      'Pet influencer partnerships',
-      'User-generated content campaigns',
-      'Educational pet content',
-      'Community building for pet parents'
+      'Trust-building brand strategies',
+      'Community building for pet parents',
+      'Engaging content approaches',
+      'Educational and value-driven marketing'
     ],
     results: [
-      { metric: 'Avg Revenue Increase', value: '220%' },
-      { metric: 'Pet Brands Served', value: '200+' },
-      { metric: 'Pet Parent Reach', value: '100M+' },
-      { metric: 'UGC Submissions', value: '30K+' }
+      { metric: 'Brand Trust', value: 'Established' },
+      { metric: 'Community Loyalty', value: 'Built' },
+      { metric: 'Engagement', value: 'Increased' },
+      { metric: 'Market Presence', value: 'Strengthened' }
     ],
     relatedIndustries: ['ecommerce', 'retail', 'healthcare'],
-    popularServices: ['Pet Influencers', 'UGC Campaigns', 'Community Building', 'Product Launches']
+    popularServices: ['Brand Building', 'Community Building', 'Social Media', 'Content Strategy']
   },
 
   // ═══════════════════════════════════════════════════════════════
@@ -977,66 +991,66 @@ export const industries: Industry[] = [
     slug: 'restaurants',
     category: 'food',
     icon: 'UtensilsCrossed',
-    tagline: 'Fill your tables',
-    description: 'Help restaurants attract diners, build loyalty, and create buzz that keeps tables full.',
-    metaTitle: 'Restaurant Marketing Agency | Food Marketing | EDST',
-    metaDescription: 'EDST helps restaurants grow. Social media marketing, reputation management, and local marketing strategies.',
-    keywords: ['restaurant marketing', 'food marketing', 'restaurant social media', 'restaurant reputation', 'diner acquisition'],
-    heroHeadline: 'Restaurant Marketing That Fills Tables',
-    heroSubheadline: 'Create buzz that brings diners through the door. We help restaurants build brands people crave.',
+    tagline: 'Build your restaurant brand',
+    description: 'Help restaurants build brands that attract diners and build loyalty.',
+    metaTitle: 'Restaurant Marketing Agency | Food Branding | EDST',
+    metaDescription: 'EDST helps restaurants build brands that attract diners and create buzz.',
+    keywords: ['restaurant marketing', 'food branding', 'restaurant social media'],
+    heroHeadline: 'Build a Restaurant Brand People Crave',
+    heroSubheadline: 'Stand out with a brand that creates buzz and keeps tables full.',
     challenges: [
       'Standing out in a crowded restaurant market',
-      'Converting social followers into actual diners',
-      'Managing online reputation and reviews',
-      'Building loyalty in a fickle market'
+      'Building a brand beyond just food',
+      'Creating consistent presence',
+      'Building loyalty in a competitive market'
     ],
     solutions: [
-      'Food photography and content strategies',
-      'Influencer and foodie partnerships',
-      'Review generation and management',
-      'Loyalty and retention marketing'
+      'Restaurant brand positioning',
+      'Visual content strategies',
+      'Social presence building',
+      'Community and loyalty building'
     ],
     results: [
-      { metric: 'Avg Cover Increase', value: '150%' },
-      { metric: 'Restaurants Served', value: '500+' },
-      { metric: 'Reviews Generated', value: '50K+' },
-      { metric: 'Social Reach', value: '200M+' }
+      { metric: 'Brand Recognition', value: 'Increased' },
+      { metric: 'Social Presence', value: 'Strengthened' },
+      { metric: 'Community Loyalty', value: 'Built' },
+      { metric: 'Market Position', value: 'Elevated' }
     ],
     relatedIndustries: ['bars', 'hospitality', 'food-beverage'],
-    popularServices: ['Social Media', 'Review Management', 'Food Photography', 'Local Marketing']
+    popularServices: ['Brand Building', 'Social Media', 'Content Strategy', 'Local Marketing']
   },
   {
     name: 'Bars & Nightlife',
     slug: 'bars',
     category: 'food',
     icon: 'Wine',
-    tagline: 'Create the buzz',
-    description: 'Help bars, clubs, and nightlife venues create buzz and become the places to be.',
-    metaTitle: 'Bar Marketing Agency | Nightlife Marketing | EDST',
-    metaDescription: 'EDST helps bars and nightlife venues create buzz. Event marketing, social media, and brand building.',
-    keywords: ['bar marketing', 'nightlife marketing', 'club marketing', 'nightclub marketing', 'bar social media'],
-    heroHeadline: 'Nightlife Marketing That Creates Scenes',
-    heroSubheadline: 'Become THE place to be. We help bars and nightlife venues create buzz that drives crowds.',
+    tagline: 'Build your nightlife brand',
+    description: 'Help bars and nightlife venues build brands that create buzz and attract crowds.',
+    metaTitle: 'Bar Marketing Agency | Nightlife Branding | EDST',
+    metaDescription: 'EDST helps bars and nightlife venues build brands that create buzz.',
+    keywords: ['bar marketing', 'nightlife branding', 'club marketing'],
+    heroHeadline: 'Build a Nightlife Brand That Creates Scenes',
+    heroSubheadline: 'Become THE place to be with a brand that generates buzz and draws crowds.',
     challenges: [
-      'Creating FOMO that drives attendance',
-      'Staying relevant in fast-changing nightlife',
-      'Building a brand, not just promoting events',
-      'Attracting the right crowd consistently'
+      'Creating consistent buzz',
+      'Building brand beyond just events',
+      'Staying relevant in fast-moving nightlife',
+      'Attracting the right crowd'
     ],
     solutions: [
-      'Event marketing and promotion',
-      'Influencer and VIP strategies',
-      'User-generated content campaigns',
-      'Brand identity and positioning'
+      'Brand identity and positioning',
+      'Buzz-building strategies',
+      'Community building',
+      'Event and social marketing'
     ],
     results: [
-      { metric: 'Avg Attendance Increase', value: '200%' },
-      { metric: 'Venues Served', value: '300+' },
-      { metric: 'Events Promoted', value: '2K+' },
-      { metric: 'Social Buzz Reach', value: '150M+' }
+      { metric: 'Brand Buzz', value: 'Created' },
+      { metric: 'Market Position', value: 'Elevated' },
+      { metric: 'Community Engagement', value: 'Increased' },
+      { metric: 'Brand Recognition', value: 'Built' }
     ],
     relatedIndustries: ['restaurants', 'entertainment', 'hospitality'],
-    popularServices: ['Event Marketing', 'Social Media', 'Influencer Partnerships', 'Brand Building']
+    popularServices: ['Brand Building', 'Social Media', 'Event Marketing', 'Community Building']
   },
   {
     name: 'Food & Beverage Brands',
@@ -1044,65 +1058,65 @@ export const industries: Industry[] = [
     category: 'food',
     icon: 'Coffee',
     tagline: 'Build your CPG brand',
-    description: 'Help food and beverage brands build awareness, drive trial, and create loyal customers.',
-    metaTitle: 'Food & Beverage Marketing Agency | CPG Marketing | EDST',
-    metaDescription: 'EDST helps food and beverage brands grow. Product launches, influencer marketing, and brand building.',
-    keywords: ['food brand marketing', 'beverage marketing', 'CPG marketing', 'food product marketing', 'drink brand marketing'],
-    heroHeadline: 'Food & Beverage Marketing That Drives Trial',
-    heroSubheadline: 'Turn first tastes into loyal customers. We help F&B brands build awareness and drive purchases.',
+    description: 'Help food and beverage brands build awareness and loyal customers.',
+    metaTitle: 'Food & Beverage Marketing Agency | CPG Branding | EDST',
+    metaDescription: 'EDST helps food and beverage brands build awareness and customer loyalty.',
+    keywords: ['food brand marketing', 'beverage branding', 'CPG marketing'],
+    heroHeadline: 'Build a Food & Beverage Brand People Love',
+    heroSubheadline: 'Stand out on the shelf and in the feed with a brand that drives trial and loyalty.',
     challenges: [
-      'Breaking through in crowded grocery aisles',
-      'Driving trial without massive ad budgets',
-      'Building brand loyalty in a promotional category',
-      'Creating content that makes people hungry'
+      'Standing out in crowded categories',
+      'Building brand beyond product',
+      'Creating content that engages',
+      'Building loyalty in a promotional market'
     ],
     solutions: [
-      'Influencer sampling and reviews',
-      'Recipe and usage content',
-      'User-generated content campaigns',
-      'Launch and distribution marketing'
+      'Brand identity and positioning',
+      'Content that engages and educates',
+      'Community building strategies',
+      'Visibility and awareness building'
     ],
     results: [
-      { metric: 'Avg Velocity Increase', value: '180%' },
-      { metric: 'F&B Brands Served', value: '250+' },
-      { metric: 'Sampling Reach', value: '50M+' },
-      { metric: 'Distribution Points Added', value: '100K+' }
+      { metric: 'Brand Awareness', value: 'Increased' },
+      { metric: 'Customer Engagement', value: 'Enhanced' },
+      { metric: 'Market Presence', value: 'Strengthened' },
+      { metric: 'Brand Loyalty', value: 'Built' }
     ],
     relatedIndustries: ['restaurants', 'retail', 'ecommerce'],
-    popularServices: ['Influencer Sampling', 'Recipe Content', 'Launch Campaigns', 'UGC Strategy']
+    popularServices: ['Brand Building', 'Content Strategy', 'Social Media', 'Influencer Marketing']
   },
   {
     name: 'Hotels & Hospitality',
     slug: 'hospitality',
     category: 'food',
     icon: 'Hotel',
-    tagline: 'Book more rooms',
-    description: 'Help hotels and hospitality brands drive direct bookings and build memorable experiences.',
-    metaTitle: 'Hotel Marketing Agency | Hospitality Marketing | EDST',
-    metaDescription: 'EDST helps hotels and hospitality brands drive bookings. Social media, influencer stays, and brand marketing.',
-    keywords: ['hotel marketing', 'hospitality marketing', 'hotel social media', 'hotel influencer marketing', 'resort marketing'],
-    heroHeadline: 'Hospitality Marketing That Books Rooms',
-    heroSubheadline: 'Drive direct bookings and build loyalty. We help hotels create experiences worth sharing.',
+    tagline: 'Build your hospitality brand',
+    description: 'Help hotels and hospitality brands build memorable brand experiences.',
+    metaTitle: 'Hotel Marketing Agency | Hospitality Branding | EDST',
+    metaDescription: 'EDST helps hotels and hospitality brands build memorable brand experiences.',
+    keywords: ['hotel marketing', 'hospitality branding', 'hotel social media'],
+    heroHeadline: 'Build a Hospitality Brand Worth Talking About',
+    heroSubheadline: 'Create a brand that inspires bookings and generates word-of-mouth.',
     challenges: [
-      'Competing with OTAs for direct bookings',
-      'Standing out in a crowded hospitality market',
-      'Creating content that captures the experience',
-      'Building loyalty in a price-sensitive market'
+      'Standing out in a crowded market',
+      'Building brand beyond just amenities',
+      'Creating content that captures experience',
+      'Competing with major chains and OTAs'
     ],
     solutions: [
-      'Influencer stay partnerships',
-      'Experience-focused content strategies',
-      'Direct booking campaigns',
-      'Loyalty and retention marketing'
+      'Brand experience positioning',
+      'Visual content strategies',
+      'Community and loyalty building',
+      'Direct relationship marketing'
     ],
     results: [
-      { metric: 'Avg Direct Booking Increase', value: '150%' },
-      { metric: 'Properties Served', value: '200+' },
-      { metric: 'Influencer Stays Arranged', value: '500+' },
-      { metric: 'Content Reach', value: '300M+' }
+      { metric: 'Brand Experience', value: 'Elevated' },
+      { metric: 'Guest Connection', value: 'Strengthened' },
+      { metric: 'Market Presence', value: 'Enhanced' },
+      { metric: 'Brand Recognition', value: 'Increased' }
     ],
     relatedIndustries: ['travel', 'restaurants', 'luxury'],
-    popularServices: ['Influencer Stays', 'Visual Content', 'Direct Booking Campaigns', 'Loyalty Marketing']
+    popularServices: ['Brand Building', 'Visual Content', 'Social Media', 'Experience Marketing']
   },
 
   // ═══════════════════════════════════════════════════════════════
@@ -1113,132 +1127,132 @@ export const industries: Industry[] = [
     slug: 'tech',
     category: 'tech',
     icon: 'Laptop',
-    tagline: 'Scale your tech brand',
-    description: 'Help tech companies and SaaS brands build awareness, generate leads, and acquire customers.',
-    metaTitle: 'Tech Marketing Agency | SaaS Marketing | EDST',
-    metaDescription: 'EDST helps tech and SaaS companies grow. Product marketing, content strategy, and customer acquisition.',
-    keywords: ['tech marketing', 'SaaS marketing', 'technology marketing', 'software marketing', 'B2B tech marketing'],
-    heroHeadline: 'Tech Marketing That Drives Growth',
-    heroSubheadline: 'Scale your tech company with marketing that matches your product. We help SaaS and tech brands acquire customers.',
+    tagline: 'Build your tech brand',
+    description: 'Help tech companies build brands that stand out and attract customers.',
+    metaTitle: 'Tech Marketing Agency | SaaS Branding | EDST',
+    metaDescription: 'EDST helps tech and SaaS companies build brands that stand out and attract customers.',
+    keywords: ['tech marketing', 'SaaS branding', 'technology marketing'],
+    heroHeadline: 'Build a Tech Brand That Stands Out',
+    heroSubheadline: 'Rise above the noise with a brand that resonates and drives customer interest.',
     challenges: [
-      'Explaining complex products simply',
       'Standing out in crowded tech categories',
-      'Converting free users to paid customers',
-      'Building brand in a feature-focused market'
+      'Building brand beyond just features',
+      'Creating content that engages',
+      'Looking established and trustworthy'
     ],
     solutions: [
-      'Product marketing and positioning',
-      'Content marketing that drives MQLs',
-      'Conversion optimization strategies',
-      'Thought leadership and PR'
+      'Brand positioning strategies',
+      'Thought leadership content',
+      'Professional presence building',
+      'Credibility and trust development'
     ],
     results: [
-      { metric: 'Avg MQL Increase', value: '250%' },
-      { metric: 'Tech Companies Served', value: '350+' },
-      { metric: 'ARR Growth Driven', value: '$100M+' },
-      { metric: 'Free to Paid Conversion', value: '+40%' }
+      { metric: 'Brand Positioning', value: 'Strengthened' },
+      { metric: 'Market Credibility', value: 'Established' },
+      { metric: 'Audience Engagement', value: 'Increased' },
+      { metric: 'Professional Image', value: 'Elevated' }
     ],
     relatedIndustries: ['startups', 'crypto', 'ecommerce'],
-    popularServices: ['Product Marketing', 'Content Strategy', 'Lead Generation', 'Thought Leadership']
+    popularServices: ['Brand Building', 'Content Strategy', 'Thought Leadership', 'Social Media']
   },
   {
     name: 'Startups',
     slug: 'startups',
     category: 'tech',
     icon: 'Rocket',
-    tagline: 'Launch and scale fast',
-    description: 'Help startups build brand awareness, acquire early customers, and grow without burning cash.',
-    metaTitle: 'Startup Marketing Agency | Growth Marketing | EDST',
-    metaDescription: 'EDST helps startups grow efficiently. Brand building, customer acquisition, and growth marketing strategies.',
-    keywords: ['startup marketing', 'growth marketing', 'startup growth', 'early-stage marketing', 'startup customer acquisition'],
-    heroHeadline: 'Startup Marketing That Doesn\'t Burn Cash',
-    heroSubheadline: 'Grow fast without wasting money. We help startups acquire customers efficiently and build lasting brands.',
+    tagline: 'Build your startup brand',
+    description: 'Help startups build credibility and brand presence from day one.',
+    metaTitle: 'Startup Marketing Agency | Startup Branding | EDST',
+    metaDescription: 'EDST helps startups build credibility and brand presence efficiently.',
+    keywords: ['startup marketing', 'startup branding', 'early-stage marketing'],
+    heroHeadline: 'Build a Startup Brand That Punches Up',
+    heroSubheadline: 'Look established from day one. Build credibility and presence that attracts customers and investors.',
     challenges: [
-      'Building awareness with limited budgets',
-      'Finding product-market fit signals',
-      'Acquiring customers efficiently',
-      'Building credibility as a new player'
+      'Building credibility as a new player',
+      'Looking professional with limited resources',
+      'Creating brand presence quickly',
+      'Standing out to get noticed'
     ],
     solutions: [
-      'Lean marketing strategies',
-      'Growth experiment frameworks',
-      'Early adopter acquisition tactics',
-      'Credibility building campaigns'
+      'Credibility building strategies',
+      'Professional brand development',
+      'Efficient presence building',
+      'Visibility and buzz creation'
     ],
     results: [
-      { metric: 'Avg CAC Reduction', value: '45%' },
-      { metric: 'Startups Served', value: '500+' },
-      { metric: 'Funding Raised Post', value: '$200M+' },
-      { metric: 'Success Rate', value: '3x industry avg' }
+      { metric: 'Brand Credibility', value: 'Established' },
+      { metric: 'Professional Image', value: 'Built' },
+      { metric: 'Market Visibility', value: 'Increased' },
+      { metric: 'Investor Perception', value: 'Enhanced' }
     ],
     relatedIndustries: ['tech', 'ecommerce', 'finance'],
-    popularServices: ['Growth Marketing', 'Brand Building', 'User Acquisition', 'PR & Buzz']
+    popularServices: ['Brand Building', 'Credibility Strategy', 'Social Media', 'PR & Visibility']
   },
   {
     name: 'Crypto & Web3',
     slug: 'crypto',
     category: 'tech',
     icon: 'Coins',
-    tagline: 'Build your Web3 community',
-    description: 'Help crypto projects, NFT collections, and Web3 companies build communities and drive adoption.',
-    metaTitle: 'Crypto Marketing Agency | Web3 Marketing | EDST',
-    metaDescription: 'EDST helps crypto and Web3 projects grow. Community building, launch marketing, and NFT promotion.',
-    keywords: ['crypto marketing', 'web3 marketing', 'NFT marketing', 'blockchain marketing', 'defi marketing'],
-    heroHeadline: 'Web3 Marketing for the Next Era',
-    heroSubheadline: 'Build communities that believe. We help crypto and Web3 projects find their tribe and drive adoption.',
+    tagline: 'Build your Web3 brand',
+    description: 'Help crypto and Web3 projects build trusted communities and credible presence.',
+    metaTitle: 'Crypto Marketing Agency | Web3 Branding | EDST',
+    metaDescription: 'EDST helps crypto and Web3 projects build trusted communities and brand presence.',
+    keywords: ['crypto marketing', 'web3 branding', 'NFT marketing'],
+    heroHeadline: 'Build a Web3 Brand That Builds Trust',
+    heroSubheadline: 'Stand out in a skeptical space with a brand that builds credibility and community.',
     challenges: [
       'Building trust in a skeptical environment',
-      'Creating communities, not just followers',
-      'Marketing in a constantly changing landscape',
-      'Standing out among thousands of projects'
+      'Creating credible brand presence',
+      'Standing out among thousands of projects',
+      'Building real community, not just followers'
     ],
     solutions: [
+      'Trust and credibility building',
       'Community building strategies',
-      'Launch and mint campaigns',
-      'Influencer and KOL partnerships',
-      'Discord and Twitter growth tactics'
+      'Professional brand presence',
+      'Engagement that builds believers'
     ],
     results: [
-      { metric: 'Communities Built', value: '200+' },
-      { metric: 'Avg Community Size', value: '50K+' },
-      { metric: 'Successful Launches', value: '150+' },
-      { metric: 'TVL Influenced', value: '$500M+' }
+      { metric: 'Community Trust', value: 'Established' },
+      { metric: 'Brand Credibility', value: 'Built' },
+      { metric: 'Community Engagement', value: 'Increased' },
+      { metric: 'Market Presence', value: 'Strengthened' }
     ],
     relatedIndustries: ['tech', 'gaming', 'finance'],
-    popularServices: ['Community Building', 'Launch Marketing', 'KOL Partnerships', 'Discord Growth']
+    popularServices: ['Community Building', 'Brand Building', 'Content Strategy', 'Social Media']
   },
   {
     name: 'Apps & Mobile',
     slug: 'apps',
     category: 'tech',
     icon: 'Smartphone',
-    tagline: 'Drive app downloads',
-    description: 'Help mobile apps drive downloads, improve retention, and build engaged user bases.',
-    metaTitle: 'App Marketing Agency | Mobile Marketing | EDST',
-    metaDescription: 'EDST helps mobile apps grow. User acquisition, ASO, and retention marketing for iOS and Android.',
-    keywords: ['app marketing', 'mobile marketing', 'app store optimization', 'app user acquisition', 'mobile app marketing'],
-    heroHeadline: 'App Marketing That Drives Downloads',
-    heroSubheadline: 'Get your app on screens and keep it there. We help mobile apps acquire and retain users.',
+    tagline: 'Build your app brand',
+    description: 'Help mobile apps build brand presence that attracts and retains users.',
+    metaTitle: 'App Marketing Agency | Mobile Branding | EDST',
+    metaDescription: 'EDST helps mobile apps build brand presence that attracts and retains users.',
+    keywords: ['app marketing', 'mobile branding', 'app store marketing'],
+    heroHeadline: 'Build an App Brand Users Remember',
+    heroSubheadline: 'Stand out in a sea of apps with a brand that attracts users and keeps them engaged.',
     challenges: [
       'Standing out among millions of apps',
-      'Acquiring users cost-effectively',
-      'Reducing churn and improving retention',
-      'Driving reviews and ratings'
+      'Building brand beyond just features',
+      'Creating presence that attracts users',
+      'Building loyalty and retention'
     ],
     solutions: [
-      'User acquisition campaigns',
-      'App store optimization',
-      'Retention and engagement marketing',
-      'Review generation strategies'
+      'App brand positioning',
+      'User engagement strategies',
+      'Professional presence building',
+      'Community and loyalty development'
     ],
     results: [
-      { metric: 'Avg Download Increase', value: '300%' },
-      { metric: 'Apps Served', value: '250+' },
-      { metric: 'Downloads Driven', value: '10M+' },
-      { metric: 'Avg Retention Improvement', value: '45%' }
+      { metric: 'Brand Recognition', value: 'Increased' },
+      { metric: 'User Engagement', value: 'Enhanced' },
+      { metric: 'Market Presence', value: 'Strengthened' },
+      { metric: 'User Loyalty', value: 'Built' }
     ],
     relatedIndustries: ['tech', 'gaming', 'ecommerce'],
-    popularServices: ['User Acquisition', 'ASO', 'Retention Marketing', 'Review Campaigns']
+    popularServices: ['Brand Building', 'User Engagement', 'Social Media', 'Content Strategy']
   },
 
   // ═══════════════════════════════════════════════════════════════
@@ -1249,99 +1263,99 @@ export const industries: Industry[] = [
     slug: 'ecommerce',
     category: 'retail',
     icon: 'ShoppingCart',
-    tagline: 'Scale your online store',
-    description: 'Help e-commerce brands drive traffic, increase conversions, and build loyal customer bases.',
-    metaTitle: 'E-commerce Marketing Agency | Online Store Marketing | EDST',
-    metaDescription: 'EDST helps e-commerce brands grow. Traffic, conversions, and customer acquisition for online stores.',
-    keywords: ['ecommerce marketing', 'online store marketing', 'shopify marketing', 'DTC marketing', 'ecommerce growth'],
-    heroHeadline: 'E-commerce Marketing That Converts',
-    heroSubheadline: 'Drive traffic that buys. We help online stores turn browsers into buyers and buyers into repeat customers.',
+    tagline: 'Build your online brand',
+    description: 'Help e-commerce brands build presence that drives traffic and creates loyal customers.',
+    metaTitle: 'E-commerce Marketing Agency | Online Store Branding | EDST',
+    metaDescription: 'EDST helps e-commerce brands build presence that attracts customers and builds loyalty.',
+    keywords: ['ecommerce marketing', 'online store branding', 'DTC marketing'],
+    heroHeadline: 'Build an E-commerce Brand That Sells',
+    heroSubheadline: 'Stand out from the sea of online stores with a brand that attracts and converts.',
     challenges: [
-      'Driving qualified traffic cost-effectively',
-      'Converting browsers into buyers',
-      'Building loyalty in a one-click market',
-      'Competing with Amazon and big box retailers'
+      'Standing out among endless online options',
+      'Building brand trust online',
+      'Creating presence that converts',
+      'Building loyalty in a one-click market'
     ],
     solutions: [
-      'Social commerce strategies',
-      'Influencer and UGC campaigns',
-      'Email and SMS marketing',
-      'Retention and loyalty programs'
+      'Brand identity and positioning',
+      'Trust-building strategies',
+      'Content that engages and converts',
+      'Community and loyalty building'
     ],
     results: [
-      { metric: 'Avg Revenue Increase', value: '280%' },
-      { metric: 'Stores Served', value: '800+' },
-      { metric: 'Conversions Driven', value: '2M+' },
-      { metric: 'Avg AOV Increase', value: '35%' }
+      { metric: 'Brand Recognition', value: 'Increased' },
+      { metric: 'Customer Trust', value: 'Built' },
+      { metric: 'Engagement', value: 'Enhanced' },
+      { metric: 'Loyalty', value: 'Strengthened' }
     ],
     relatedIndustries: ['fashion', 'beauty', 'food-beverage'],
-    popularServices: ['Social Commerce', 'Influencer Marketing', 'Email/SMS', 'Retention Programs']
+    popularServices: ['Brand Building', 'Social Media', 'Content Strategy', 'Community Building']
   },
   {
     name: 'Local Retail',
     slug: 'retail',
     category: 'retail',
     icon: 'Store',
-    tagline: 'Drive foot traffic',
-    description: 'Help local retailers attract customers and compete in an omnichannel world.',
-    metaTitle: 'Retail Marketing Agency | Local Store Marketing | EDST',
-    metaDescription: 'EDST helps local retail stores grow. Foot traffic, local marketing, and omnichannel strategies.',
-    keywords: ['retail marketing', 'local store marketing', 'brick and mortar marketing', 'retail foot traffic', 'shop local marketing'],
-    heroHeadline: 'Retail Marketing for the Modern Store',
-    heroSubheadline: 'Drive customers through your doors. We help local retailers thrive in an Amazon world.',
+    tagline: 'Build your local brand',
+    description: 'Help local retailers build brands that attract customers and build community loyalty.',
+    metaTitle: 'Retail Marketing Agency | Local Store Branding | EDST',
+    metaDescription: 'EDST helps local retail stores build brands that attract customers.',
+    keywords: ['retail marketing', 'local store branding', 'brick and mortar marketing'],
+    heroHeadline: 'Build a Retail Brand People Choose',
+    heroSubheadline: 'Stand out locally with a brand that builds community and attracts loyal customers.',
     challenges: [
-      'Competing with online-only retailers',
-      'Driving foot traffic consistently',
-      'Building local community and loyalty',
-      'Creating compelling in-store experiences'
+      'Competing with online retailers',
+      'Building a brand people remember',
+      'Creating local community loyalty',
+      'Standing out in local markets'
     ],
     solutions: [
-      'Local marketing strategies',
-      'Google My Business optimization',
-      'Community building campaigns',
-      'Event and experiential marketing'
+      'Local brand positioning',
+      'Community building strategies',
+      'Professional presence building',
+      'Local visibility and engagement'
     ],
     results: [
-      { metric: 'Avg Foot Traffic Increase', value: '150%' },
-      { metric: 'Retailers Served', value: '400+' },
-      { metric: 'Local Reviews Generated', value: '20K+' },
-      { metric: 'Event Attendance Driven', value: '100K+' }
+      { metric: 'Local Recognition', value: 'Increased' },
+      { metric: 'Community Loyalty', value: 'Built' },
+      { metric: 'Brand Presence', value: 'Strengthened' },
+      { metric: 'Customer Connection', value: 'Enhanced' }
     ],
     relatedIndustries: ['small-business', 'restaurants', 'home-services'],
-    popularServices: ['Local Marketing', 'Google My Business', 'Event Marketing', 'Community Building']
+    popularServices: ['Brand Building', 'Local Marketing', 'Community Building', 'Social Media']
   },
   {
     name: 'Home Services',
     slug: 'home-services',
     category: 'retail',
     icon: 'Wrench',
-    tagline: 'Fill your schedule',
-    description: 'Help home service providers like plumbers, electricians, and contractors generate leads and build reputations.',
-    metaTitle: 'Home Services Marketing Agency | Contractor Marketing | EDST',
-    metaDescription: 'EDST helps home service businesses grow. Lead generation, reputation management, and local marketing.',
-    keywords: ['home services marketing', 'contractor marketing', 'plumber marketing', 'electrician marketing', 'HVAC marketing'],
-    heroHeadline: 'Home Services Marketing That Fills Calendars',
-    heroSubheadline: 'Keep your trucks rolling. We help home service businesses generate quality leads and build sterling reputations.',
+    tagline: 'Build your service brand',
+    description: 'Help home service providers build trusted brands that attract quality customers.',
+    metaTitle: 'Home Services Marketing Agency | Contractor Branding | EDST',
+    metaDescription: 'EDST helps home service businesses build trusted brands that attract customers.',
+    keywords: ['home services marketing', 'contractor branding', 'plumber marketing'],
+    heroHeadline: 'Build a Service Brand People Trust',
+    heroSubheadline: 'Stand out with a professional brand that builds trust before you ever walk through the door.',
     challenges: [
-      'Generating quality leads consistently',
       'Building trust before entering homes',
-      'Managing online reputation',
-      'Competing with franchise operations'
+      'Looking professional and established',
+      'Standing out from competitors',
+      'Building reputation in local markets'
     ],
     solutions: [
-      'Lead generation campaigns',
-      'Review generation and management',
-      'Local SEO and Google My Business',
-      'Trust-building content strategies'
+      'Trust and credibility building',
+      'Professional brand development',
+      'Reputation building strategies',
+      'Local presence and visibility'
     ],
     results: [
-      { metric: 'Avg Lead Increase', value: '200%' },
-      { metric: 'Home Service Businesses', value: '600+' },
-      { metric: 'Jobs Booked', value: '100K+' },
-      { metric: 'Avg Review Rating', value: '4.8★' }
+      { metric: 'Brand Trust', value: 'Established' },
+      { metric: 'Professional Image', value: 'Elevated' },
+      { metric: 'Local Reputation', value: 'Strengthened' },
+      { metric: 'Market Presence', value: 'Increased' }
     ],
     relatedIndustries: ['real-estate', 'small-business', 'retail'],
-    popularServices: ['Lead Generation', 'Review Management', 'Local SEO', 'Google My Business']
+    popularServices: ['Brand Building', 'Reputation Management', 'Local Marketing', 'Social Media']
   },
 
   // ═══════════════════════════════════════════════════════════════
@@ -1352,99 +1366,99 @@ export const industries: Industry[] = [
     slug: 'photography',
     category: 'creative',
     icon: 'Camera',
-    tagline: 'Book more shoots',
-    description: 'Help photographers and videographers attract clients and build thriving creative businesses.',
-    metaTitle: 'Photography Marketing Agency | Photographer Marketing | EDST',
-    metaDescription: 'EDST helps photographers book more clients. Portfolio marketing, social media, and lead generation.',
-    keywords: ['photography marketing', 'photographer marketing', 'wedding photographer marketing', 'portrait photography marketing'],
-    heroHeadline: 'Photography Marketing That Books Shoots',
-    heroSubheadline: 'Your work speaks for itself — when people see it. We help photographers get their work in front of ideal clients.',
+    tagline: 'Build your creative brand',
+    description: 'Help photographers build professional brands that attract ideal clients.',
+    metaTitle: 'Photography Marketing Agency | Photographer Branding | EDST',
+    metaDescription: 'EDST helps photographers build professional brands that attract clients.',
+    keywords: ['photography marketing', 'photographer branding', 'creative marketing'],
+    heroHeadline: 'Build a Photography Brand That Books',
+    heroSubheadline: 'Your work speaks for itself — when people see it. Build a brand that gets your work in front of ideal clients.',
     challenges: [
-      'Standing out in a saturated photography market',
-      'Attracting clients who value quality over price',
-      'Building a consistent inquiry pipeline',
-      'Showcasing work without looking salesy'
+      'Standing out in a saturated market',
+      'Attracting quality clients',
+      'Building consistent presence',
+      'Looking as professional as your work'
     ],
     solutions: [
-      'Portfolio optimization strategies',
-      'Social media content systems',
-      'Referral amplification programs',
-      'Ideal client attraction campaigns'
+      'Professional brand positioning',
+      'Portfolio and presence optimization',
+      'Ideal client attraction strategies',
+      'Consistent brand experience'
     ],
     results: [
-      { metric: 'Avg Booking Increase', value: '180%' },
-      { metric: 'Photographers Served', value: '500+' },
-      { metric: 'Shoots Booked', value: '25K+' },
-      { metric: 'Avg Package Price Increase', value: '50%' }
+      { metric: 'Brand Professionalism', value: 'Elevated' },
+      { metric: 'Client Quality', value: 'Enhanced' },
+      { metric: 'Market Presence', value: 'Strengthened' },
+      { metric: 'Brand Recognition', value: 'Increased' }
     ],
     relatedIndustries: ['film-video', 'wedding', 'influencers'],
-    popularServices: ['Portfolio Marketing', 'Social Media', 'Referral Programs', 'Local Marketing']
+    popularServices: ['Brand Building', 'Portfolio Marketing', 'Social Media', 'Content Strategy']
   },
   {
     name: 'Weddings & Events',
     slug: 'wedding',
     category: 'creative',
     icon: 'Heart',
-    tagline: 'Book your calendar',
-    description: 'Help wedding and event professionals attract clients and build booked-out businesses.',
-    metaTitle: 'Wedding Marketing Agency | Event Vendor Marketing | EDST',
-    metaDescription: 'EDST helps wedding and event professionals grow. Lead generation, social media, and vendor marketing.',
-    keywords: ['wedding marketing', 'wedding vendor marketing', 'event planner marketing', 'wedding photographer marketing'],
-    heroHeadline: 'Wedding & Event Marketing That Books',
-    heroSubheadline: 'Build a booked-out business doing what you love. We help wedding and event pros attract dream clients.',
+    tagline: 'Build your event brand',
+    description: 'Help wedding and event professionals build brands that attract dream clients.',
+    metaTitle: 'Wedding Marketing Agency | Event Branding | EDST',
+    metaDescription: 'EDST helps wedding and event professionals build brands that attract clients.',
+    keywords: ['wedding marketing', 'wedding vendor branding', 'event planner marketing'],
+    heroHeadline: 'Build a Wedding Brand That Books Dream Clients',
+    heroSubheadline: 'Attract couples who value what you do with a brand that showcases your best work.',
     challenges: [
-      'Reaching engaged couples in a crowded market',
-      'Booking consistently year-round',
-      'Building a portfolio of showcase events',
-      'Commanding premium pricing'
+      'Standing out in the wedding market',
+      'Attracting quality clients',
+      'Building presence consistently',
+      'Commanding premium positioning'
     ],
     solutions: [
-      'Pinterest and visual marketing strategies',
-      'Vendor network and referral marketing',
-      'Styled shoot strategies',
-      'Premium positioning and pricing'
+      'Brand positioning strategies',
+      'Visual excellence and portfolio presentation',
+      'Ideal client attraction',
+      'Premium brand development'
     ],
     results: [
-      { metric: 'Avg Booking Increase', value: '200%' },
-      { metric: 'Wedding Pros Served', value: '400+' },
-      { metric: 'Events Booked', value: '15K+' },
-      { metric: 'Avg Package Price Increase', value: '65%' }
+      { metric: 'Brand Positioning', value: 'Elevated' },
+      { metric: 'Client Quality', value: 'Enhanced' },
+      { metric: 'Professional Image', value: 'Strengthened' },
+      { metric: 'Market Presence', value: 'Increased' }
     ],
     relatedIndustries: ['photography', 'entertainment', 'hospitality'],
-    popularServices: ['Pinterest Marketing', 'Vendor Networks', 'Styled Shoots', 'Premium Positioning']
+    popularServices: ['Brand Building', 'Visual Marketing', 'Social Media', 'Portfolio Strategy']
   },
   {
     name: 'Art & Design',
     slug: 'art-design',
     category: 'creative',
     icon: 'Palette',
-    tagline: 'Sell your creative work',
-    description: 'Help artists and designers build audiences and turn creative work into sustainable businesses.',
-    metaTitle: 'Art Marketing Agency | Artist Marketing | EDST',
-    metaDescription: 'EDST helps artists and designers sell their work. Audience building, sales marketing, and creative business growth.',
-    keywords: ['art marketing', 'artist marketing', 'graphic design marketing', 'creative business marketing', 'sell art online'],
-    heroHeadline: 'Marketing for Artists Who Want to Thrive',
-    heroSubheadline: 'Turn your art into income. We help artists build audiences and businesses around their creative work.',
+    tagline: 'Build your creative brand',
+    description: 'Help artists and designers build brands that attract collectors and clients.',
+    metaTitle: 'Art Marketing Agency | Artist Branding | EDST',
+    metaDescription: 'EDST helps artists and designers build brands that attract buyers and opportunities.',
+    keywords: ['art marketing', 'artist branding', 'creative business marketing'],
+    heroHeadline: 'Build a Creative Brand That Sells',
+    heroSubheadline: 'Turn your art into income with a brand that attracts collectors and clients.',
     challenges: [
-      'Selling creative work without "selling out"',
-      'Building an audience that actually buys',
-      'Pricing work appropriately',
-      'Creating sustainable creative income'
+      'Selling creative work authentically',
+      'Building audience that buys',
+      'Creating sustainable creative income',
+      'Looking professional as a business'
     ],
     solutions: [
-      'Authentic audience building',
-      'Artist brand positioning',
-      'Launch and collection marketing',
-      'Collector relationship building'
+      'Authentic brand positioning',
+      'Audience building strategies',
+      'Professional presence development',
+      'Collector and client attraction'
     ],
     results: [
-      { metric: 'Avg Sales Increase', value: '250%' },
-      { metric: 'Artists Served', value: '300+' },
-      { metric: 'Art Sales Generated', value: '$10M+' },
-      { metric: 'Avg Audience Growth', value: '400%' }
+      { metric: 'Brand Authenticity', value: 'Preserved' },
+      { metric: 'Audience Building', value: 'Accelerated' },
+      { metric: 'Professional Image', value: 'Elevated' },
+      { metric: 'Collector Interest', value: 'Increased' }
     ],
     relatedIndustries: ['photography', 'influencers', 'fashion'],
-    popularServices: ['Audience Building', 'Launch Marketing', 'Brand Positioning', 'Collector Marketing']
+    popularServices: ['Brand Building', 'Audience Building', 'Social Media', 'Portfolio Marketing']
   },
 
   // ═══════════════════════════════════════════════════════════════
@@ -1455,198 +1469,198 @@ export const industries: Industry[] = [
     slug: 'cannabis',
     category: 'lifestyle',
     icon: 'Leaf',
-    tagline: 'Grow your cannabis brand',
-    description: 'Help cannabis brands navigate marketing restrictions and build compliant, effective campaigns.',
-    metaTitle: 'Cannabis Marketing Agency | Marijuana Marketing | EDST',
-    metaDescription: 'EDST helps cannabis brands grow within compliance. Brand building, social media, and customer acquisition.',
-    keywords: ['cannabis marketing', 'marijuana marketing', 'dispensary marketing', 'CBD marketing', 'cannabis brand marketing'],
-    heroHeadline: 'Cannabis Marketing That Works Within the Rules',
-    heroSubheadline: 'Build a cannabis brand that breaks through — legally. We help cannabis companies grow compliantly.',
+    tagline: 'Build your cannabis brand',
+    description: 'Help cannabis brands build credible presence within compliance requirements.',
+    metaTitle: 'Cannabis Marketing Agency | Cannabis Branding | EDST',
+    metaDescription: 'EDST helps cannabis brands build credible presence while staying compliant.',
+    keywords: ['cannabis marketing', 'cannabis branding', 'dispensary marketing'],
+    heroHeadline: 'Build a Cannabis Brand That Stands Out',
+    heroSubheadline: 'Build credibility and community in a restricted landscape. Professional branding that works within the rules.',
     challenges: [
       'Marketing with platform restrictions',
       'Building brand in a stigmatized industry',
-      'Staying compliant across jurisdictions',
-      'Standing out in a rapidly commoditizing market'
+      'Creating credible professional presence',
+      'Standing out in a commoditizing market'
     ],
     solutions: [
-      'Compliant marketing strategies',
-      'Brand building without paid ads',
-      'Community and loyalty marketing',
-      'Educational content strategies'
+      'Compliant brand strategies',
+      'Credibility and trust building',
+      'Community development approaches',
+      'Professional presence building'
     ],
     results: [
-      { metric: 'Avg Revenue Increase', value: '200%' },
-      { metric: 'Cannabis Brands Served', value: '150+' },
-      { metric: 'Dispensary Visits Driven', value: '500K+' },
-      { metric: 'Brand Awareness Lift', value: '300%' }
+      { metric: 'Brand Credibility', value: 'Established' },
+      { metric: 'Community Building', value: 'Achieved' },
+      { metric: 'Market Presence', value: 'Strengthened' },
+      { metric: 'Professional Image', value: 'Elevated' }
     ],
     relatedIndustries: ['wellness', 'retail', 'ecommerce'],
-    popularServices: ['Brand Building', 'Community Marketing', 'Content Strategy', 'Loyalty Programs']
+    popularServices: ['Brand Building', 'Community Building', 'Content Strategy', 'Social Media']
   },
   {
     name: 'Nonprofit',
     slug: 'nonprofit',
     category: 'business',
     icon: 'Heart',
-    tagline: 'Amplify your mission',
-    description: 'Help nonprofits and causes build awareness, drive donations, and amplify their impact.',
-    metaTitle: 'Nonprofit Marketing Agency | Cause Marketing | EDST',
-    metaDescription: 'EDST helps nonprofits amplify their impact. Awareness campaigns, fundraising marketing, and donor engagement.',
-    keywords: ['nonprofit marketing', 'cause marketing', 'charity marketing', 'fundraising marketing', 'nonprofit social media'],
-    heroHeadline: 'Nonprofit Marketing That Moves People',
-    heroSubheadline: 'Your cause deserves to be heard. We help nonprofits build awareness and inspire action.',
+    tagline: 'Build your mission brand',
+    description: 'Help nonprofits build presence that amplifies their mission and impact.',
+    metaTitle: 'Nonprofit Marketing Agency | Cause Branding | EDST',
+    metaDescription: 'EDST helps nonprofits build brand presence that amplifies their mission.',
+    keywords: ['nonprofit marketing', 'cause branding', 'charity marketing'],
+    heroHeadline: 'Build a Nonprofit Brand That Moves People',
+    heroSubheadline: 'Your cause deserves to be heard. Build presence that inspires action and support.',
     challenges: [
-      'Limited marketing budgets',
-      'Standing out among thousands of causes',
-      'Converting awareness into donations',
-      'Building long-term donor relationships'
+      'Limited marketing resources',
+      'Standing out among many causes',
+      'Building credibility and trust',
+      'Inspiring action and support'
     ],
     solutions: [
+      'Mission-driven brand building',
       'Impact storytelling strategies',
-      'Fundraising campaign marketing',
-      'Donor engagement programs',
-      'Awareness and advocacy campaigns'
+      'Credibility and trust development',
+      'Community engagement approaches'
     ],
     results: [
-      { metric: 'Avg Donation Increase', value: '180%' },
-      { metric: 'Nonprofits Served', value: '200+' },
-      { metric: 'Donations Influenced', value: '$25M+' },
-      { metric: 'Awareness Reach', value: '100M+' }
+      { metric: 'Mission Visibility', value: 'Increased' },
+      { metric: 'Community Engagement', value: 'Enhanced' },
+      { metric: 'Brand Credibility', value: 'Strengthened' },
+      { metric: 'Supporter Connection', value: 'Deepened' }
     ],
-    relatedIndustries: ['healthcare', 'education', 'environment'],
-    popularServices: ['Storytelling', 'Fundraising Campaigns', 'Donor Engagement', 'Awareness Marketing']
+    relatedIndustries: ['healthcare', 'education'],
+    popularServices: ['Brand Building', 'Storytelling', 'Community Building', 'Content Strategy']
   },
   {
     name: 'Education',
     slug: 'education',
     category: 'business',
     icon: 'GraduationCap',
-    tagline: 'Grow your educational brand',
-    description: 'Help schools, courses, and educational businesses attract students and build impactful brands.',
-    metaTitle: 'Education Marketing Agency | Course Marketing | EDST',
-    metaDescription: 'EDST helps educational businesses grow. Student acquisition, course marketing, and brand building.',
-    keywords: ['education marketing', 'course marketing', 'online course marketing', 'school marketing', 'educational marketing'],
-    heroHeadline: 'Education Marketing That Enrolls Students',
-    heroSubheadline: 'Fill your courses and classrooms. We help educational brands attract students who are ready to learn.',
+    tagline: 'Build your education brand',
+    description: 'Help educational businesses build trusted brands that attract students.',
+    metaTitle: 'Education Marketing Agency | Course Branding | EDST',
+    metaDescription: 'EDST helps educational businesses build trusted brands that attract students.',
+    keywords: ['education marketing', 'course branding', 'online course marketing'],
+    heroHeadline: 'Build an Education Brand Students Trust',
+    heroSubheadline: 'Stand out with a brand that builds credibility and attracts committed learners.',
     challenges: [
       'Standing out in a crowded education market',
+      'Building credibility and trust',
       'Demonstrating value before enrollment',
-      'Converting interest into committed students',
-      'Building credibility and trust'
+      'Creating professional presence'
     ],
     solutions: [
-      'Student acquisition campaigns',
-      'Authority and credibility building',
-      'Course launch marketing',
+      'Credibility and authority building',
+      'Professional brand development',
+      'Trust-building strategies',
       'Student success storytelling'
     ],
     results: [
-      { metric: 'Avg Enrollment Increase', value: '220%' },
-      { metric: 'Education Brands Served', value: '300+' },
-      { metric: 'Students Enrolled', value: '100K+' },
-      { metric: 'Enrollment Increase', value: '220%' }
+      { metric: 'Brand Credibility', value: 'Established' },
+      { metric: 'Student Trust', value: 'Built' },
+      { metric: 'Market Presence', value: 'Strengthened' },
+      { metric: 'Professional Image', value: 'Elevated' }
     ],
     relatedIndustries: ['coaches', 'tech', 'nonprofit'],
-    popularServices: ['Student Acquisition', 'Course Launches', 'Authority Building', 'Success Stories']
+    popularServices: ['Brand Building', 'Authority Building', 'Content Strategy', 'Social Media']
   },
   {
     name: 'Automotive',
     slug: 'automotive',
     category: 'retail',
     icon: 'Car',
-    tagline: 'Drive more sales',
-    description: 'Help automotive businesses, dealerships, and car brands drive traffic and close more deals.',
-    metaTitle: 'Automotive Marketing Agency | Car Dealer Marketing | EDST',
-    metaDescription: 'EDST helps automotive businesses grow. Dealership marketing, car sales, and automotive brand building.',
-    keywords: ['automotive marketing', 'car dealer marketing', 'dealership marketing', 'car sales marketing', 'automotive social media'],
-    heroHeadline: 'Automotive Marketing That Moves Metal',
-    heroSubheadline: 'Drive buyers to your lot. We help automotive businesses generate leads and close more deals.',
+    tagline: 'Build your dealer brand',
+    description: 'Help automotive businesses build trusted brands that attract quality buyers.',
+    metaTitle: 'Automotive Marketing Agency | Dealer Branding | EDST',
+    metaDescription: 'EDST helps automotive businesses build trusted brands that attract buyers.',
+    keywords: ['automotive marketing', 'car dealer branding', 'dealership marketing'],
+    heroHeadline: 'Build an Automotive Brand Buyers Trust',
+    heroSubheadline: 'Stand out from the competition with a brand that builds trust and attracts quality buyers.',
     challenges: [
-      'Standing out in a competitive dealer market',
+      'Standing out in a competitive market',
       'Building trust before the test drive',
-      'Generating quality leads consistently',
+      'Looking professional and trustworthy',
       'Differentiating beyond price'
     ],
     solutions: [
-      'Lead generation campaigns',
-      'Inventory marketing strategies',
-      'Review and reputation management',
-      'Service department marketing'
+      'Trust and credibility building',
+      'Professional brand development',
+      'Reputation building strategies',
+      'Value-based positioning'
     ],
     results: [
-      { metric: 'Avg Lead Increase', value: '180%' },
-      { metric: 'Dealers Served', value: '150+' },
-      { metric: 'Vehicles Sold', value: '25K+' },
-      { metric: 'Service Revenue Increase', value: '120%' }
+      { metric: 'Brand Trust', value: 'Established' },
+      { metric: 'Professional Image', value: 'Elevated' },
+      { metric: 'Market Reputation', value: 'Strengthened' },
+      { metric: 'Customer Confidence', value: 'Increased' }
     ],
     relatedIndustries: ['home-services', 'finance', 'insurance'],
-    popularServices: ['Lead Generation', 'Inventory Marketing', 'Review Management', 'Service Marketing']
+    popularServices: ['Brand Building', 'Reputation Management', 'Social Media', 'Content Strategy']
   },
   {
     name: 'Construction',
     slug: 'construction',
     category: 'business',
     icon: 'HardHat',
-    tagline: 'Build your reputation',
-    description: 'Help construction companies, contractors, and builders generate leads and build dominant reputations.',
-    metaTitle: 'Construction Marketing Agency | Contractor Marketing | EDST',
-    metaDescription: 'EDST helps construction companies grow. Lead generation, reputation building, and contractor marketing.',
-    keywords: ['construction marketing', 'contractor marketing', 'builder marketing', 'construction lead generation', 'home builder marketing'],
-    heroHeadline: 'Construction Marketing That Builds Pipelines',
-    heroSubheadline: 'Keep your crews busy. We help construction companies generate quality leads and build dominant reputations.',
+    tagline: 'Build your company brand',
+    description: 'Help construction companies build professional brands that attract quality projects.',
+    metaTitle: 'Construction Marketing Agency | Contractor Branding | EDST',
+    metaDescription: 'EDST helps construction companies build professional brands that attract projects.',
+    keywords: ['construction marketing', 'contractor branding', 'builder marketing'],
+    heroHeadline: 'Build a Construction Brand That Commands Respect',
+    heroSubheadline: 'Stand out with a professional brand that builds trust and attracts quality projects.',
     challenges: [
-      'Generating quality project leads',
       'Building trust for significant investments',
-      'Showcasing work effectively',
-      'Standing out among contractors'
+      'Looking professional and established',
+      'Standing out from competitors',
+      'Showcasing work effectively'
     ],
     solutions: [
-      'Project lead generation',
-      'Portfolio and case study marketing',
-      'Review and reputation building',
-      'Referral network development'
+      'Professional brand development',
+      'Trust and credibility building',
+      'Portfolio and case presentation',
+      'Reputation building strategies'
     ],
     results: [
-      { metric: 'Avg Lead Increase', value: '200%' },
-      { metric: 'Contractors Served', value: '300+' },
-      { metric: 'Project Value Generated', value: '$100M+' },
-      { metric: 'Avg Project Size Increase', value: '50%' }
+      { metric: 'Brand Credibility', value: 'Established' },
+      { metric: 'Professional Image', value: 'Elevated' },
+      { metric: 'Client Trust', value: 'Strengthened' },
+      { metric: 'Market Reputation', value: 'Enhanced' }
     ],
-    relatedIndustries: ['real-estate', 'home-services', 'architecture'],
-    popularServices: ['Lead Generation', 'Portfolio Marketing', 'Reputation Building', 'Referral Programs']
+    relatedIndustries: ['real-estate', 'home-services'],
+    popularServices: ['Brand Building', 'Portfolio Marketing', 'Reputation Building', 'Social Media']
   },
   {
     name: 'Mortgage & Lending',
     slug: 'mortgage',
     category: 'business',
     icon: 'Building',
-    tagline: 'Close more loans',
-    description: 'Help mortgage professionals and lenders generate leads and build referral networks.',
-    metaTitle: 'Mortgage Marketing Agency | Loan Officer Marketing | EDST',
-    metaDescription: 'EDST helps mortgage professionals grow. Lead generation, realtor partnerships, and personal branding.',
-    keywords: ['mortgage marketing', 'loan officer marketing', 'lender marketing', 'mortgage lead generation', 'loan officer branding'],
-    heroHeadline: 'Mortgage Marketing That Closes Loans',
-    heroSubheadline: 'Build a pipeline of qualified borrowers. We help mortgage pros generate leads and strengthen referral networks.',
+    tagline: 'Build your lending brand',
+    description: 'Help mortgage professionals build trusted personal brands that attract clients.',
+    metaTitle: 'Mortgage Marketing Agency | Loan Officer Branding | EDST',
+    metaDescription: 'EDST helps mortgage professionals build trusted personal brands.',
+    keywords: ['mortgage marketing', 'loan officer branding', 'lender marketing'],
+    heroHeadline: 'Build a Mortgage Brand Clients Trust',
+    heroSubheadline: 'Stand out with a personal brand that builds trust and attracts quality borrowers.',
     challenges: [
-      'Generating purchase leads in competitive markets',
-      'Building realtor referral relationships',
-      'Differentiating in a rate-driven market',
-      'Staying compliant while marketing effectively'
+      'Building trust in a rate-driven market',
+      'Standing out as an individual professional',
+      'Looking professional and credible',
+      'Building referral relationships'
     ],
     solutions: [
-      'Lead generation campaigns',
-      'Realtor partnership marketing',
       'Personal brand building',
-      'Compliant content strategies'
+      'Trust and credibility strategies',
+      'Professional presence development',
+      'Relationship marketing approaches'
     ],
     results: [
-      { metric: 'Avg Lead Increase', value: '180%' },
-      { metric: 'Loan Officers Served', value: '400+' },
-      { metric: 'Loans Closed', value: '15K+' },
-      { metric: 'Referral Network Growth', value: '200%' }
+      { metric: 'Personal Brand', value: 'Established' },
+      { metric: 'Client Trust', value: 'Strengthened' },
+      { metric: 'Professional Image', value: 'Elevated' },
+      { metric: 'Referral Potential', value: 'Enhanced' }
     ],
     relatedIndustries: ['real-estate', 'finance', 'insurance'],
-    popularServices: ['Lead Generation', 'Realtor Partnerships', 'Personal Branding', 'Content Marketing']
+    popularServices: ['Personal Branding', 'Content Marketing', 'Social Media', 'Relationship Marketing']
   },
 ];
 
@@ -1688,4 +1702,3 @@ export function getIndustryCategories(): { category: IndustryCategory; info: { n
     industries: getIndustriesByCategory(category)
   }));
 }
-
