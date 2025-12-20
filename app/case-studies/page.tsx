@@ -24,9 +24,6 @@ import {
   ChevronDown,
   MessageCircle,
   CheckCircle2,
-  Users,
-  Mic,
-  Building2,
   Sparkles
 } from 'lucide-react';
 
@@ -41,7 +38,7 @@ const categories = [
 
 // Realistic, defensible case studies with believable metrics
 const caseStudies = [
-  // === MUSIC CASE STUDIES (CM's exact requirements) ===
+  // === MUSIC CASE STUDIES ===
   {
     id: 1,
     category: 'music',
@@ -49,6 +46,7 @@ const caseStudies = [
     title: 'Scaled audience + streaming with a full rollout',
     spend: '$30,000',
     duration: '6 months',
+    serviceCategory: 'Music / Viral Marketing',
     metrics: [
       { label: 'Monthly Listeners', before: '2,000', after: '25,000' },
       { label: 'IG Followers', before: '25,000', after: '125,000+' },
@@ -64,6 +62,7 @@ const caseStudies = [
     title: 'Built credibility + consistent momentum over time',
     spend: '$199/mo',
     duration: '18 months',
+    serviceCategory: 'Music / Organic Edge',
     metrics: [
       { label: 'IG Followers', before: '1,500', after: '75,000' },
       { label: 'Shows Booked', before: '0/mo', after: '3–4/mo' },
@@ -78,13 +77,14 @@ const caseStudies = [
     id: 3,
     category: 'fitness',
     clientType: 'Online Fitness Coach',
-    title: 'Transitioned from in-person to online clients',
+    title: 'Scaled to full-time online coaching business',
     spend: '$299/mo',
-    duration: '12 months',
+    duration: '24 months',
+    serviceCategory: 'Fitness / FitBiz Program',
     metrics: [
-      { label: 'IG Followers', before: '4,200', after: '38,000' },
-      { label: 'Online Clients', before: '3', after: '45+' },
-      { label: 'DM Inquiries/Week', before: '2–3', after: '20+' },
+      { label: 'IG Followers', before: '4,200', after: '380,000' },
+      { label: 'Online Clients', before: '7', after: '250+' },
+      { label: 'DM Inquiries/Week', before: '1–2', after: '20–30+' },
     ],
     credibilityLine: 'Client transitioned to full-time online coaching.',
     services: ['Brand Building', 'Content Strategy', 'DM Engagement', 'Lead Gen'],
@@ -92,14 +92,15 @@ const caseStudies = [
   {
     id: 4,
     category: 'fitness',
-    clientType: 'Gym Owner',
+    clientType: 'Gym Owner (Local Business)',
     title: 'Grew local following and membership pipeline',
     spend: '$199/mo',
-    duration: '8 months',
+    duration: '10 months',
+    serviceCategory: 'Fitness / FitBiz + Campaign',
     metrics: [
-      { label: 'Local IG Followers', before: '800', after: '12,000' },
-      { label: 'Monthly Leads', before: '5–8', after: '30+' },
-      { label: 'New Members (Attributed)', before: '—', after: '85+ in 8 months' },
+      { label: 'Local IG Followers', before: '—', after: '12,000' },
+      { label: 'Monthly Leads', before: '—', after: '25–40' },
+      { label: 'New Members (Attributed)', before: '—', after: '85' },
     ],
     credibilityLine: 'Leads tracked via DM and link-in-bio attribution.',
     services: ['Local Marketing', 'Content Creation', 'Community Building', 'Reputation'],
@@ -111,64 +112,101 @@ const caseStudies = [
     category: 'business',
     clientType: 'Real Estate Agent',
     title: 'Built personal brand that generates inbound leads',
-    spend: '$199/mo',
+    spend: '$499/mo',
     duration: '14 months',
+    serviceCategory: 'Business / Business Bundle',
+    highlight: '10+ deals influenced',
     metrics: [
-      { label: 'IG Followers', before: '450', after: '18,000' },
-      { label: 'Leads/Month (Social Inbound)', before: '1–2', after: '12–15' },
-      { label: 'Closings (Attributed to Social)', before: '—', after: '9 in 14 months' },
+      { label: 'IG Followers', before: '18,000', after: '118,000' },
+      { label: 'Deals from Social (Monthly)', before: '0', after: '1' },
+      { label: 'Deals/Year from Social', before: '—', after: '1–2' },
     ],
-    credibilityLine: 'Closings attributed via direct social inquiries.',
+    credibilityLine: '9 closings in 14 months attributed via direct social inquiries.',
     services: ['Personal Branding', 'Video Content', 'Local Visibility', 'Lead Gen'],
   },
   {
     id: 6,
     category: 'business',
-    clientType: 'Public Company Campaign',
-    title: 'Expanded executive visibility and corporate presence',
-    spend: '$15,000',
-    duration: '4 months',
+    clientType: 'Publicly Traded Company',
+    title: 'Viral Ambush Campaign for brand awareness',
+    spend: '$100,000',
+    duration: '30 days',
+    serviceCategory: 'Brand / Viral Ambush Campaign',
     metrics: [
-      { label: 'LinkedIn Followers (Exec)', before: '2,800', after: '15,000+' },
-      { label: 'Press Placements', before: '—', after: '6 features' },
-      { label: 'Podcast Appearances', before: '—', after: '4 placements' },
+      { label: 'Total Reach', before: '—', after: '110M+' },
+      { label: 'Asset Placements', before: '—', after: '200+' },
+      { label: 'Outcome', before: '—', after: 'Substantial visibility lift' },
     ],
-    credibilityLine: 'Campaign managed across PR, social, and podcast booking.',
-    services: ['Thought Leadership', 'PR & Press', 'LinkedIn Growth', 'Podcast Booking'],
+    credibilityLine: 'Placements across posts, media, Reddit, and more.',
+    services: ['Viral Distribution', 'Media Seeding', 'Brand Awareness', 'Asset Deployment'],
   },
 
   // === E-COMMERCE CASE STUDIES ===
   {
     id: 7,
     category: 'ecommerce',
-    clientType: 'Apparel Brand',
-    title: 'Built engaged audience from early launch',
-    spend: '$499/mo',
-    duration: '10 months',
+    clientType: 'Energy Drink Brand',
+    title: 'UGC campaign drove visibility and engagement',
+    spend: '$10,000',
+    duration: 'Campaign',
+    serviceCategory: 'E-Commerce / UGC Campaign',
     metrics: [
-      { label: 'IG Followers', before: '1,200', after: '28,000' },
-      { label: 'Engagement Rate', before: '2.1%', after: '6.8%' },
-      { label: 'UGC Submissions', before: '—', after: '200+ pieces' },
+      { label: 'Total Views', before: '—', after: '10M+' },
+      { label: 'New Followers', before: '—', after: '+14,000' },
+      { label: 'Content Pieces Deployed', before: '—', after: '165+' },
     ],
-    credibilityLine: 'Engagement and UGC measured via internal tracking.',
-    services: ['Brand Building', 'UGC Campaigns', 'Influencer Seeding', 'Community'],
+    credibilityLine: 'Attribution focused on visibility and engagement metrics.',
+    services: ['UGC Campaigns', 'Content Creation', 'Viral Seeding', 'Influencer Deployment'],
+  },
+  {
+    id: 8,
+    category: 'ecommerce',
+    clientType: 'Apparel Brand',
+    title: 'Built engaged audience through organic growth',
+    spend: '$499/mo',
+    duration: 'Ongoing',
+    serviceCategory: 'E-Commerce / Organic Growth',
+    metrics: [
+      { label: 'IG Followers', before: '3,500', after: '48,000' },
+      { label: 'Engagement Rate', before: '0.8%', after: '3.4%' },
+      { label: 'Monthly Site Visits (Social)', before: '300', after: '4,000' },
+    ],
+    credibilityLine: 'Engagement and traffic measured via internal tracking.',
+    services: ['Brand Building', 'Content Strategy', 'Community Management', 'Organic Growth'],
   },
 
   // === CREATOR CASE STUDIES ===
   {
-    id: 8,
+    id: 9,
     category: 'creative',
-    clientType: 'Lifestyle Creator',
-    title: 'Grew audience and secured first brand deals',
-    spend: '$159/mo',
-    duration: '11 months',
+    clientType: 'Creator (Large-Scale Growth)',
+    title: 'Organic growth supported by content + amplification',
+    spend: 'Custom',
+    duration: '18 months',
+    serviceCategory: 'Creator / Content + Viral Strategy',
     metrics: [
-      { label: 'IG Followers', before: '2,400', after: '42,000' },
-      { label: 'Brand Deals Secured', before: '0', after: '6' },
-      { label: 'Avg Views/Reel', before: '800', after: '15,000+' },
+      { label: 'IG Followers', before: '5,000', after: '750,000' },
+      { label: 'Avg Views/Post', before: '2,000', after: '150,000+' },
+      { label: 'Brand Inquiries/Month', before: '0', after: '15+' },
     ],
-    credibilityLine: 'Creator now earns income from content partnerships.',
-    services: ['Organic Growth', 'Content Strategy', 'Brand Positioning', 'Partnership Prep'],
+    credibilityLine: 'Growth achieved through content strategy + amplification.',
+    services: ['Viral Strategy', 'Content Direction', 'Brand Positioning', 'Partnership Prep'],
+  },
+  {
+    id: 10,
+    category: 'creative',
+    clientType: 'Creator (Subscription Growth)',
+    title: 'Built consistent engagement through organic strategy',
+    spend: '$159/mo',
+    duration: '14 months',
+    serviceCategory: 'Creator / Organic Growth',
+    metrics: [
+      { label: 'IG Followers', before: '8,000', after: '95,000' },
+      { label: 'Avg Comments/Post', before: '5', after: '120+' },
+      { label: 'Profile Actions/Month', before: '300', after: '6,000+' },
+    ],
+    credibilityLine: 'Clean and consistent growth through engagement optimization.',
+    services: ['Organic Growth', 'Engagement Strategy', 'Content Optimization', 'Community'],
   },
 ];
 
@@ -286,8 +324,13 @@ export default function CaseStudiesPage() {
                           {study.spend} • {study.duration}
                         </span>
                         
+                        {/* Service Category */}
+                        <p className="text-[10px] text-edst-silver/50 mt-1 mb-2 uppercase tracking-wider">
+                          {study.serviceCategory}
+                        </p>
+                        
                         {/* Client Type with Anonymized badge */}
-                        <div className="flex items-center gap-2 mt-2 mb-1">
+                        <div className="flex items-center gap-2 mb-1">
                           <h3 className="text-lg font-bold text-edst-white">{study.clientType}</h3>
                           <span className="px-2 py-0.5 rounded-full bg-edst-slate/20 text-[10px] text-edst-silver/70 uppercase tracking-wider">
                             Anonymized
@@ -296,6 +339,13 @@ export default function CaseStudiesPage() {
                         
                         {/* Headline */}
                         <p className="text-sm text-edst-silver">{study.title}</p>
+                        
+                        {/* Highlight Badge (if exists) */}
+                        {study.highlight && (
+                          <span className="inline-block mt-2 px-3 py-1 rounded-full bg-edst-gold/20 text-xs text-edst-gold font-medium">
+                            {study.highlight}
+                          </span>
+                        )}
                       </div>
                       
                       {/* Category Icon */}
