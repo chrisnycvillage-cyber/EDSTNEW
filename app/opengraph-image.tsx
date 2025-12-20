@@ -1,9 +1,8 @@
 /**
  * ═══════════════════════════════════════════════════════════════════
- * DYNAMIC OG IMAGE GENERATOR
+ * DYNAMIC OG IMAGE - MINIMAL & IMPACTFUL
  * ───────────────────────────────────────────────────────────────────
- * Premium Open Graph image for social sharing
- * "The Marketing Ecosystem That Never Sleeps"
+ * Clean, bold, sexy. Just the essentials.
  * ═══════════════════════════════════════════════════════════════════
  */
 
@@ -30,124 +29,72 @@ export default async function Image() {
           alignItems: 'center',
           justifyContent: 'center',
           backgroundColor: '#020309',
-          backgroundImage: 'radial-gradient(ellipse at 50% 40%, rgba(250, 204, 83, 0.12) 0%, transparent 60%)',
+          backgroundImage: 'radial-gradient(ellipse at 50% 50%, rgba(250, 204, 83, 0.08) 0%, transparent 50%)',
         }}
       >
-        {/* Always Online Badge */}
+        {/* Always Online Badge - small, top */}
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '12px',
-            padding: '12px 28px',
-            borderRadius: '50px',
-            backgroundColor: 'rgba(34, 197, 94, 0.15)',
-            border: '2px solid rgba(34, 197, 94, 0.4)',
-            marginBottom: '50px',
+            gap: '8px',
+            marginBottom: '40px',
           }}
         >
           <div
             style={{
-              width: '12px',
-              height: '12px',
+              width: '10px',
+              height: '10px',
               borderRadius: '50%',
               backgroundColor: '#22c55e',
             }}
           />
           <span
             style={{
-              fontSize: '20px',
-              fontWeight: 700,
+              fontSize: '16px',
+              fontWeight: 600,
               color: '#22c55e',
-              letterSpacing: '3px',
+              letterSpacing: '2px',
             }}
           >
             ALWAYS ONLINE
           </span>
         </div>
 
-        {/* Main Headline */}
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            marginBottom: '40px',
-          }}
-        >
-          <span
-            style={{
-              fontSize: '64px',
-              fontWeight: 800,
-              color: '#ffffff',
-              lineHeight: 1.15,
-            }}
-          >
-            The Marketing Ecosystem
-          </span>
-          <span
-            style={{
-              fontSize: '64px',
-              fontWeight: 800,
-              color: '#facc53',
-              lineHeight: 1.15,
-            }}
-          >
-            That Never Sleeps.
-          </span>
-        </div>
-
-        {/* Subline */}
+        {/* EDST Logo - Big & Bold */}
         <span
           style={{
-            fontSize: '26px',
-            color: '#9ca3af',
-            marginBottom: '50px',
+            fontSize: '140px',
+            fontWeight: 800,
+            color: '#facc53',
+            letterSpacing: '-6px',
+            marginBottom: '30px',
           }}
         >
-          Everything you need to blow up — under one roof.
+          EDST
         </span>
 
-        {/* EDST Logo Bar */}
-        <div
+        {/* Main Headline - Clean */}
+        <span
           style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '20px',
-            padding: '20px 40px',
-            borderRadius: '20px',
-            backgroundColor: 'rgba(250, 204, 83, 0.1)',
-            border: '2px solid rgba(250, 204, 83, 0.25)',
+            fontSize: '48px',
+            fontWeight: 700,
+            color: '#ffffff',
+            textAlign: 'center',
           }}
         >
-          <span
-            style={{
-              fontSize: '52px',
-              fontWeight: 800,
-              color: '#facc53',
-              letterSpacing: '-2px',
-            }}
-          >
-            EDST
-          </span>
-          <div
-            style={{
-              width: '3px',
-              height: '40px',
-              backgroundColor: 'rgba(250, 204, 83, 0.4)',
-              borderRadius: '2px',
-            }}
-          />
-          <span
-            style={{
-              fontSize: '22px',
-              color: '#9ca3af',
-              fontWeight: 500,
-            }}
-          >
-            edst.com
-          </span>
-        </div>
+          The Marketing Ecosystem
+        </span>
+        <span
+          style={{
+            fontSize: '48px',
+            fontWeight: 700,
+            color: 'rgba(255, 255, 255, 0.6)',
+            textAlign: 'center',
+          }}
+        >
+          That Never Sleeps.
+        </span>
       </div>
     ),
     {
