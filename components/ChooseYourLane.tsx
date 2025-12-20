@@ -17,8 +17,8 @@ const lanes = [
     id: 'artists',
     icon: Music,
     title: 'Artists & Music',
-    problem: 'Your music is good. Nobody's hearing it. Streams are flat. Engagement is dead.',
-    solution: 'We fix visibility. We build credibility. We get your music in front of people who actually care — and help you look like the artist you're becoming.',
+    problem: "Your music is good. Nobody is hearing it. Streams are flat. Engagement is dead.",
+    solution: "We fix visibility. We build credibility. We get your music in front of people who actually care — and help you look like the artist you are becoming.",
     cta: 'Explore Music Services',
     href: '/industries/music',
     accentColor: 'from-pink-500/20 to-pink-500/5',
@@ -27,8 +27,8 @@ const lanes = [
     id: 'creators',
     icon: Users,
     title: 'Creators & Influencers',
-    problem: 'You're posting. You're consistent. But growth is slow and brand deals aren't landing.',
-    solution: 'We amplify your reach, build social proof that brands notice, and position you as someone worth paying attention to.',
+    problem: "You are posting. You are consistent. But growth is slow and brand deals are not landing.",
+    solution: "We amplify your reach, build social proof that brands notice, and position you as someone worth paying attention to.",
     cta: 'Explore Creator Services',
     href: '/industries/influencers',
     accentColor: 'from-purple-500/20 to-purple-500/5',
@@ -37,8 +37,8 @@ const lanes = [
     id: 'businesses',
     icon: Briefcase,
     title: 'Businesses & Brands',
-    problem: 'You have a product or service. You need more leads, more visibility, more authority in your space.',
-    solution: 'We build your brand presence, drive inbound attention, and establish the credibility that makes sales easier.',
+    problem: "You have a product or service. You need more leads, more visibility, more authority in your space.",
+    solution: "We build your brand presence, drive inbound attention, and establish the credibility that makes sales easier.",
     cta: 'Explore Business Services',
     href: '/industries/business-services',
     accentColor: 'from-blue-500/20 to-blue-500/5',
@@ -134,7 +134,7 @@ export const ChooseYourLane = () => {
           transition={{ delay: 0.5 }}
           className="text-center text-xs text-edst-silver/50 mt-10 max-w-xl mx-auto"
         >
-          Don't fit neatly into one lane? Most of our clients don't. We'll figure it out together.
+          Do not fit neatly into one lane? Most of our clients do not. We will figure it out together.
         </motion.p>
       </div>
     </section>
