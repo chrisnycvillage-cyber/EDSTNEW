@@ -1,8 +1,8 @@
 /**
  * ═══════════════════════════════════════════════════════════════════
- * OG IMAGE - MATCHES HOMEPAGE HERO STYLE
+ * OG IMAGE - MAXIMIZED AESTHETIC
  * ───────────────────────────────────────────────────────────────────
- * Big headline across the screen, just like the homepage.
+ * Clean, bold, premium. Big headline + prominent Always Online.
  * ═══════════════════════════════════════════════════════════════════
  */
 
@@ -32,49 +32,49 @@ export default async function Image() {
           position: 'relative',
         }}
       >
-        {/* Gold glow behind text */}
+        {/* Gold glow behind text - larger and more prominent */}
         <div
           style={{
             position: 'absolute',
-            top: '50%',
+            top: '45%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-            width: '900px',
-            height: '500px',
-            background: 'radial-gradient(ellipse, rgba(250, 204, 83, 0.15) 0%, rgba(250, 204, 83, 0.05) 40%, transparent 70%)',
+            width: '1000px',
+            height: '600px',
+            background: 'radial-gradient(ellipse, rgba(250, 204, 83, 0.18) 0%, rgba(250, 204, 83, 0.06) 35%, transparent 65%)',
             borderRadius: '50%',
           }}
         />
 
-        {/* Always Online Badge - matching homepage style */}
+        {/* Always Online Badge - BIGGER and more prominent */}
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '8px',
-            padding: '8px 16px',
+            gap: '12px',
+            padding: '14px 28px',
             borderRadius: '50px',
-            backgroundColor: 'rgba(30, 30, 35, 0.6)',
-            border: '1px solid rgba(100, 100, 110, 0.3)',
-            marginBottom: '50px',
+            backgroundColor: 'rgba(34, 197, 94, 0.1)',
+            border: '1.5px solid rgba(34, 197, 94, 0.4)',
+            marginBottom: '45px',
           }}
         >
           <div
             style={{
-              width: '8px',
-              height: '8px',
+              width: '12px',
+              height: '12px',
               borderRadius: '50%',
               backgroundColor: '#22c55e',
+              boxShadow: '0 0 12px rgba(34, 197, 94, 0.6)',
             }}
           />
           <span
             style={{
-              fontSize: '14px',
-              fontWeight: 500,
-              color: '#a1a1aa',
-              letterSpacing: '1.5px',
+              fontSize: '20px',
+              fontWeight: 600,
+              color: '#22c55e',
+              letterSpacing: '3px',
               textTransform: 'uppercase',
-              fontFamily: 'monospace',
             }}
           >
             Always Online
@@ -92,10 +92,10 @@ export default async function Image() {
         >
           <span
             style={{
-              fontSize: '82px',
+              fontSize: '86px',
               fontWeight: 700,
               color: '#ffffff',
-              lineHeight: 1.1,
+              lineHeight: 1.05,
               textAlign: 'center',
             }}
           >
@@ -103,12 +103,10 @@ export default async function Image() {
           </span>
           <span
             style={{
-              fontSize: '82px',
+              fontSize: '86px',
               fontWeight: 700,
-              background: 'linear-gradient(135deg, #facc53 0%, #f5d78e 50%, #facc53 100%)',
-              backgroundClip: 'text',
               color: '#facc53',
-              lineHeight: 1.1,
+              lineHeight: 1.05,
               textAlign: 'center',
             }}
           >
@@ -116,29 +114,16 @@ export default async function Image() {
           </span>
         </div>
 
-        {/* Subline */}
+        {/* Subline - clean and subtle */}
         <span
           style={{
-            fontSize: '24px',
+            fontSize: '26px',
             color: '#71717a',
-            marginTop: '40px',
+            marginTop: '45px',
             textAlign: 'center',
           }}
         >
           Everything you need to blow up — under one roof.
-        </span>
-
-        {/* Bottom URL */}
-        <span
-          style={{
-            position: 'absolute',
-            bottom: '30px',
-            fontSize: '18px',
-            color: '#52525b',
-            letterSpacing: '1px',
-          }}
-        >
-          edst.com
         </span>
       </div>
     ),
