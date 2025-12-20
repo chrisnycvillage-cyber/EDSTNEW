@@ -135,7 +135,7 @@ export const ChooseYourLane = () => {
           transition={{ delay: 0.5 }}
           className="text-center text-xs text-edst-silver/50 mt-6 max-w-xl mx-auto"
         >
-          Not sure which lane you fit? Most clients do not fit neatly — we will figure it out together.
+          Not sure where you fit? Tell us your goal and we will point you in the right direction.
         </motion.p>
       </div>
     </section>
