@@ -78,6 +78,19 @@ export function AsSeenIn({ variant = 'full', className = '' }: AsSeenInProps) {
           </div>
         </div>
         
+        {/* Microcopy + Request Link */}
+        <div className="text-center mt-6">
+          <p className="text-[11px] text-edst-silver/40 mb-2">
+            Client examples shared selectively to protect privacy.
+          </p>
+          <a 
+            href="/marketing" 
+            className="text-[11px] text-edst-gold/60 hover:text-edst-gold transition-colors"
+          >
+            Request relevant examples privately →
+          </a>
+        </div>
+        
         {/* Static version for smaller screens or no-animation preference */}
         <noscript>
           <div className="flex flex-wrap items-center justify-center gap-6">

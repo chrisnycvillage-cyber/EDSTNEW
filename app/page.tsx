@@ -21,9 +21,9 @@ import {
 
 // Dynamic imports for below-the-fold content (lazy loaded)
 const ServiceMarquee = dynamic(() => import('@/components/ServiceMarquee').then(m => ({ default: m.ServiceMarquee })), { ssr: true });
-const EcosystemSection = dynamic(() => import('@/components/EcosystemSection').then(m => ({ default: m.EcosystemSection })), { ssr: true });
+const Capabilities = dynamic(() => import('@/components/Capabilities').then(m => ({ default: m.Capabilities })), { ssr: true });
+const ChooseYourLane = dynamic(() => import('@/components/ChooseYourLane').then(m => ({ default: m.ChooseYourLane })), { ssr: true });
 const HowItWorks = dynamic(() => import('@/components/HowItWorks').then(m => ({ default: m.HowItWorks })), { ssr: true });
-const Services = dynamic(() => import('@/components/Services').then(m => ({ default: m.Services })), { ssr: true });
 const Testimonials = dynamic(() => import('@/components/Testimonials').then(m => ({ default: m.Testimonials })), { ssr: true });
 const DashboardTeaser = dynamic(() => import('@/components/DashboardTeaser').then(m => ({ default: m.DashboardTeaser })), { ssr: true });
 const OurStory = dynamic(() => import('@/components/OurStory').then(m => ({ default: m.OurStory })), { ssr: true });
@@ -58,17 +58,17 @@ export default function Home() {
       {/* Real-Time Activity Ticker */}
       <ResultsFeed />
 
-      {/* Ecosystem Section - Six growth engines */}
-      <EcosystemSection />
+      {/* Capabilities Section - Merged capabilities (replaces Ecosystem + Services) */}
+      <Capabilities />
+
+      {/* Choose Your Lane - Outcome-based targeting */}
+      <ChooseYourLane />
 
       {/* How It Works - Simple 3 steps */}
       <HowItWorks />
 
       {/* Service Marquee - Scrolling service names */}
       <ServiceMarquee />
-
-      {/* Services Section - Full service breakdown */}
-      <Services />
 
       {/* Testimonials Section - Social proof */}
       <section id="results">

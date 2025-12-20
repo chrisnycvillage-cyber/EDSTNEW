@@ -14,6 +14,8 @@ export { Logo } from './Logo';
 export { Hero } from './Hero';
 export { EcosystemSection } from './EcosystemSection';
 export { Services } from './Services';
+export { Capabilities } from './Capabilities';
+export { ChooseYourLane } from './ChooseYourLane';
 export { Testimonials } from './Testimonials';
 export { VideoTestimonials } from './VideoTestimonials';
 export { DashboardTeaser } from './DashboardTeaser';

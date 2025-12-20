@@ -49,6 +49,11 @@ export const CTA = () => {
           <p className="mt-6 text-sm text-edst-silver">
             {cta.trustNote}
           </p>
+          
+          {/* Routing microcopy */}
+          <p className="mt-3 text-xs text-edst-silver/50">
+            Not sure what you need? Tell us your goal — we'll route you correctly.
+          </p>
         </motion.div>
       </div>
     </section>
